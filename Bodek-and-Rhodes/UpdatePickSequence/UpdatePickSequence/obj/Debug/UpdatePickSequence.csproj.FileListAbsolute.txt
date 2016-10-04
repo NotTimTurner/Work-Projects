@@ -1,0 +1,10 @@
+\\192.168.1.192\d$\Tim's Projects\UpdatePickSequence\UpdatePickSequence\bin\Debug\UpdatePickSequence.exe.config
+\\192.168.1.192\d$\Tim's Projects\UpdatePickSequence\UpdatePickSequence\bin\Debug\UpdatePickSequence.exe
+\\192.168.1.192\d$\Tim's Projects\UpdatePickSequence\UpdatePickSequence\bin\Debug\UpdatePickSequence.pdb
+\\192.168.1.192\d$\Tim's Projects\UpdatePickSequence\UpdatePickSequence\bin\Debug\EntityFramework.dll
+\\192.168.1.192\d$\Tim's Projects\UpdatePickSequence\UpdatePickSequence\bin\Debug\EntityFramework.SqlServer.dll
+\\192.168.1.192\d$\Tim's Projects\UpdatePickSequence\UpdatePickSequence\bin\Debug\EntityFramework.xml
+\\192.168.1.192\d$\Tim's Projects\UpdatePickSequence\UpdatePickSequence\bin\Debug\EntityFramework.SqlServer.xml
+\\192.168.1.192\d$\Tim's Projects\UpdatePickSequence\UpdatePickSequence\obj\Debug\UpdatePickSequence.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\UpdatePickSequence\UpdatePickSequence\obj\Debug\UpdatePickSequence.exe
+\\192.168.1.192\d$\Tim's Projects\UpdatePickSequence\UpdatePickSequence\obj\Debug\UpdatePickSequence.pdb

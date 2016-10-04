@@ -1,0 +1,2370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Audit_Manifest">
+    <Key>
+      <PropertyRef Name="CaseID" />
+      <PropertyRef Name="Transaction_Time" />
+    </Key>
+    <Property Name="CaseID" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Transaction_Time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TranType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SubType" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="StationID" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Message" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AUDIT_OUTBOUND">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="TRANTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SUBTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TRANSACTION_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="APPOINTMENT_TIME" Type="DateTime" Precision="3" />
+    <Property Name="APPOINTMENT_TIME_OLD" Type="DateTime" Precision="3" />
+    <Property Name="DOOR_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="DOOR_ID_OLD" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="MADE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="MADE_TIME_OLD" Type="DateTime" Precision="3" />
+    <Property Name="DURATION" Type="Int32" />
+    <Property Name="DURATION_OLD" Type="Int32" />
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CARRIER_ID_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID_OLD" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="ARRIVAL_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_ASSIGNED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_START_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_COMPLETE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="DEPARTURE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTTIME_SYS1" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTLOADNUM_SYS1" Type="Int32" />
+    <Property Name="EXPORTTIME_SYS2" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTLOADNUM_SYS2" Type="Int32" />
+    <Property Name="EXPORTTIME_SYS3" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTLOADNUM_SYS3" Type="Int32" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_1_OLD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_2_OLD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CITY_OLD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="STATE_OLD" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP_OLD" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="PURCHASE_ORDER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="PURCHASE_ORDER_OLD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="PURCHASE_ORDER_DATE" Type="DateTime" Precision="3" />
+    <Property Name="PURCHASE_ORDER_DATE_OLD" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS_OLD" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="COMMENTS_1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="EXPORTFDM4BATCH_SYS1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AUDIT_OUTBOUND_DETAIL">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="AUDIT_OUTBOUND_RID" Type="Int32" Nullable="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_LINE" Type="Int32" />
+    <Property Name="ORDER_LINE_OLD" Type="Int32" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID_OLD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="DUE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DUE_DATE_OLD" Type="DateTime" Precision="3" />
+    <Property Name="PICK_ASSIGNED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_START_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_COMPLETE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICKER" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="UNITS_ORDERED" Type="Single" />
+    <Property Name="UNITS_STAGED" Type="Single" />
+    <Property Name="UNITS_VERIFIED" Type="Single" />
+    <Property Name="UNITS_SHIPPED" Type="Single" />
+    <Property Name="ADJUSTMENT_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="ADJUSTMENT_CODE_OLD" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="UNITS_ORDERED_OLD" Type="Single" />
+    <Property Name="TRANTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SUBTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TRANSACTION_TIME" Type="DateTime" Precision="3" />
+    <Property Name="QC_AUDITOR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Cashier_Notes">
+    <Key>
+      <PropertyRef Name="Transaction_rid" />
+    </Key>
+    <Property Name="Transaction_rid" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Note" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Last_Updated" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Cashier_Transactions">
+    <Key>
+      <PropertyRef Name="C_rid_" />
+    </Key>
+    <Property Name="C_rid_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="userid" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="shipment_id" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="transaction_amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="transaction_type" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_last_updated_" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="signatureImg" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="printedName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Guid" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="dtproperty">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="property" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="objectid" Type="Int32" />
+    <Property Name="property" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="value" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="lvalue" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="version" Type="Int32" Nullable="false" />
+    <Property Name="uvalue" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ERRORS_RUNTIME">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="ERRORTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="USERID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MODULE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="FUNCTION" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ERRORTYPE" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="ERRORNUMBER" Type="Int32" />
+    <Property Name="ERRORMESSAGE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ERRORDATA" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="FREIGHT_LANES">
+    <Key>
+      <PropertyRef Name="CARRIER_ID" />
+      <PropertyRef Name="SHIP_MODE" />
+      <PropertyRef Name="FullZip_From" />
+      <PropertyRef Name="FullZip_Thru" />
+    </Key>
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SHIP_MODE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ZIP3_FROM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ZIP3_THRU" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DAY_DELAY" Type="Int16" />
+    <Property Name="ALLOW_EXCEPTIONS" Type="Boolean" Nullable="false" />
+    <Property Name="EFFECTIVE_FROM_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EFFECTIVE_THRU_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FullZip_From" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FullZip_Thru" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GTIN_XREF">
+    <Key>
+      <PropertyRef Name="GTIN" />
+      <PropertyRef Name="PRODUCT_ID" />
+    </Key>
+    <Property Name="GTIN" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_USER" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATED" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODULE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="HOST_ORDER_DETAIL">
+    <Key>
+      <PropertyRef Name="EIS_ORDER_ID" />
+      <PropertyRef Name="EIS_ORDER_LINE" />
+    </Key>
+    <Property Name="EIS_ORDER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EIS_ORDER_LINE" Type="Int16" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="ORDERED_UNITS" Type="Single" />
+    <Property Name="UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="SCHEDULED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="OLDNOTES" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EIS_ORDLINE_PRICE" Type="Single" />
+    <Property Name="EIS_UNIT_PRICE" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NOTES" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="HOST_ORDERS">
+    <Key>
+      <PropertyRef Name="EIS_ORDER_ID" />
+    </Key>
+    <Property Name="EIS_ORDER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CUSTOMER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="PHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PURCHASE_ORDER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ORIGINAL_SHIP_MODE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="TERMS" Type="Int16" />
+    <Property Name="COD_INDICATOR" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="EST_NUM_BOXES" Type="Int32" />
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="DEPOSIT_AMOUNT" Type="Single" />
+    <Property Name="FREIGHT_BILLING_OPTION" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="EXPEDITE_IND" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="NOTES" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IMPORT_TIME" Type="DateTime" Precision="3" />
+    <Property Name="FREIGHT_BILL_TO_ACCOUNT" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_NAME" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_CITY" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="QC_REQUIRED" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="QC_CODES" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVER_BY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="EXTERNAL_CARTONIZED" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="FIRSTBOXSHIPPED" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="INVENTORY_ALLOCATION">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LOCATION_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TRACE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTITY" Type="Single" />
+    <Property Name="ALLOCATION_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_LINE" Type="Int32" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MOVE_QUEUE">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="INV_RID" Type="Int32" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRIORITY" Type="Int16" Nullable="false" />
+    <Property Name="CREATE_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LABELLEVEL" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TO_ZONE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="TO_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_ZONE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="ORIG_QUANTITY_REQUIRED" Type="Single" />
+    <Property Name="QUANTITY_REQUIRED" Type="Single" />
+    <Property Name="QUANTITY_INTRANSIT" Type="Single" />
+    <Property Name="USER_ID_INTRANSIT" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="VEHICLE_INTRANSIT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_LINE" Type="Int16" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="OUTBOUND_SHIPMENT_DETAILS">
+    <Key>
+      <PropertyRef Name="SHIPMENT_ID" />
+      <PropertyRef Name="ORDER_NUMBER" />
+      <PropertyRef Name="ORDER_LINE" />
+    </Key>
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_LINE" Type="Int16" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="UOM_WEIGHT" Type="Single" />
+    <Property Name="ORDERED_UNITS" Type="Single" />
+    <Property Name="STAGED_UNITS" Type="Single" />
+    <Property Name="SHIPPED_UNITS" Type="Single" />
+    <Property Name="STATUS" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="SCHEDULED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_ASSIGNED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_START_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_COMPLETE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="UNIT_PRICE_EA" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="NOTES" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ALLOCATION_STATUS" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="OUTBOUND_SHIPMENTS">
+    <Key>
+      <PropertyRef Name="SHIPMENT_ID" />
+      <PropertyRef Name="ORDER_NUMBER" />
+    </Key>
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="STOP" Type="Int16" />
+    <Property Name="STOP_OF" Type="Int16" />
+    <Property Name="SEQUENCE" Type="Int16" />
+    <Property Name="SITE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CUSTOMER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="PHONE" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="PURCHASE_ORDER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="PURCHASE_ORDER_DATE" Type="DateTime" Precision="3" />
+    <Property Name="SCHEDULED_SHIP_DATE" Type="DateTime" Precision="3" />
+    <Property Name="ACTUAL_SHIP_DATE" Type="DateTime" Precision="3" />
+    <Property Name="RELEASE_EMPL" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="ORIGINAL_CARRIER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORIGINAL_SHIP_MODE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="RAIL_ROUTING" Type="String" MaxLength="58" FixedLength="false" Unicode="false" />
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SHIP_MODE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="EARLY_LATE_CODE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="EARLY_LATE_EMPLOYEE" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="EARLY_LATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DOOR_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TRAILER_INITIALS" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TRAILER_NUMBER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TRAILER_SEAL_1" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TRAILER_SEAL_2" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TRAILER_SEAL_3" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="REQUESTED_ARRIVAL_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DELIVERY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="TOTAL_CSN" Type="Int32" />
+    <Property Name="TOTAL_WEIGHT" Type="Single" />
+    <Property Name="LOADER" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVATION_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="PREPAID_COLLECT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="STAGED_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="EXCEED_SHIP_BY" Type="Boolean" Nullable="false" />
+    <Property Name="SUBSTITUTION_OVERRIDE" Type="Boolean" Nullable="false" />
+    <Property Name="SPECIAL_HANDLING" Type="Boolean" Nullable="false" />
+    <Property Name="NOTES" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ALLOWCOPL" Type="Boolean" Nullable="false" />
+    <Property Name="PAYMENT_TERMS" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CARTON_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_CHARGE" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="ALLOCATION_STATUS" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="COD_INDICATOR" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="CARTON_FREIGHT" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="COD_COST" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="WAVE_ID" Type="Int32" />
+    <Property Name="WAVE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DEPOSIT_AMOUNT" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="FREIGHT_BILL_TO_ACCOUNT" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_NAME" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_CITY" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="QC_REQUIRED" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="QC_CODES" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVER_BY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="ADDRESS_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="POS_Move_Queue">
+    <Key>
+      <PropertyRef Name="C_rid_" />
+    </Key>
+    <Property Name="C_rid_" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FromLocation" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ToLocation" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="User_ID_Intransit" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="ShipmentID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OrderNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastUser" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SYSTEM">
+    <Key>
+      <PropertyRef Name="NAME" />
+    </Key>
+    <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VALUE" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATATYPE" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SYSTEMNEXTRID">
+    <Key>
+      <PropertyRef Name="GENERICNAME" />
+    </Key>
+    <Property Name="GENERICNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NEXTRID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ABS_PO_Detail">
+    <Key>
+      <PropertyRef Name="PURCHASE_ORDER" />
+      <PropertyRef Name="PO_LINE" />
+    </Key>
+    <Property Name="PURCHASE_ORDER" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PO_LINE" Type="Int32" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTITY_ORDERED" Type="Single" />
+    <Property Name="QUANTITY_RECEIVED" Type="Single" />
+    <Property Name="UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="DUE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ABS_PO_Header">
+    <Key>
+      <PropertyRef Name="PURCHASE_ORDER" />
+    </Key>
+    <Property Name="PURCHASE_ORDER" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VENDOR_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DUE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ADJUSTMENT_CODES">
+    <Key>
+      <PropertyRef Name="ADJUSTMENT_CODE" />
+      <PropertyRef Name="GL_ACCOUNT_REQUIRED" />
+      <PropertyRef Name="AMOUNT_REQUIRED" />
+      <PropertyRef Name="WMS_ONLY" />
+    </Key>
+    <Property Name="ADJUSTMENT_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="GL_ACCOUNT_REQUIRED" Type="Boolean" Nullable="false" />
+    <Property Name="AMOUNT_REQUIRED" Type="Boolean" Nullable="false" />
+    <Property Name="WMS_ONLY" Type="Boolean" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ADJUSTMENT_CODES_old">
+    <Key>
+      <PropertyRef Name="ADJUSTMENT_CODE" />
+      <PropertyRef Name="GL_ACCOUNT_REQUIRED" />
+      <PropertyRef Name="AMOUNT_REQUIRED" />
+      <PropertyRef Name="WMS_ONLY" />
+    </Key>
+    <Property Name="ADJUSTMENT_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="GL_ACCOUNT_REQUIRED" Type="Boolean" Nullable="false" />
+    <Property Name="AMOUNT_REQUIRED" Type="Boolean" Nullable="false" />
+    <Property Name="WMS_ONLY" Type="Boolean" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_BROWSER_APPS">
+    <Key>
+      <PropertyRef Name="APP_ID" />
+      <PropertyRef Name="NAME" />
+      <PropertyRef Name="INFO" />
+    </Key>
+    <Property Name="APP_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="INFO" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_BROWSER_LINKS">
+    <Key>
+      <PropertyRef Name="GROUP_ID" />
+      <PropertyRef Name="APP_ID" />
+    </Key>
+    <Property Name="GROUP_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APP_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_BROWSER_MENU">
+    <Key>
+      <PropertyRef Name="MENU_TITLE" />
+      <PropertyRef Name="OPTION_NUMBER" />
+      <PropertyRef Name="OPTION_TITLE" />
+    </Key>
+    <Property Name="MENU_TITLE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OPTION_NUMBER" Type="Int16" Nullable="false" />
+    <Property Name="OPTION_TITLE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APP_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_CONSOLE_APPS">
+    <Key>
+      <PropertyRef Name="APP_ID" />
+      <PropertyRef Name="NAME" />
+      <PropertyRef Name="INFO" />
+    </Key>
+    <Property Name="APP_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="INFO" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_CONSOLE_LINKS">
+    <Key>
+      <PropertyRef Name="GROUP_ID" />
+      <PropertyRef Name="APP_ID" />
+    </Key>
+    <Property Name="GROUP_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APP_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_CONSOLE_MENU">
+    <Key>
+      <PropertyRef Name="MENU_TITLE" />
+      <PropertyRef Name="OPTION_NUMBER" />
+      <PropertyRef Name="OPTION_TITLE" />
+    </Key>
+    <Property Name="MENU_TITLE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OPTION_NUMBER" Type="Int16" Nullable="false" />
+    <Property Name="OPTION_TITLE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APP_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_GROUPS">
+    <Key>
+      <PropertyRef Name="GROUP_ID" />
+    </Key>
+    <Property Name="GROUP_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_PREFERENCES">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="OPTION_NAME" />
+      <PropertyRef Name="OPTION_VALUE" />
+    </Key>
+    <Property Name="USER_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OPTION_NAME" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OPTION_VALUE" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_RIGHTS">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="GROUP_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GROUP_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_SYSINFO">
+    <Key>
+      <PropertyRef Name="SYSTEMID" />
+    </Key>
+    <Property Name="SYSTEMID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_SYSTABLEMAP">
+    <Key>
+      <PropertyRef Name="SYSTEMID" />
+      <PropertyRef Name="GENERICNAME" />
+    </Key>
+    <Property Name="SYSTEMID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GENERICNAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SYSSPECIFICNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_SYSTEMS">
+    <Key>
+      <PropertyRef Name="SYSTEM_ID" />
+    </Key>
+    <Property Name="SYSTEM_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TABLE_QUALIFIER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_TABLES">
+    <Key>
+      <PropertyRef Name="SYSTEM_ID" />
+      <PropertyRef Name="GENERIC_NAME" />
+      <PropertyRef Name="SPECIFIC_NAME" />
+    </Key>
+    <Property Name="SYSTEM_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GENERIC_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SPECIFIC_NAME" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AFX_USERS">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="NAME" />
+      <PropertyRef Name="LOG_ACCESS" />
+      <PropertyRef Name="DENY_ACCESS" />
+      <PropertyRef Name="QC_REQUIRED" />
+    </Key>
+    <Property Name="USER_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LOG_ACCESS" Type="Boolean" Nullable="false" />
+    <Property Name="DENY_ACCESS" Type="Boolean" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="QC_REQUIRED" Type="Boolean" Nullable="false" />
+    <Property Name="QC_EXPIRE_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ASN_LAYOUT">
+    <Key>
+      <PropertyRef Name="SHIPMENT_ID" />
+      <PropertyRef Name="SHORT_DESCRIPTION" />
+      <PropertyRef Name="LAYOUT_CODE" />
+    </Key>
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SHORT_DESCRIPTION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LAYOUT_CODE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LAST_UPDATED" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ASN_VENDOR_SITE_XREF">
+    <Key>
+      <PropertyRef Name="RID" />
+      <PropertyRef Name="VENDOR_ID" />
+      <PropertyRef Name="SITE_CODE" />
+      <PropertyRef Name="SITE" />
+    </Key>
+    <Property Name="RID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="VENDOR_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SITE_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SITE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LAST_USER" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="LAST_UPDATED" Type="DateTime" Precision="0" />
+    <Property Name="LAST_MODULE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AUDIT_ASN">
+    <Key>
+      <PropertyRef Name="RID" />
+      <PropertyRef Name="TRANTYPE" />
+    </Key>
+    <Property Name="RID" Type="Int32" Nullable="false" />
+    <Property Name="TRANTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SUBTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TRANTIME" Type="DateTime" Precision="3" />
+    <Property Name="FILE_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ALT_FILE_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="BOL_NUMBER" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="SHIP_TO_ACCOUNT" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="GTIN" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="VENDOR_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MESSAGE" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="EXPORTTIME1" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTTIME2" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTTIME3" Type="DateTime" Precision="3" />
+    <Property Name="LAST_USER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_MODULE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATED" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="AUDIT_INBOUND">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="TRANTYPE" />
+      <PropertyRef Name="SUBTYPE" />
+      <PropertyRef Name="TRANSACTION_TIME" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="TRANTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SUBTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TRANSACTION_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="APPOINTMENT_TIME" Type="DateTime" Precision="3" />
+    <Property Name="APPOINTMENT_TIME_OLD" Type="DateTime" Precision="3" />
+    <Property Name="DOOR_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="DOOR_ID_OLD" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="MADE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="MADE_TIME_OLD" Type="DateTime" Precision="3" />
+    <Property Name="DURATION" Type="Int32" />
+    <Property Name="DURATION_OLD" Type="Int32" />
+    <Property Name="SENDER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SENDER_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CARRIER_ID_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID_OLD" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="ARRIVAL_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_ASSIGNED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_START_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_COMPLETE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="DEPARTURE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTTIME_SYS1" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTLOADNUM_SYS1" Type="Int32" />
+    <Property Name="EXPORTTIME_SYS2" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTLOADNUM_SYS2" Type="Int32" />
+    <Property Name="EXPORTTIME_SYS3" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTLOADNUM_SYS3" Type="Int32" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AUDIT_INBOUND_DETAIL">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="AUDIT_INBOUND_RID" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="AUDIT_INBOUND_RID" Type="Int32" Nullable="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_LINE" Type="Int32" />
+    <Property Name="ORDER_LINE_OLD" Type="Int32" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID_OLD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="DUE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DUE_DATE_OLD" Type="DateTime" Precision="3" />
+    <Property Name="UNLOAD_ASSIGNED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="UNLOAD_START_TIME" Type="DateTime" Precision="3" />
+    <Property Name="UNLOAD_COMPLETE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="UNLOADER" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="UNITS_ORDERED" Type="Single" />
+    <Property Name="UNITS_UNLOADED" Type="Single" />
+    <Property Name="UNITS_RECEIVED" Type="Single" />
+    <Property Name="ADJUSTMENT_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="ADJUSTMENT_CODE_OLD" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AUDIT_INVENTORY">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="TRANTYPE" />
+      <PropertyRef Name="SUBTYPE" />
+      <PropertyRef Name="TRANSACTION_TIME" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="TRANTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SUBTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TRANSACTION_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="USER_ID" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="INV_RID" Type="Int32" />
+    <Property Name="INV_RID_OLD" Type="Int32" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID_OLD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_INV_BASELABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="INV_BASELABEL_OLD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="INV_TRACE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="INV_TRACE_OLD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="INV_QTY" Type="Single" />
+    <Property Name="INV_QTY_OLD" Type="Single" />
+    <Property Name="UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="UOM_OLD" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_ID_OLD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SITE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SITE_ID_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_ID_OLD" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="QC_CATEGORY_OLD" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="EXPORTTIME_SYS1" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTLOADNUM_SYS1" Type="Int32" />
+    <Property Name="EXPORTTIME_SYS2" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTLOADNUM_SYS2" Type="Int32" />
+    <Property Name="EXPORTTIME_SYS3" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTLOADNUM_SYS3" Type="Int32" />
+    <Property Name="TRAILERRAILBOATLABEL" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CONTAINERLABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PALLETTOTELABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AUDIT_INVENTORY_DETAIL">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="AUDIT_INVENTORY_RID" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="AUDIT_INVENTORY_RID" Type="Int32" Nullable="false" />
+    <Property Name="INV_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="INV_BASELABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="INV_TRACE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CUSTOMER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CUSTOMER_ID_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID_OLD" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_LINE" Type="Int32" />
+    <Property Name="ORDER_LINE_OLD" Type="Int32" />
+    <Property Name="QC_INCIDENT" Type="Int32" />
+    <Property Name="QC_INCIDENT_OLD" Type="Int32" />
+    <Property Name="DEFECT_REASON" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="DEFECT_REASON_OLD" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="DEFECT_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DEFECT_ID_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MANUFACTURED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MANUFACTURED_DATE_OLD" Type="DateTime" Precision="3" />
+    <Property Name="RECEIPT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="RECEIPT_DATE_OLD" Type="DateTime" Precision="3" />
+    <Property Name="EXPIRATION_DATE" Type="DateTime" Precision="3" />
+    <Property Name="EXPIRATION_DATE_OLD" Type="DateTime" Precision="3" />
+    <Property Name="PRODUCTION_ORDER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCTION_ORDER_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCTION_LINE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCTION_LINE_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCTION_SHIFT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCTION_SHIFT_OLD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ADJUSTMENT_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="ADJUSTMENT_CODE_OLD" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="BOL_CLASS">
+    <Key>
+      <PropertyRef Name="BOL_CLASS1" />
+    </Key>
+    <Property Name="BOL_CLASS1" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION_1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIPTION_2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CARRIER">
+    <Key>
+      <PropertyRef Name="CARRIER_ID" />
+      <PropertyRef Name="NAME" />
+    </Key>
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="POOL_POINT" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_PHONE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="COMMENTS_1" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="COMMENTS_2" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="COMMENTS_3" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="COMMENTS_4" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="ACCOUNT_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ICC_NUMBER" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="COMPANY_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SHIP_MODE_DEFAULT" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CARTON_MASTER">
+    <Key>
+      <PropertyRef Name="CARTON_TYPE" />
+      <PropertyRef Name="LENGTH" />
+      <PropertyRef Name="WIDTH" />
+      <PropertyRef Name="HEIGHT" />
+      <PropertyRef Name="UCB_PERCENT" />
+      <PropertyRef Name="LCB_PERCENT" />
+      <PropertyRef Name="MAX_WEIGHT" />
+      <PropertyRef Name="DUNNAGE_WEIGHT" />
+      <PropertyRef Name="CONVEYABLE_IND" />
+    </Key>
+    <Property Name="CARTON_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="LENGTH" Type="Single" Nullable="false" />
+    <Property Name="WIDTH" Type="Single" Nullable="false" />
+    <Property Name="HEIGHT" Type="Single" Nullable="false" />
+    <Property Name="UCB_PERCENT" Type="Single" Nullable="false" />
+    <Property Name="LCB_PERCENT" Type="Single" Nullable="false" />
+    <Property Name="MAX_WEIGHT" Type="Single" Nullable="false" />
+    <Property Name="DUNNAGE_WEIGHT" Type="Single" Nullable="false" />
+    <Property Name="CONVEYABLE_IND" Type="Boolean" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Case_Count">
+    <Key>
+      <PropertyRef Name="Order_Number" />
+    </Key>
+    <Property Name="Order_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Order_Line" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Product_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Skid_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="C_Last_updated" Type="DateTime" Precision="3" />
+    <Property Name="C_Last_User" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CLIPPERSHIP">
+    <Key>
+      <PropertyRef Name="Caseid" />
+    </Key>
+    <Property Name="Caseid" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="InterModalVehicle" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ExternOrderKey" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="OrderKey" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CaseType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PmtTerm" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="BR_BookID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_CustNum" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="C_Address1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="C_Address2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="C_Zip" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="C_State" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="C_City" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="C_Company" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CalcWgt" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="COD_Cost" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="TrailerCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Freight_Charge" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="TrackingNum" Type="String" MaxLength="22" FixedLength="false" Unicode="false" />
+    <Property Name="ActWeight" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ShipLine" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PayFlag" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="EXPORTTIME_SYS1" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTFILENAME_SYS1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EXPORTTIME_SYS2" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTFILENAME_SYS2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DEPOSIT_AMOUNT" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="FREIGHT_BILL_TO_ACCOUNT" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_NAME" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_CITY" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Cust_PO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ActFreight" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="EXPORTFDM4BATCH_SYS1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_Address3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CONSOLIDATION_RULES">
+    <Key>
+      <PropertyRef Name="RULE_ID" />
+      <PropertyRef Name="MIX_LOTS" />
+      <PropertyRef Name="MIX_LINES" />
+      <PropertyRef Name="MIX_SHIFTS" />
+      <PropertyRef Name="MIX_PURCHASE_ORDERS" />
+      <PropertyRef Name="MIX_QUALITY_CATEGORIES" />
+      <PropertyRef Name="MIX_PRODUCT" />
+    </Key>
+    <Property Name="RULE_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="MIX_LOTS" Type="Boolean" Nullable="false" />
+    <Property Name="MIX_LINES" Type="Boolean" Nullable="false" />
+    <Property Name="MIX_SHIFTS" Type="Boolean" Nullable="false" />
+    <Property Name="MIX_PURCHASE_ORDERS" Type="Boolean" Nullable="false" />
+    <Property Name="MIX_QUALITY_CATEGORIES" Type="Boolean" Nullable="false" />
+    <Property Name="MIX_PRODUCT" Type="Boolean" Nullable="false" />
+    <Property Name="CONSOLIDATION_DAY_WINDOW" Type="Int16" />
+    <Property Name="MAX_DAYS_SINCE_ARRIVAL" Type="Int32" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="custcity">
+    <Key>
+      <PropertyRef Name="customer_id" />
+    </Key>
+    <Property Name="customer_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="custcity1">
+    <Key>
+      <PropertyRef Name="customer_id" />
+    </Key>
+    <Property Name="customer_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="city" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CUSTOMER">
+    <Key>
+      <PropertyRef Name="CUSTOMER_ID" />
+      <PropertyRef Name="BILL_TO_ID" />
+      <PropertyRef Name="SPECIAL_PICKING" />
+      <PropertyRef Name="SPECIAL_PALLETS" />
+      <PropertyRef Name="INBOUND_EDI" />
+      <PropertyRef Name="OUTBOUND_EDI" />
+    </Key>
+    <Property Name="CUSTOMER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BILL_TO_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="PHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SPECIAL_PICKING" Type="Boolean" Nullable="false" />
+    <Property Name="SPECIAL_PALLETS" Type="Boolean" Nullable="false" />
+    <Property Name="INBOUND_EDI" Type="Boolean" Nullable="false" />
+    <Property Name="OUTBOUND_EDI" Type="Boolean" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL_ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SPECIAL_CARTONIZATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CYCLE_COUNT_RESULTS">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="LOCATION_ID" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="LOCATION_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="RECEIPT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="QTY_PER_CONTAINER" Type="Single" />
+    <Property Name="UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_COUNT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="ACT_CONTAINER_COUNT" Type="Int32" />
+    <Property Name="ACT_QUANTITY" Type="Single" />
+    <Property Name="BOOK_CONTAINER_COUNT" Type="Int32" />
+    <Property Name="BOOK_QUANTITY" Type="Single" />
+    <Property Name="DATA1DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA1NUM" Type="Single" />
+    <Property Name="DATA1STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA2DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA2NUM" Type="Single" />
+    <Property Name="DATA2STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DOCK_ACTIVITY">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="TRANTYPE" />
+      <PropertyRef Name="STATUS" />
+      <PropertyRef Name="APPOINTMENT_DATE" />
+      <PropertyRef Name="DOOR_ID" />
+      <PropertyRef Name="ALLOWPICKING" />
+      <PropertyRef Name="ALLOWLINETOTRUCK" />
+      <PropertyRef Name="ALLOWXDOCKING" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="TRANTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APPOINTMENT_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DOOR_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATE_MADE" Type="DateTime" Precision="3" />
+    <Property Name="DURATION" Type="Int32" />
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORIGINAL_DATE" Type="DateTime" Precision="3" />
+    <Property Name="ORIGINAL_DOOR" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="ORIGINAL_DURATION" Type="Int32" />
+    <Property Name="ARRIVAL_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DRIVER_ASSIGNED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_START_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PICK_COMPLETE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="DEPARTURE_TIME" Type="DateTime" Precision="3" />
+    <Property Name="ALLOWPICKING" Type="Boolean" Nullable="false" />
+    <Property Name="ALLOWLINETOTRUCK" Type="Boolean" Nullable="false" />
+    <Property Name="ALLOWXDOCKING" Type="Boolean" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DOOR">
+    <Key>
+      <PropertyRef Name="DOOR_ID" />
+      <PropertyRef Name="ALLOWSCHEDULES" />
+      <PropertyRef Name="ALLOWAPPOINTMENTS" />
+    </Key>
+    <Property Name="DOOR_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ALLOWSCHEDULES" Type="Boolean" Nullable="false" />
+    <Property Name="ALLOWAPPOINTMENTS" Type="Boolean" Nullable="false" />
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TIME_ASSIGN" Type="DateTime" Precision="3" />
+    <Property Name="DURATION" Type="Int32" />
+    <Property Name="START_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LABOR" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="REFERENCE_AREA" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EMAIL_ALIAS">
+    <Key>
+      <PropertyRef Name="FRIENDLY_NAME" />
+      <PropertyRef Name="EMAIL_ADDRESS" />
+      <PropertyRef Name="STATUS" />
+    </Key>
+    <Property Name="FRIENDLY_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_USER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_MODULE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATED" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="EMAIL_GROUPS">
+    <Key>
+      <PropertyRef Name="EMAIL_GROUP" />
+      <PropertyRef Name="FRIENDLY_NAME" />
+    </Key>
+    <Property Name="EMAIL_GROUP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FRIENDLY_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_MODULE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_USER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATED" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="EMAIL_QUEUE">
+    <Key>
+      <PropertyRef Name="RID" />
+    </Key>
+    <Property Name="RID" Type="Int32" Nullable="false" />
+    <Property Name="RECIPIENT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SUBJECT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MESSAGE" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS_MESSAGE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SENT_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_USER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_MODULE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATED" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="EMPLOYEE_ACTIVITY_REPORT">
+    <Key>
+      <PropertyRef Name="REPORT_ID" />
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="C_LAST_UPDATED_" />
+      <PropertyRef Name="INV_QTY" />
+      <PropertyRef Name="INV_QTY_OLD" />
+      <PropertyRef Name="CREATED_DATE" />
+    </Key>
+    <Property Name="REPORT_ID" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="INV_QTY" Type="Single" Nullable="false" />
+    <Property Name="INV_QTY_OLD" Type="Single" Nullable="false" />
+    <Property Name="UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TRANTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SUBTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_ID_OLD" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_LINE" Type="Int32" />
+    <Property Name="Short_Description" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="COMBO_FIELD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ERRORS_USAGE">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="ERRORTIME" />
+      <PropertyRef Name="TYPE" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="ERRORTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="USERID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MESSAGE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="HOST_INVENTORY_EFFECT">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="TRANTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SUBTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TRANSACTION_TIME" Type="DateTime" Precision="3" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="INV_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_SITE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_HOSTLOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_QC_REASON" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TO_SITE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TO_HOSTLOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="TO_QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TO_QC_REASON" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="DATA1STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA1NUM" Type="Single" />
+    <Property Name="DATA1DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA2STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA2NUM" Type="Single" />
+    <Property Name="DATA2DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA3STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA3NUM" Type="Single" />
+    <Property Name="DATA3DATE" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="HOST_INVENTORY_STATE">
+    <Key>
+      <PropertyRef Name="PRODUCT_ID" />
+      <PropertyRef Name="HOST_QUANTITY" />
+      <PropertyRef Name="WMS_QUANTITY" />
+      <PropertyRef Name="NO_HOST_INV" />
+      <PropertyRef Name="NO_WMS_INV" />
+    </Key>
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="HOST_QUANTITY" Type="Single" Nullable="false" />
+    <Property Name="WMS_QUANTITY" Type="Single" Nullable="false" />
+    <Property Name="NO_HOST_INV" Type="Boolean" Nullable="false" />
+    <Property Name="NO_WMS_INV" Type="Boolean" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="HOST_PRODMAST">
+    <Key>
+      <PropertyRef Name="EIS_PRODUCT_ID" />
+      <PropertyRef Name="VENDOR_ID" />
+      <PropertyRef Name="SHORT_DESCRIPTION" />
+      <PropertyRef Name="BASE_UOM" />
+      <PropertyRef Name="BASE_UOM_PER_CSN" />
+      <PropertyRef Name="PRODUCT_TYPE" />
+    </Key>
+    <Property Name="EIS_PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VENDOR_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SHORT_DESCRIPTION" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BASE_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BASE_UOM_PER_CSN" Type="Single" Nullable="false" />
+    <Property Name="PRODUCT_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CASELEVEL_WEIGHT" Type="Single" />
+    <Property Name="EIS_QTY_ONORDER" Type="Single" />
+    <Property Name="EIS_QTY_ONHAND" Type="Single" />
+    <Property Name="EIS_MILL_PURCHASE_PRICE" Type="Single" />
+    <Property Name="EIS_AVG_UNIT_COST" Type="Single" />
+    <Property Name="EIS_PACKAGE_QTY" Type="Single" />
+    <Property Name="EIS_SIZE" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="EIS_MILL_STYLE_NUMBER" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="IMPORT_ENGINE_DEFS">
+    <Key>
+      <PropertyRef Name="IMPORT" />
+    </Key>
+    <Property Name="IMPORT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SOURCE_TABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SOURCE_FIELD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SOURCE_KEY" Type="Int32" />
+    <Property Name="TARGET_TABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TARGET_FIELD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TARGET_KEY" Type="Int32" />
+    <Property Name="LAST_UPDATED" Type="DateTime" Precision="0" />
+    <Property Name="LAST_USER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LAST_MODULE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="INBOUND_CSN">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="SHIPMENT_ID" />
+      <PropertyRef Name="ORDER_NUMBER" />
+      <PropertyRef Name="PRODUCT_ID" />
+      <PropertyRef Name="CASELABEL" />
+      <PropertyRef Name="RECEIVING_STATUS" />
+      <PropertyRef Name="QUANTITY" />
+      <PropertyRef Name="UOM" />
+      <PropertyRef Name="LABELPRINT_STATUS" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CASELABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PALLETTOTELABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RECEIVING_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="QC_REASON" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="QC_DEFECT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LOT_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MFG_VERSION_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MFG_LINE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MFG_SHIFT_ID" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="MFG_DATE" Type="DateTime" Precision="3" />
+    <Property Name="EXPIRATION_DATE" Type="DateTime" Precision="3" />
+    <Property Name="SHIPBY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="QUANTITY" Type="Single" Nullable="false" />
+    <Property Name="UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LABELPRINT_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="INBOUND_MOVES">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="INV_RID" />
+      <PropertyRef Name="TYPE" />
+      <PropertyRef Name="PRIORITY" />
+      <PropertyRef Name="CREATE_TIME" />
+      <PropertyRef Name="STATUS" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="INV_RID" Type="Int32" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRIORITY" Type="Int16" Nullable="false" />
+    <Property Name="CREATE_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LABELLEVEL" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TO_ZONE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="TO_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_ZONE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="ORIG_QUANTITY_REQUIRED" Type="Single" />
+    <Property Name="QUANTITY_REQUIRED" Type="Single" />
+    <Property Name="QUANTITY_INTRANSIT" Type="Single" />
+    <Property Name="USER_ID_INTRANSIT" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="VEHICLE_INTRANSIT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_LINE" Type="Int16" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="INBOUND_SERIAL">
+    <Key>
+      <PropertyRef Name="SHIPMENT_ID" />
+      <PropertyRef Name="ORDER_NUMBER" />
+      <PropertyRef Name="PRODUCT_ID" />
+      <PropertyRef Name="CSN_RID" />
+      <PropertyRef Name="SERIAL" />
+      <PropertyRef Name="STATUS" />
+    </Key>
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CSN_RID" Type="Int32" Nullable="false" />
+    <Property Name="SERIAL" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MFG_DATA1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="INBOUND_SHIPMENT_DETAIL">
+    <Key>
+      <PropertyRef Name="SHIPMENT_ID" />
+      <PropertyRef Name="ORDER_NUMBER" />
+      <PropertyRef Name="ORDER_LINE" />
+      <PropertyRef Name="PRODUCT_ID" />
+    </Key>
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_LINE" Type="Int16" Nullable="false" />
+    <Property Name="CUSTOMER_TRACKING_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CONTROL_CONTAINER_COUNT" Type="Int32" />
+    <Property Name="CONTROL_QUANTITY" Type="Single" />
+    <Property Name="CONTROL_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="ACTUAL_CONTAINER_COUNT" Type="Int32" />
+    <Property Name="ACTUAL_QUANTITY" Type="Single" />
+    <Property Name="ACTUAL_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="UNLOADED_CONTAINER_COUNT" Type="Single" />
+    <Property Name="UNLOADED_QUANTITY" Type="Single" />
+    <Property Name="UNLOADED_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="LABELPRINT_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ExportTime_Sys1" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="INBOUND_SHIPMENTS">
+    <Key>
+      <PropertyRef Name="SHIPMENT_ID" />
+      <PropertyRef Name="ORDER_NUMBER" />
+      <PropertyRef Name="STATUS" />
+      <PropertyRef Name="PO_UNKNOWN" />
+      <PropertyRef Name="ORDER_DATE" />
+    </Key>
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PO_UNKNOWN" Type="Boolean" Nullable="false" />
+    <Property Name="VENDOR_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SENT_FROM_SITE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CONTROL_CONTAINER_COUNT" Type="Int32" />
+    <Property Name="CONTROL_PALLET_COUNT" Type="Int32" />
+    <Property Name="SHIPPED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="BOL_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SEAL" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="TRAILER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CUSTOMER_TRACKING_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="INVENTORY">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="RESERVED" />
+      <PropertyRef Name="HOLD" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="CASELABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PALLETTOTELABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CONTAINERLABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TRAILERRAILBOATLABEL" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="TRACE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTITY" Type="Single" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="EXPIRATION_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MFG_DATETIME" Type="DateTime" Precision="3" />
+    <Property Name="RECEIPT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="RESERVED" Type="Boolean" Nullable="false" />
+    <Property Name="HOLD" Type="Boolean" Nullable="false" />
+    <Property Name="RESERVATION_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_LINE" Type="Int16" />
+    <Property Name="DATA1DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA1NUM" Type="Single" />
+    <Property Name="DATA1STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA2DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA2NUM" Type="Single" />
+    <Property Name="DATA2STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA3DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA3NUM" Type="Single" />
+    <Property Name="DATA3STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="INVENTORY_SERIAL">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="CASELABEL" />
+      <PropertyRef Name="SERIAL_NUMBER" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="INV_RID" Type="Int32" />
+    <Property Name="CASELABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SERIAL_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATA1DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA1NUM" Type="Single" />
+    <Property Name="DATA2STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LOCATION_CAPACITY">
+    <Key>
+      <PropertyRef Name="LOCATION_ID" />
+      <PropertyRef Name="UOM" />
+      <PropertyRef Name="USE_PRODUCTSPECIFIC" />
+    </Key>
+    <Property Name="LOCATION_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CAPACITY" Type="Single" />
+    <Property Name="USE_PRODUCTSPECIFIC" Type="Boolean" Nullable="false" />
+    <Property Name="REPLENISH_LB_QTY" Type="Single" />
+    <Property Name="REPLENISH_LB_UOM" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="REPLENISH_UB_QTY" Type="Single" />
+    <Property Name="REPLENISH_UB_UOM" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LOCATION">
+    <Key>
+      <PropertyRef Name="LOCATION_ID" />
+      <PropertyRef Name="LOCATION_GROUP" />
+      <PropertyRef Name="PICK_SEQUENCE" />
+      <PropertyRef Name="SITE_ID" />
+      <PropertyRef Name="ALLOWPIECEPICKING" />
+    </Key>
+    <Property Name="LOCATION_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LOCATION_GROUP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EIS_LOCATION" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PICK_SEQUENCE" Type="Int32" Nullable="false" />
+    <Property Name="AISLE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="SLOT" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="VLEVEL" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="BIN" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SITE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PICKING_ZONE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_ZONE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ALLOWPIECEPICKING" Type="Boolean" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="USAGE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_SEQUENCE" Type="Int32" />
+    <Property Name="REVERSE_SLOT" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LOOKUP_VALUES">
+    <Key>
+      <PropertyRef Name="TABLE_NAME" />
+      <PropertyRef Name="FIELD_NAME" />
+      <PropertyRef Name="VALUE" />
+    </Key>
+    <Property Name="TABLE_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FIELD_NAME" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VALUE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LOOKUP_VALUES_old">
+    <Key>
+      <PropertyRef Name="TABLE_NAME" />
+      <PropertyRef Name="FIELD_NAME" />
+      <PropertyRef Name="VALUE" />
+    </Key>
+    <Property Name="TABLE_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FIELD_NAME" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VALUE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MOVE_QUEUE_ARCHIVE">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="INV_RID" />
+      <PropertyRef Name="TYPE" />
+      <PropertyRef Name="PRIORITY" />
+      <PropertyRef Name="CREATE_TIME" />
+      <PropertyRef Name="STATUS" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="INV_RID" Type="Int32" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRIORITY" Type="Int16" Nullable="false" />
+    <Property Name="CREATE_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LABELLEVEL" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TO_ZONE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="TO_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_ZONE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="ORIG_QUANTITY_REQUIRED" Type="Single" />
+    <Property Name="QUANTITY_REQUIRED" Type="Single" />
+    <Property Name="QUANTITY_INTRANSIT" Type="Single" />
+    <Property Name="USER_ID_INTRANSIT" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="VEHICLE_INTRANSIT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_LINE" Type="Int16" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PICKING_RULES">
+    <Key>
+      <PropertyRef Name="RULE_ID" />
+    </Key>
+    <Property Name="RULE_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MIN_DAYS_TO_EXPIRE" Type="Int32" />
+    <Property Name="MIN_DAYS_OLD" Type="Int32" />
+    <Property Name="DEFAULT_ALGORITHIM" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PICKING_RULES_DETAIL">
+    <Key>
+      <PropertyRef Name="RULE_ID" />
+      <PropertyRef Name="PREFERENCE_SEQ" />
+    </Key>
+    <Property Name="RULE_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PREFERENCE_SEQ" Type="Int16" Nullable="false" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PRODUCT_MASTER">
+    <Key>
+      <PropertyRef Name="PRODUCT_ID" />
+      <PropertyRef Name="PRODUCT_TYPE" />
+      <PropertyRef Name="AUTO_RELEASE" />
+    </Key>
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EIS_PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="UPC_CODE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="VENDOR_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SHORT_DESCRIPTION" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="BASE_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCTION_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="STOCK_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="RECEIVING_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="BASE_UOM_PER_CASELEVEL" Type="Single" />
+    <Property Name="CASELEVEL_PER_PALLETTOTE" Type="Int32" />
+    <Property Name="CASELEVEL_PER_CONTAINER" Type="Int32" />
+    <Property Name="LOCATION_GROUP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_ZONE_1" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_ZONE_2" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_ZONE_3" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PICK_ZONE_1" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PICK_ZONE_2" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PICK_ZONE_3" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PIECE_PICK_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="CASELEVEL_PICK_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="PALLETTOTE_PICK_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="CONTAINER_PICK_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="BOL_CLASS" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="INIT_QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="SHELF_LIFE" Type="Int16" />
+    <Property Name="SHIP_BY_WINDOW" Type="Int16" />
+    <Property Name="CONSOLIDATION_WINDOW" Type="Int16" />
+    <Property Name="CASELEVEL_WEIGHT" Type="Single" />
+    <Property Name="CUBEPERUOM" Type="Single" />
+    <Property Name="CUBEUOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="AUTO_RELEASE" Type="Boolean" Nullable="false" />
+    <Property Name="EIS_AVG_UNIT_COST" Type="Single" />
+    <Property Name="EIS_SIZE" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="EIS_MILL_STYLE_NUMBER" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="EIS_PACKAGE_QTY" Type="Single" />
+    <Property Name="EIS_QTY_ONORDER" Type="Single" />
+    <Property Name="EIS_QTY_ONHAND" Type="Single" />
+    <Property Name="EIS_MILL_PURCHASE_PRICE" Type="Single" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EIS_PIECE_WEIGHT" Type="Single" />
+    <Property Name="EIS_COLOR" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PRODUCT_MASTER_20091106BAK">
+    <Key>
+      <PropertyRef Name="PRODUCT_ID" />
+      <PropertyRef Name="PRODUCT_TYPE" />
+      <PropertyRef Name="AUTO_RELEASE" />
+    </Key>
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EIS_PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="UPC_CODE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="VENDOR_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SHORT_DESCRIPTION" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="BASE_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCTION_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="STOCK_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="RECEIVING_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="BASE_UOM_PER_CASELEVEL" Type="Single" />
+    <Property Name="CASELEVEL_PER_PALLETTOTE" Type="Int32" />
+    <Property Name="CASELEVEL_PER_CONTAINER" Type="Int32" />
+    <Property Name="LOCATION_GROUP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_ZONE_1" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_ZONE_2" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_ZONE_3" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PICK_ZONE_1" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PICK_ZONE_2" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PICK_ZONE_3" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PIECE_PICK_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="CASELEVEL_PICK_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="PALLETTOTE_PICK_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="CONTAINER_PICK_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="BOL_CLASS" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="INIT_QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="SHELF_LIFE" Type="Int16" />
+    <Property Name="SHIP_BY_WINDOW" Type="Int16" />
+    <Property Name="CONSOLIDATION_WINDOW" Type="Int16" />
+    <Property Name="CASELEVEL_WEIGHT" Type="Single" />
+    <Property Name="CUBEPERUOM" Type="Single" />
+    <Property Name="CUBEUOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="AUTO_RELEASE" Type="Boolean" Nullable="false" />
+    <Property Name="EIS_AVG_UNIT_COST" Type="Single" />
+    <Property Name="EIS_SIZE" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="EIS_MILL_STYLE_NUMBER" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="EIS_PACKAGE_QTY" Type="Single" />
+    <Property Name="EIS_QTY_ONORDER" Type="Single" />
+    <Property Name="EIS_QTY_ONHAND" Type="Single" />
+    <Property Name="EIS_MILL_PURCHASE_PRICE" Type="Single" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EIS_PIECE_WEIGHT" Type="Single" />
+    <Property Name="EIS_COLOR" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PURCHASE_ORDER_DETAILS">
+    <Key>
+      <PropertyRef Name="PURCHASE_ORDER" />
+      <PropertyRef Name="PO_LINE" />
+    </Key>
+    <Property Name="PURCHASE_ORDER" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PO_LINE" Type="Int32" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTITY_ORDERED" Type="Single" />
+    <Property Name="QUANTITY_RECEIVED" Type="Single" />
+    <Property Name="UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="DUE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PURCHASE_ORDERS">
+    <Key>
+      <PropertyRef Name="PURCHASE_ORDER" />
+    </Key>
+    <Property Name="PURCHASE_ORDER" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VENDOR_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DUE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PURGE_ARCHIVE_GROUP">
+    <Key>
+      <PropertyRef Name="GROUP_NAME" />
+      <PropertyRef Name="GROUP_MEMBER" />
+    </Key>
+    <Property Name="GROUP_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GROUP_MEMBER" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MEMBER_TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SERVER_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ARCHIVE_FILE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MEMBER_PRIORITY" Type="Int16" />
+    <Property Name="MEMBER_SUB_PRIORITY" Type="Int16" />
+    <Property Name="WHERE_CONDITION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PA_KEY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FOREIGN_PA_KEY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PA_DATE_COLUMN" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PURGE_ARCHIVE_RULE">
+    <Key>
+      <PropertyRef Name="GROUP_NAME" />
+      <PropertyRef Name="ARCHIVE_DAYS" />
+      <PropertyRef Name="PURGE_DAYS" />
+    </Key>
+    <Property Name="GROUP_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ARCHIVE_DAYS" Type="Int16" Nullable="false" />
+    <Property Name="PURGE_DAYS" Type="Int16" Nullable="false" />
+    <Property Name="LAST_ARCHIVED" Type="DateTime" Precision="3" />
+    <Property Name="LAST_PURGED" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="purge_only" Type="Int16" />
+  </EntityType>
+  <EntityType Name="PUTAWAY_RULES">
+    <Key>
+      <PropertyRef Name="RULE_ID" />
+    </Key>
+    <Property Name="RULE_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DEFAULT_ALGORITHIM" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PUTAWAY_RULES_DETAIL">
+    <Key>
+      <PropertyRef Name="RULE_ID" />
+      <PropertyRef Name="SEQUENCE" />
+      <PropertyRef Name="USE_ZONE_OR_GROUP" />
+    </Key>
+    <Property Name="RULE_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SEQUENCE" Type="Int16" Nullable="false" />
+    <Property Name="CONSOLIDATION_RULE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="USE_ZONE_OR_GROUP" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRODUCT_ZONE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_ATTRIBUTE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="QC_CATEGORYS">
+    <Key>
+      <PropertyRef Name="QC_CATEGORY" />
+      <PropertyRef Name="SALEABLE" />
+      <PropertyRef Name="RETURNABLE" />
+    </Key>
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SALEABLE" Type="Boolean" Nullable="false" />
+    <Property Name="RETURNABLE" Type="Boolean" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="QC_DEFECTS">
+    <Key>
+      <PropertyRef Name="QC_DEFECT" />
+      <PropertyRef Name="QC_CATEGORY" />
+    </Key>
+    <Property Name="QC_DEFECT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="REPLENISHMENT_RULES">
+    <Key>
+      <PropertyRef Name="RULE_ID" />
+    </Key>
+    <Property Name="RULE_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DEFAULT_ALGORITHIM" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="MAX_LOCATION_HOPS" Type="Int16" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RETURN">
+    <Key>
+      <PropertyRef Name="RETURN_ID" />
+    </Key>
+    <Property Name="RETURN_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="RECEIPT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="COMPLETED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CUSTOMER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="RETURNED_CONTAINER_COUNT" Type="Int32" />
+    <Property Name="COMMENTS_1" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="COMMENTS_2" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="COMMENTS_3" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="DATA1STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA1DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA1NUM" Type="Single" />
+    <Property Name="DATA2DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA2NUM" Type="Single" />
+    <Property Name="DATA2STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA3DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA3NUM" Type="Single" />
+    <Property Name="DATA3STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RETURNS_DETAIL">
+    <Key>
+      <PropertyRef Name="RETURN_ID" />
+      <PropertyRef Name="ORDER_LINE" />
+      <PropertyRef Name="PRODUCT_ID" />
+    </Key>
+    <Property Name="RETURN_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_LINE" Type="Int32" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="RETURNED_QUANTITY" Type="Single" />
+    <Property Name="COMMENTS_1" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="COMMENTS_2" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="DATA1DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA1NUM" Type="Single" />
+    <Property Name="DATA1STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RETURNS_DISPOSITION">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="RETURN_ID" />
+      <PropertyRef Name="ORDER_LINE" />
+      <PropertyRef Name="PRODUCT_ID" />
+      <PropertyRef Name="LABELS" />
+      <PropertyRef Name="INVENTORY" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="RETURN_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_LINE" Type="Int32" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="QC_DEFECT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DISPOSITION_CONTAINER_COUNT" Type="Int32" />
+    <Property Name="DISPOSITION_QUANTITY" Type="Single" />
+    <Property Name="DISPOSITION_DATE" Type="DateTime" Precision="3" />
+    <Property Name="COMMENTS_1" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="COMMENTS_2" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="DATA1DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA1NUM" Type="Int32" />
+    <Property Name="DATA1STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LABELS" Type="Boolean" Nullable="false" />
+    <Property Name="INVENTORY" Type="Boolean" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ExportTime_Sys2" Type="DateTime" Precision="3" />
+    <Property Name="ExportTime_Sys1" Type="DateTime" Precision="3" />
+    <Property Name="EXPORTLOADNUM_SYS2" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RETURNS_DISPOSITION_CSN">
+    <Key>
+      <PropertyRef Name="RETURNS_DISPOSITION_RID" />
+      <PropertyRef Name="QUANTITY" />
+      <PropertyRef Name="RETURN_ID" />
+      <PropertyRef Name="PRODUCT_ID" />
+    </Key>
+    <Property Name="RETURNS_DISPOSITION_RID" Type="Int32" Nullable="false" />
+    <Property Name="QUANTITY" Type="Single" Nullable="false" />
+    <Property Name="RETURN_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RULES_FINDER">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="PRODUCT_ID" />
+      <PropertyRef Name="UOM" />
+      <PropertyRef Name="RULE_CHANGE" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UOM" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CUSTOMER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="REPLENISHMENT_RULE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_RULE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PICKING_RULE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="SUBSTITUTION_RULE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="RULE_CHANGE" Type="Boolean" Nullable="false" />
+    <Property Name="CURRENT_OWNER" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SITE">
+    <Key>
+      <PropertyRef Name="SITE_ID" />
+      <PropertyRef Name="TYPE" />
+      <PropertyRef Name="NO_SYSTEM_IND" />
+    </Key>
+    <Property Name="SITE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="SQL_SERVER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TIME_ZONE_OFFSET" Type="Int16" />
+    <Property Name="NO_SYSTEM_IND" Type="Boolean" Nullable="false" />
+    <Property Name="SHIPPING_INSTRUCTIONS" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SUBSTITUTION_RULES">
+    <Key>
+      <PropertyRef Name="RULE_ID" />
+      <PropertyRef Name="SUBST_PRODUCT_ID" />
+    </Key>
+    <Property Name="RULE_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SUBST_PRODUCT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QTY_PER_SOURCE_QTY" Type="Single" />
+    <Property Name="SOURCE_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="SUBST_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SUPPLIER_ITEM">
+    <Key>
+      <PropertyRef Name="VENDOR_ID" />
+      <PropertyRef Name="PRODUCT_ID" />
+      <PropertyRef Name="CASELEVEL_INCOMING" />
+      <PropertyRef Name="INSPECTION_REQUIRED" />
+    </Key>
+    <Property Name="VENDOR_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CASELEVEL_INCOMING" Type="Boolean" Nullable="false" />
+    <Property Name="INSPECTION_REQUIRED" Type="Boolean" Nullable="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SYSTEMNEXTRID_AUDINV">
+    <Key>
+      <PropertyRef Name="NEXTRID" />
+    </Key>
+    <Property Name="NEXTRID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYSTEMNEXTRID_AUDINVD">
+    <Key>
+      <PropertyRef Name="NEXTRID" />
+    </Key>
+    <Property Name="NEXTRID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Temp_asn">
+    <Key>
+      <PropertyRef Name="RID" />
+      <PropertyRef Name="VENDOR_ID" />
+      <PropertyRef Name="SITE_CODE" />
+    </Key>
+    <Property Name="RID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="VENDOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SITE_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SITE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LAST_USER" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="LAST_UPDATED" Type="DateTime" Precision="0" />
+    <Property Name="LAST_MODULE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TRACELOG">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="LOGDATE" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="USERID" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LOGDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TEXT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="unalloc_inv">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="RESERVED" />
+      <PropertyRef Name="HOLD" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="CASELABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PALLETTOTELABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CONTAINERLABEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TRAILERRAILBOATLABEL" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="TRACE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTITY" Type="Single" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="EXPIRATION_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MFG_DATETIME" Type="DateTime" Precision="3" />
+    <Property Name="RECEIPT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="RESERVED" Type="Boolean" Nullable="false" />
+    <Property Name="HOLD" Type="Boolean" Nullable="false" />
+    <Property Name="RESERVATION_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_LINE" Type="Int16" />
+    <Property Name="DATA1DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA1NUM" Type="Single" />
+    <Property Name="DATA1STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA2DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA2NUM" Type="Single" />
+    <Property Name="DATA2STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA3DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA3NUM" Type="Single" />
+    <Property Name="DATA3STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UOM_CONVERSION">
+    <Key>
+      <PropertyRef Name="PRODUCT_ID" />
+      <PropertyRef Name="FROM_UOM" />
+      <PropertyRef Name="BASE_UOM" />
+      <PropertyRef Name="NUMERATOR" />
+    </Key>
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FROM_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BASE_UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NUMERATOR" Type="Single" Nullable="false" />
+    <Property Name="DENOMINATOR" Type="Single" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VENDOR">
+    <Key>
+      <PropertyRef Name="VENDOR_ID" />
+    </Key>
+    <Property Name="VENDOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="UCC_VENDOR_ID" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_TERMS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="BRAND_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VENDORS_old">
+    <Key>
+      <PropertyRef Name="VENDOR_ID" />
+    </Key>
+    <Property Name="VENDOR_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="UCC_VENDOR_ID" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_TERMS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="BRAND_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="WAIT_LIST">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="TYPE" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SEQUENCE" Type="Int32" />
+    <Property Name="APPOINTMENT_TIME" Type="DateTime" Precision="3" />
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CHECK_IN_TIME" Type="DateTime" Precision="3" />
+    <Property Name="SHIPMENT_ID" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="SHIP_TO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DURATION" Type="Int32" />
+    <Property Name="DOOR_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="LABOR" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="WORK_QUEUE">
+    <Key>
+      <PropertyRef Name="C_RID_" />
+      <PropertyRef Name="TYPE" />
+      <PropertyRef Name="CREATE_DATE" />
+    </Key>
+    <Property Name="C_RID_" Type="Int32" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FROM_ZONE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="TO_ZONE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="TO_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="INV_RID" Type="Int32" />
+    <Property Name="DATA1DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA1NUM" Type="Single" />
+    <Property Name="DATA1STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA2DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA2NUM" Type="Single" />
+    <Property Name="DATA2STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA3DATE" Type="DateTime" Precision="3" />
+    <Property Name="DATA3NUM" Type="Single" />
+    <Property Name="DATA3STR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="WMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Audit_Manifest" EntityType="Self.Audit_Manifest" />
+    <EntitySet Name="AUDIT_OUTBOUND" EntityType="Self.AUDIT_OUTBOUND" />
+    <EntitySet Name="AUDIT_OUTBOUND_DETAIL" EntityType="Self.AUDIT_OUTBOUND_DETAIL" />
+    <EntitySet Name="Cashier_Notes" EntityType="Self.Cashier_Notes" />
+    <EntitySet Name="Cashier_Transactions" EntityType="Self.Cashier_Transactions" />
+    <EntitySet Name="dtproperties" EntityType="Self.dtproperty" />
+    <EntitySet Name="ERRORS_RUNTIME" EntityType="Self.ERRORS_RUNTIME" />
+    <EntitySet Name="FREIGHT_LANES" EntityType="Self.FREIGHT_LANES" />
+    <EntitySet Name="GTIN_XREF" EntityType="Self.GTIN_XREF" />
+    <EntitySet Name="HOST_ORDER_DETAIL" EntityType="Self.HOST_ORDER_DETAIL" />
+    <EntitySet Name="HOST_ORDERS" EntityType="Self.HOST_ORDERS" />
+    <EntitySet Name="INVENTORY_ALLOCATION" EntityType="Self.INVENTORY_ALLOCATION" />
+    <EntitySet Name="MOVE_QUEUE" EntityType="Self.MOVE_QUEUE" />
+    <EntitySet Name="OUTBOUND_SHIPMENT_DETAILS" EntityType="Self.OUTBOUND_SHIPMENT_DETAILS" />
+    <EntitySet Name="OUTBOUND_SHIPMENTS" EntityType="Self.OUTBOUND_SHIPMENTS" />
+    <EntitySet Name="POS_Move_Queue" EntityType="Self.POS_Move_Queue" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="SYSTEMs" EntityType="Self.SYSTEM" />
+    <EntitySet Name="SYSTEMNEXTRIDs" EntityType="Self.SYSTEMNEXTRID" />
+    <EntitySet Name="ABS_PO_Detail" EntityType="Self.ABS_PO_Detail" />
+    <EntitySet Name="ABS_PO_Header" EntityType="Self.ABS_PO_Header" />
+    <EntitySet Name="ADJUSTMENT_CODES" EntityType="Self.ADJUSTMENT_CODES" />
+    <EntitySet Name="ADJUSTMENT_CODES_old" EntityType="Self.ADJUSTMENT_CODES_old" />
+    <EntitySet Name="AFX_BROWSER_APPS" EntityType="Self.AFX_BROWSER_APPS" />
+    <EntitySet Name="AFX_BROWSER_LINKS" EntityType="Self.AFX_BROWSER_LINKS" />
+    <EntitySet Name="AFX_BROWSER_MENU" EntityType="Self.AFX_BROWSER_MENU" />
+    <EntitySet Name="AFX_CONSOLE_APPS" EntityType="Self.AFX_CONSOLE_APPS" />
+    <EntitySet Name="AFX_CONSOLE_LINKS" EntityType="Self.AFX_CONSOLE_LINKS" />
+    <EntitySet Name="AFX_CONSOLE_MENU" EntityType="Self.AFX_CONSOLE_MENU" />
+    <EntitySet Name="AFX_GROUPS" EntityType="Self.AFX_GROUPS" />
+    <EntitySet Name="AFX_PREFERENCES" EntityType="Self.AFX_PREFERENCES" />
+    <EntitySet Name="AFX_RIGHTS" EntityType="Self.AFX_RIGHTS" />
+    <EntitySet Name="AFX_SYSINFO" EntityType="Self.AFX_SYSINFO" />
+    <EntitySet Name="AFX_SYSTABLEMAP" EntityType="Self.AFX_SYSTABLEMAP" />
+    <EntitySet Name="AFX_SYSTEMS" EntityType="Self.AFX_SYSTEMS" />
+    <EntitySet Name="AFX_TABLES" EntityType="Self.AFX_TABLES" />
+    <EntitySet Name="AFX_USERS" EntityType="Self.AFX_USERS" />
+    <EntitySet Name="ASN_LAYOUT" EntityType="Self.ASN_LAYOUT" />
+    <EntitySet Name="ASN_VENDOR_SITE_XREF" EntityType="Self.ASN_VENDOR_SITE_XREF" />
+    <EntitySet Name="AUDIT_ASN" EntityType="Self.AUDIT_ASN" />
+    <EntitySet Name="AUDIT_INBOUND" EntityType="Self.AUDIT_INBOUND" />
+    <EntitySet Name="AUDIT_INBOUND_DETAIL" EntityType="Self.AUDIT_INBOUND_DETAIL" />
+    <EntitySet Name="AUDIT_INVENTORY" EntityType="Self.AUDIT_INVENTORY" />
+    <EntitySet Name="AUDIT_INVENTORY_DETAIL" EntityType="Self.AUDIT_INVENTORY_DETAIL" />
+    <EntitySet Name="BOL_CLASS" EntityType="Self.BOL_CLASS" />
+    <EntitySet Name="CARRIERS" EntityType="Self.CARRIER" />
+    <EntitySet Name="CARTON_MASTER" EntityType="Self.CARTON_MASTER" />
+    <EntitySet Name="Case_Count" EntityType="Self.Case_Count" />
+    <EntitySet Name="CLIPPERSHIPs" EntityType="Self.CLIPPERSHIP" />
+    <EntitySet Name="CONSOLIDATION_RULES" EntityType="Self.CONSOLIDATION_RULES" />
+    <EntitySet Name="custcities" EntityType="Self.custcity" />
+    <EntitySet Name="custcity1" EntityType="Self.custcity1" />
+    <EntitySet Name="CUSTOMERS" EntityType="Self.CUSTOMER" />
+    <EntitySet Name="CYCLE_COUNT_RESULTS" EntityType="Self.CYCLE_COUNT_RESULTS" />
+    <EntitySet Name="DOCK_ACTIVITY" EntityType="Self.DOCK_ACTIVITY" />
+    <EntitySet Name="DOORS" EntityType="Self.DOOR" />
+    <EntitySet Name="EMAIL_ALIAS" EntityType="Self.EMAIL_ALIAS" />
+    <EntitySet Name="EMAIL_GROUPS" EntityType="Self.EMAIL_GROUPS" />
+    <EntitySet Name="EMAIL_QUEUE" EntityType="Self.EMAIL_QUEUE" />
+    <EntitySet Name="EMPLOYEE_ACTIVITY_REPORT" EntityType="Self.EMPLOYEE_ACTIVITY_REPORT" />
+    <EntitySet Name="ERRORS_USAGE" EntityType="Self.ERRORS_USAGE" />
+    <EntitySet Name="HOST_INVENTORY_EFFECT" EntityType="Self.HOST_INVENTORY_EFFECT" />
+    <EntitySet Name="HOST_INVENTORY_STATE" EntityType="Self.HOST_INVENTORY_STATE" />
+    <EntitySet Name="HOST_PRODMAST" EntityType="Self.HOST_PRODMAST" />
+    <EntitySet Name="IMPORT_ENGINE_DEFS" EntityType="Self.IMPORT_ENGINE_DEFS" />
+    <EntitySet Name="INBOUND_CSN" EntityType="Self.INBOUND_CSN" />
+    <EntitySet Name="INBOUND_MOVES" EntityType="Self.INBOUND_MOVES" />
+    <EntitySet Name="INBOUND_SERIAL" EntityType="Self.INBOUND_SERIAL" />
+    <EntitySet Name="INBOUND_SHIPMENT_DETAIL" EntityType="Self.INBOUND_SHIPMENT_DETAIL" />
+    <EntitySet Name="INBOUND_SHIPMENTS" EntityType="Self.INBOUND_SHIPMENTS" />
+    <EntitySet Name="INVENTORies" EntityType="Self.INVENTORY" />
+    <EntitySet Name="INVENTORY_SERIAL" EntityType="Self.INVENTORY_SERIAL" />
+    <EntitySet Name="LOCATION_CAPACITY" EntityType="Self.LOCATION_CAPACITY" />
+    <EntitySet Name="LOCATIONS" EntityType="Self.LOCATION" />
+    <EntitySet Name="LOOKUP_VALUES" EntityType="Self.LOOKUP_VALUES" />
+    <EntitySet Name="LOOKUP_VALUES_old" EntityType="Self.LOOKUP_VALUES_old" />
+    <EntitySet Name="MOVE_QUEUE_ARCHIVE" EntityType="Self.MOVE_QUEUE_ARCHIVE" />
+    <EntitySet Name="PICKING_RULES" EntityType="Self.PICKING_RULES" />
+    <EntitySet Name="PICKING_RULES_DETAIL" EntityType="Self.PICKING_RULES_DETAIL" />
+    <EntitySet Name="PRODUCT_MASTER" EntityType="Self.PRODUCT_MASTER" />
+    <EntitySet Name="PRODUCT_MASTER_20091106BAK" EntityType="Self.PRODUCT_MASTER_20091106BAK" />
+    <EntitySet Name="PURCHASE_ORDER_DETAILS" EntityType="Self.PURCHASE_ORDER_DETAILS" />
+    <EntitySet Name="PURCHASE_ORDERS" EntityType="Self.PURCHASE_ORDERS" />
+    <EntitySet Name="PURGE_ARCHIVE_GROUP" EntityType="Self.PURGE_ARCHIVE_GROUP" />
+    <EntitySet Name="PURGE_ARCHIVE_RULE" EntityType="Self.PURGE_ARCHIVE_RULE" />
+    <EntitySet Name="PUTAWAY_RULES" EntityType="Self.PUTAWAY_RULES" />
+    <EntitySet Name="PUTAWAY_RULES_DETAIL" EntityType="Self.PUTAWAY_RULES_DETAIL" />
+    <EntitySet Name="QC_CATEGORYS" EntityType="Self.QC_CATEGORYS" />
+    <EntitySet Name="QC_DEFECTS" EntityType="Self.QC_DEFECTS" />
+    <EntitySet Name="REPLENISHMENT_RULES" EntityType="Self.REPLENISHMENT_RULES" />
+    <EntitySet Name="RETURNS" EntityType="Self.RETURN" />
+    <EntitySet Name="RETURNS_DETAIL" EntityType="Self.RETURNS_DETAIL" />
+    <EntitySet Name="RETURNS_DISPOSITION" EntityType="Self.RETURNS_DISPOSITION" />
+    <EntitySet Name="RETURNS_DISPOSITION_CSN" EntityType="Self.RETURNS_DISPOSITION_CSN" />
+    <EntitySet Name="RULES_FINDER" EntityType="Self.RULES_FINDER" />
+    <EntitySet Name="SITES" EntityType="Self.SITE" />
+    <EntitySet Name="SUBSTITUTION_RULES" EntityType="Self.SUBSTITUTION_RULES" />
+    <EntitySet Name="SUPPLIER_ITEM" EntityType="Self.SUPPLIER_ITEM" />
+    <EntitySet Name="SYSTEMNEXTRID_AUDINV" EntityType="Self.SYSTEMNEXTRID_AUDINV" />
+    <EntitySet Name="SYSTEMNEXTRID_AUDINVD" EntityType="Self.SYSTEMNEXTRID_AUDINVD" />
+    <EntitySet Name="Temp_asn" EntityType="Self.Temp_asn" />
+    <EntitySet Name="TRACELOGs" EntityType="Self.TRACELOG" />
+    <EntitySet Name="unalloc_inv" EntityType="Self.unalloc_inv" />
+    <EntitySet Name="UOM_CONVERSION" EntityType="Self.UOM_CONVERSION" />
+    <EntitySet Name="VENDORS" EntityType="Self.VENDOR" />
+    <EntitySet Name="VENDORS_old" EntityType="Self.VENDORS_old" />
+    <EntitySet Name="WAIT_LIST" EntityType="Self.WAIT_LIST" />
+    <EntitySet Name="WORK_QUEUE" EntityType="Self.WORK_QUEUE" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,54 @@
+file created at6/14/2016 3:18:29 PM
+threads allowed: 1
+Process ID: 625375625
+
+
+Number of Orders: 1
+
+
+Number of OrderLines: 1
+
+
+Piece Count: 0
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0
+
+created order number: 0001
+number of items in OBS 1
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: 8780833600
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: WHT
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 6/14/2016 3:18:30 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691003
+ UOM_WEIGHT: 28.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+Allocation a case for product line0001
+Number of cases Required: 1
+Bulk Picking = False
+No Cases in Primary Locations found. looking for replens going to primary locations
+No Cases heading to primary locations found. looking for cases in secondary locations
+Number of cases for product: 52691003 Found In Secondary Locations: 43
+ALLOCATION STATUS: C
+Sucessful Allocation
+Total Volume=2.016
+Total Weight=2052
+Allocation Status once order is done;C
+threads allowed: 1

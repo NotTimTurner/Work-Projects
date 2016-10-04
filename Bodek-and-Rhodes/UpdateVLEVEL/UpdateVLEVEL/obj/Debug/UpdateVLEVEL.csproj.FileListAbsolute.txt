@@ -1,0 +1,6 @@
+\\192.168.1.192\d$\Tim's Projects\UpdateVLEVEL\UpdateVLEVEL\bin\Debug\UpdateVLEVEL.exe.config
+\\192.168.1.192\d$\Tim's Projects\UpdateVLEVEL\UpdateVLEVEL\bin\Debug\UpdateVLEVEL.exe
+\\192.168.1.192\d$\Tim's Projects\UpdateVLEVEL\UpdateVLEVEL\bin\Debug\UpdateVLEVEL.pdb
+\\192.168.1.192\d$\Tim's Projects\UpdateVLEVEL\UpdateVLEVEL\obj\Debug\UpdateVLEVEL.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\UpdateVLEVEL\UpdateVLEVEL\obj\Debug\UpdateVLEVEL.exe
+\\192.168.1.192\d$\Tim's Projects\UpdateVLEVEL\UpdateVLEVEL\obj\Debug\UpdateVLEVEL.pdb

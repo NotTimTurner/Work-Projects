@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="LOCATION">
+    <Key>
+      <PropertyRef Name="LOCATION_ID" />
+    </Key>
+    <Property Name="LOCATION_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LOCATION_GROUP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EIS_LOCATION" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PICK_SEQUENCE" Type="Int32" Nullable="false" />
+    <Property Name="AISLE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="SLOT" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="VLEVEL" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="BIN" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SITE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PICKING_ZONE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_ZONE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ALLOWPIECEPICKING" Type="Boolean" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="USAGE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PUTAWAY_SEQUENCE" Type="Int32" />
+    <Property Name="REVERSE_SLOT" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="WMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="LOCATIONS" EntityType="Self.LOCATION" />
+  </EntityContainer>
+</Schema>

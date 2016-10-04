@@ -1,0 +1,10 @@
+\\192.168.1.192\d$\Tim's Projects\Warehouse Transfer\Warehouse Transfer\bin\Debug\Warehouse Transfer.exe.config
+\\192.168.1.192\d$\Tim's Projects\Warehouse Transfer\Warehouse Transfer\bin\Debug\Warehouse Transfer.exe
+\\192.168.1.192\d$\Tim's Projects\Warehouse Transfer\Warehouse Transfer\bin\Debug\Warehouse Transfer.pdb
+\\192.168.1.192\d$\Tim's Projects\Warehouse Transfer\Warehouse Transfer\bin\Debug\EntityFramework.dll
+\\192.168.1.192\d$\Tim's Projects\Warehouse Transfer\Warehouse Transfer\bin\Debug\EntityFramework.SqlServer.dll
+\\192.168.1.192\d$\Tim's Projects\Warehouse Transfer\Warehouse Transfer\bin\Debug\EntityFramework.xml
+\\192.168.1.192\d$\Tim's Projects\Warehouse Transfer\Warehouse Transfer\bin\Debug\EntityFramework.SqlServer.xml
+\\192.168.1.192\d$\Tim's Projects\Warehouse Transfer\Warehouse Transfer\obj\Debug\Warehouse Transfer.exe
+\\192.168.1.192\d$\Tim's Projects\Warehouse Transfer\Warehouse Transfer\obj\Debug\Warehouse Transfer.pdb
+\\192.168.1.192\d$\Tim's Projects\Warehouse Transfer\Warehouse Transfer\obj\Debug\Warehouse Transfer.csproj.ResolveComReference.cache

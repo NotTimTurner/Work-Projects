@@ -1,0 +1,299 @@
+file created at3/9/2016 9:02:13 AM
+threads allowed: 1
+Process ID: 905095905
+
+
+Number of Orders: 2
+
+
+Number of OrderLines: 1
+
+
+ProductID: 42091082
+Shortened ProductID:  42091
+Total Volume Of Pieces: 0.286
+Pieces To Cartonize: 13
+Piece Pick Location: S01A165
+Zone :S
+Aisle :01
+Level :A
+Bin :165
+*********************************
+
+Piece Count: 1
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0.286
+
+Cartonizing Array Line0Product :42091082
+GOING TO USE NEW CARTONIZE
+calling SplitProduct
+Pieces to cartonize: 13
+Max Pieces Per Carton: 133
+Max Pieces per Carton Volume: 6045.45454545455
+full Cartons: -1
+No Need TO SPLIT
+The right size carton is: XSmall
+created order number: 0001
+
+
+OUTBOUND SHIPMENT DATA TO BE INSERTED INTO THE DATABASE:
+Shipment ID: 1000365300
+OrderNumber: 0001
+Type: WHT
+Stop: 0
+Stop Of: 0
+Sequence: 0
+Customer_ID: MI
+Name: MI
+Address 1: 2121 W CHICAGO RD
+Address 2: 
+City: NILES
+State: MI
+Zip: 49120
+Phone -
+Purchas Order Date: 3/4/2016 12:00:00 AM
+Scheduled Ship Date: 3/9/2016 9:02:14 AM
+Original Carrier: Truck
+Origional Ship Mode: 8
+Carrier ID: Truck
+Ship Mode: 8
+Total CNS: 0
+Total Weight0
+Status: B
+PrePaid Collect: 1
+Exceed Ship By: False
+Substitution Override: False
+Special Handeling: False
+Notes: 
+Allow CopL: False
+Payment_Terms: 4
+Freight Charge: 0
+Allocation status: N
+COD Indicator: 
+Carton Freight: 0
+COD Cost: 0
+Wave ID: 0
+Deposit Ammount: 0.000
+Freight Bill To Account: 
+Freight Bill To Name: 
+Freight Bill to Address 1: 
+Freight BIll to Address 2: 
+Freight Bill to Address 3: 
+Freight Bill to City: 
+Freight Bill to Zip: 
+Last Updated: 3/9/2016 9:02:14 AM
+last User: BR-PA-RDPIT
+Last Module: CARTONIZE
+QC Codes: 
+Deliver by Date: 3/4/2016 12:00:00 AM
+Address 3: MI
+Carton Type: XSmall
+created order number: 0002
+number of items in OBS 2
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: 1000365300
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: WHT
+UOM: EA
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 3/9/2016 9:02:14 AM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 42091082
+ UOM_WEIGHT: 0.15
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 13
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0002
+
+
+Information being inserted into outbound shipment details
+Shipment ID: 1000365300
+ORDER_NUMBER: 0002
+ORDER_LINE: 1
+TYPE: WHT
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 3/9/2016 9:02:14 AM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 42091082
+ UOM_WEIGHT: 15.6
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+
+
+INFORMANTION FOR BOX :56964204
+RID: 56964204
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: 
+Product ID 42091082
+Trace ID: 
+Owner ID: 
+Location ID: S01A165
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 512430
+Order Number: 0001
+Order Line: 
+data1date: 
+data1Num: 
+data1str: CONSOLIDATED
+data2date: 
+data2Num: 512430
+data2str: NEWCONSOLIDATED
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 5/12/2015 4:40:12 AM
+Last User: SLS
+Last Module: CONSOLIDATE.VBS
+****************************
+
+
+INFORMANTION FOR BOX :56964205
+RID: 56964205
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: 
+Product ID 42091082
+Trace ID: 
+Owner ID: 
+Location ID: S01A165
+Quantity :13
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: CONSOLIDATED
+data2date: 
+data2Num: 512430
+data2str: NEWCONSOLIDATED
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 12/29/2015 4:56:32 PM
+Last User: 703
+Last Module: RFPIECEPICK
+****************************
+Replen amount going to Location S01A165: 0
+Inventory Avliable to be Picked for 42091082: 85
+creating move queue
+Allocation a case for product line0002
+Number of cases Required: 1
+Bulk Picking = False
+No Cases in Primary Locations found. looking for replens going to primary locations
+No Cases heading to primary locations found. looking for cases in secondary locations
+No Cases in Secondary locations found. looking for replens in secondary locations
+No Cases heading to Secondary locations found. Trying Piece Pick Location
+Number of cases for product: 42091082 Cases In Piece Pick Location: 1
+ALLOCATION STATUS: C
+Sucessful Allocation
+Total Volume=1.87
+Total Weight=1125.15002754331
+Allocation Status once order is done;C
+threads allowed: 1
+Number of OrderLines: 1
+
+
+Piece Count: 0
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0
+
+created order number: 0001
+created order number: 0002
+number of items in OBS 2
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: 1000365600
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: WHT
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 3/9/2016 9:02:26 AM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 11215006
+ UOM_WEIGHT: 23
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 24
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0002
+
+
+Information being inserted into outbound shipment details
+Shipment ID: 1000365600
+ORDER_NUMBER: 0002
+ORDER_LINE: 1
+TYPE: WHT
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 3/9/2016 9:02:26 AM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 11215006
+ UOM_WEIGHT: 23
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 24
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+Allocation a case for product line0001
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 11215006 in Primary Locations: 3
+Number of cases for product: 11215006 replens going to primary Locations: 
+Allocation a case for product line0002
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 11215006 in Primary Locations: 2
+Number of cases for product: 11215006 replens going to primary Locations: 
+ALLOCATION STATUS: C
+Sucessful Allocation
+Total Volume=2.88
+Total Weight=1104
+Allocation Status once order is done;C
+threads allowed: 1

@@ -1,0 +1,5 @@
+\\192.168.1.192\d$\Tim's Projects\WMS Classes Philly\WMS Classes Philly\bin\Debug\WMS Classes Philly.dll.config
+\\192.168.1.192\d$\Tim's Projects\WMS Classes Philly\WMS Classes Philly\bin\Debug\WMS Classes Philly.dll
+\\192.168.1.192\d$\Tim's Projects\WMS Classes Philly\WMS Classes Philly\bin\Debug\WMS Classes Philly.pdb
+\\192.168.1.192\d$\Tim's Projects\WMS Classes Philly\WMS Classes Philly\obj\Debug\WMS Classes Philly.dll
+\\192.168.1.192\d$\Tim's Projects\WMS Classes Philly\WMS Classes Philly\obj\Debug\WMS Classes Philly.pdb

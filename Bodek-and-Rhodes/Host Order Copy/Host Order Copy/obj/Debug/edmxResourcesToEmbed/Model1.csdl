@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="HOST_ORDER_DETAIL">
+    <Key>
+      <PropertyRef Name="EIS_ORDER_ID" />
+      <PropertyRef Name="EIS_ORDER_LINE" />
+    </Key>
+    <Property Name="EIS_ORDER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EIS_ORDER_LINE" Type="Int16" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="QC_CATEGORY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="ORDERED_UNITS" Type="Single" />
+    <Property Name="UOM" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="SCHEDULED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="NOTES" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="EIS_ORDLINE_PRICE" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="EIS_UNIT_PRICE" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="HOST_ORDERS">
+    <Key>
+      <PropertyRef Name="EIS_ORDER_ID" />
+    </Key>
+    <Property Name="EIS_ORDER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDER_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CUSTOMER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PURCHASE_ORDER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ORIGINAL_SHIP_MODE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="TERMS" Type="Int16" />
+    <Property Name="COD_INDICATOR" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="EST_NUM_BOXES" Type="Int32" />
+    <Property Name="CARRIER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="DEPOSIT_AMOUNT" Type="Decimal" Precision="24" Scale="3" />
+    <Property Name="FREIGHT_BILLING_OPTION" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="EXPEDITE_IND" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="NOTES" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IMPORT_TIME" Type="DateTime" Precision="3" />
+    <Property Name="FREIGHT_BILL_TO_ACCOUNT" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_NAME" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_CITY" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_STATE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="FREIGHT_BILL_TO_ZIP" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+    <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="QC_CODES" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVER_BY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="QC_REQUIRED" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="EXTERNAL_CARTONIZED" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="FIRSTBOXSHIPPED" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="WMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="HOST_ORDER_DETAIL" EntityType="Self.HOST_ORDER_DETAIL" />
+    <EntitySet Name="HOST_ORDERS" EntityType="Self.HOST_ORDERS" />
+  </EntityContainer>
+</Schema>

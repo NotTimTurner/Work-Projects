@@ -1,0 +1,3752 @@
+file created at1/25/2016 11:34:39 AM
+Cartonize is Running, trying again in a minute 3 tries left
+threads allowed: 1
+Process ID: 24976024
+
+
+Error in :GetOrders
+Error Message: An error occurred while executing the command definition. See the inner exception for details.
+Stack Trace:    at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at WarehouseTransfer.Cartonize.CheckTruck() in \\192.168.1.192\d$\Tim's Projects\WHT CA\Warehouse Transfer\Warehouse Transfer\Warehouse Transfer\Cartonize.cs:line 207
+   at WarehouseTransfer.Cartonize.GetOrders(String OrderType) in \\192.168.1.192\d$\Tim's Projects\WHT CA\Warehouse Transfer\Warehouse Transfer\Warehouse Transfer\Cartonize.cs:line 290
+Target Site: System.Data.Common.DbDataReader ExecuteStoreCommands(System.Data.Entity.Core.EntityClient.EntityCommand, System.Data.CommandBehavior)
+Exiting Program
+threads allowed: 1
+Process ID: 323677323
+
+
+Number of Orders: 1
+
+
+Error in :GetOrders
+Error Message: The 'DEPOSIT_AMOUNT' property on 'HOST_ORDERS' could not be set to a 'System.Single' value. You must set this property to a non-null value of type 'System.Decimal'. 
+Stack Trace:    at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.GetPropertyValueWithErrorHandling[TProperty](Int32 ordinal, String propertyName, String typeName)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at WarehouseTransfer.Cartonize.GetOrders(String OrderType) in \\192.168.1.192\d$\Tim's Projects\WHT CA\Warehouse Transfer\Warehouse Transfer\Warehouse Transfer\Cartonize.cs:line 313
+Target Site: T GetValue(System.Data.Common.DbDataReader, Int32)
+Exiting Program
+threads allowed: 1
+Process ID: 566434566
+
+
+Number of Orders: 1
+
+
+Cartonize is Running, trying again in a minute 3 tries left
+threads allowed: 1
+Process ID: 703297703
+
+
+Number of Orders: 1
+
+
+Number of OrderLines: 3
+
+
+ProductID: 30045002
+Shortened ProductID:  30045
+Total Volume Of Pieces: 0.024
+Pieces To Cartonize: 1
+Piece Pick Location: T03C046
+Zone :T
+Aisle :03
+Level :C
+Bin :046
+*********************************
+
+ProductID: 30045003
+Shortened ProductID:  30045
+Total Volume Of Pieces: 0.026
+Pieces To Cartonize: 1
+Piece Pick Location: H03C015
+Zone :H
+Aisle :03
+Level :C
+Bin :015
+*********************************
+
+ProductID: 30045004
+Shortened ProductID:  30045
+Total Volume Of Pieces: 0.026
+Pieces To Cartonize: 1
+Piece Pick Location: H03A016
+Zone :H
+Aisle :03
+Level :A
+Bin :016
+*********************************
+
+Piece Count: 3
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0.076
+
+Cartonizing Array Line0Product :30045002
+Not using new cartonize
+calling SplitProduct
+Pieces to cartonize: 1
+Max Pieces Per Carton: 128
+Max Pieces per Carton Volume: 5333.33333333333
+full Cartons: -1
+No Need TO SPLIT
+Cartonizing Array Line1Product :30045003
+Not using new cartonize
+calling SplitProduct
+Pieces to cartonize: 1
+Max Pieces Per Carton: 118
+Max Pieces per Carton Volume: 4538.46153846154
+full Cartons: -1
+No Need TO SPLIT
+Cartonizing Array Line2Product :30045004
+Not using new cartonize
+calling SplitProduct
+Pieces to cartonize: 1
+Max Pieces Per Carton: 118
+Max Pieces per Carton Volume: 4538.46153846154
+full Cartons: -1
+No Need TO SPLIT
+created order number: 0001
+
+
+OUTBOUND SHIPMENT DATA TO BE INSERTED INTO THE DATABASE:
+Shipment ID: C000001100
+OrderNumber: 0001
+Type: ORD
+Stop: 0
+Stop Of: 0
+Sequence: 0
+Customer_ID: 101210
+Name: Bob
+Address 1: 12Happy Way
+Address 2: 
+City: REAMSTOWN
+State: PA
+Zip: 17567
+Phone 555-5551212
+Purchas Order Date: 1/15/2016 12:00:00 AM
+Scheduled Ship Date: 1/25/2016 12:17:04 PM
+Original Carrier: Truck
+Origional Ship Mode: 8
+Carrier ID: Truck
+Ship Mode: 8
+Total CNS: 0
+Total Weight0
+Status: B
+PrePaid Collect: 1
+Exceed Ship By: False
+Substitution Override: False
+Special Handeling: False
+Notes: 
+Allow CopL: False
+Payment_Terms: 8
+Freight Charge: 0
+Allocation status: N
+COD Indicator: 
+Carton Freight: 0
+COD Cost: 0
+Wave ID: 0
+Deposit Ammount: 0
+Freight Bill To Account: 
+Freight Bill To Name: APEX ADVERTISING CO
+Freight Bill to Address 1: 
+Freight BIll to Address 2: 
+Freight Bill to Address 3: 
+Freight Bill to City: 
+Freight Bill to Zip: 
+Last Updated: 1/25/2016 12:17:04 PM
+last User: BR-PA-RDPIT
+Last Module: CARTONIZE
+QC Codes: 
+Deliver by Date: 1/15/2016 12:00:00 AM
+Address 3: SCHOOLSTOCKPO 44515
+Carton Type: XSmall
+created order number: 0002
+
+
+OUTBOUND SHIPMENT DATA TO BE INSERTED INTO THE DATABASE:
+Shipment ID: C000001100
+OrderNumber: 0002
+Type: ORD
+Stop: 0
+Stop Of: 0
+Sequence: 0
+Customer_ID: 101210
+Name: Bob
+Address 1: 12Happy Way
+Address 2: 
+City: REAMSTOWN
+State: PA
+Zip: 17567
+Phone 555-5551212
+Purchas Order Date: 1/15/2016 12:00:00 AM
+Scheduled Ship Date: 1/25/2016 12:17:04 PM
+Original Carrier: Truck
+Origional Ship Mode: 8
+Carrier ID: Truck
+Ship Mode: 8
+Total CNS: 0
+Total Weight0
+Status: B
+PrePaid Collect: 1
+Exceed Ship By: False
+Substitution Override: False
+Special Handeling: False
+Notes: 
+Allow CopL: False
+Payment_Terms: 8
+Freight Charge: 0
+Allocation status: N
+COD Indicator: 
+Carton Freight: 0
+COD Cost: 0
+Wave ID: 0
+Deposit Ammount: 0
+Freight Bill To Account: 
+Freight Bill To Name: APEX ADVERTISING CO
+Freight Bill to Address 1: 
+Freight BIll to Address 2: 
+Freight Bill to Address 3: 
+Freight Bill to City: 
+Freight Bill to Zip: 
+Last Updated: 1/25/2016 12:17:04 PM
+last User: BR-PA-RDPIT
+Last Module: CARTONIZE
+QC Codes: 
+Deliver by Date: 1/15/2016 12:00:00 AM
+Address 3: SCHOOLSTOCKPO 44515
+Carton Type: XSmall
+created order number: 0003
+
+
+OUTBOUND SHIPMENT DATA TO BE INSERTED INTO THE DATABASE:
+Shipment ID: C000001100
+OrderNumber: 0003
+Type: ORD
+Stop: 0
+Stop Of: 0
+Sequence: 0
+Customer_ID: 101210
+Name: Bob
+Address 1: 12Happy Way
+Address 2: 
+City: REAMSTOWN
+State: PA
+Zip: 17567
+Phone 555-5551212
+Purchas Order Date: 1/15/2016 12:00:00 AM
+Scheduled Ship Date: 1/25/2016 12:17:04 PM
+Original Carrier: Truck
+Origional Ship Mode: 8
+Carrier ID: Truck
+Ship Mode: 8
+Total CNS: 0
+Total Weight0
+Status: B
+PrePaid Collect: 1
+Exceed Ship By: False
+Substitution Override: False
+Special Handeling: False
+Notes: 
+Allow CopL: False
+Payment_Terms: 8
+Freight Charge: 0
+Allocation status: N
+COD Indicator: 
+Carton Freight: 0
+COD Cost: 0
+Wave ID: 0
+Deposit Ammount: 0
+Freight Bill To Account: 
+Freight Bill To Name: APEX ADVERTISING CO
+Freight Bill to Address 1: 
+Freight BIll to Address 2: 
+Freight Bill to Address 3: 
+Freight Bill to City: 
+Freight Bill to Zip: 
+Last Updated: 1/25/2016 12:17:04 PM
+last User: BR-PA-RDPIT
+Last Module: CARTONIZE
+QC Codes: 
+Deliver by Date: 1/15/2016 12:00:00 AM
+Address 3: SCHOOLSTOCKPO 44515
+Carton Type: XSmall
+number of items in OBS 3
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000001100
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: ORD
+UOM: EA
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 12:17:04 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 30045002
+ UOM_WEIGHT: 0.06
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 1
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0002
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000001100
+ORDER_NUMBER: 0002
+ORDER_LINE: 1
+TYPE: ORD
+UOM: EA
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 12:17:04 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 30045003
+ UOM_WEIGHT: 0.06
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 1
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0003
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000001100
+ORDER_NUMBER: 0003
+ORDER_LINE: 1
+TYPE: ORD
+UOM: EA
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 12:17:04 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 30045004
+ UOM_WEIGHT: 0.061
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 1
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+
+
+INFORMANTION FOR BOX :16706684
+RID: 16706684
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0643825
+Product ID 30045002
+Trace ID: 
+Owner ID: 
+Location ID: T03C046
+Quantity :9
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 1/21/2015 6:44:27 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 408469070101347024
+data2date: 
+data2Num: 5132880
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 10/16/2015 5:48:28 PM
+Last User: 253
+Last Module: RFPIECEPICK
+****************************
+Replen amount going to Location T03C046: 0
+Inventory Avliable to be Picked for 30045002: 9
+creating move queue
+
+
+INFORMANTION FOR BOX :16957204
+RID: 16957204
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0666701
+Product ID 30045003
+Trace ID: 
+Owner ID: 
+Location ID: H03C015
+Quantity :27
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 3/25/2015 4:31:37 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 408469070101404338
+data2date: 
+data2Num: 5231691
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/18/2016 2:48:15 PM
+Last User: 203
+Last Module: RFPIECEPICK
+****************************
+
+
+INFORMANTION FOR BOX :18165372
+RID: 18165372
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0782157
+Product ID 30045003
+Trace ID: 
+Owner ID: 
+Location ID: H03C015
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 12/22/2015 5:02:10 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 408469070101662004
+data2date: 
+data2Num: 5522371
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 12/23/2015 8:52:56 AM
+Last User: 269
+Last Module: RFPUTAWAY
+****************************
+Replen amount going to Location H03C015: 0
+Inventory Avliable to be Picked for 30045003: 99
+creating move queue
+
+
+INFORMANTION FOR BOX :18165373
+RID: 18165373
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0782157
+Product ID 30045004
+Trace ID: 
+Owner ID: 
+Location ID: H03A016
+Quantity :44
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 12/22/2015 5:02:10 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 408469070101662004
+data2date: 
+data2Num: 5521408
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/20/2016 2:01:29 PM
+Last User: 212
+Last Module: RFPIECEPICK
+****************************
+
+
+INFORMANTION FOR BOX :18165374
+RID: 18165374
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0782157
+Product ID 30045004
+Trace ID: 
+Owner ID: 
+Location ID: H03A016
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 12/22/2015 5:02:10 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 408469070101662004
+data2date: 
+data2Num: 5521409
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 12/23/2015 8:53:18 AM
+Last User: 269
+Last Module: RFPUTAWAY
+****************************
+Replen amount going to Location H03A016: 0
+Inventory Avliable to be Picked for 30045004: 116
+creating move queue
+ALLOCATION STATUS: C
+Sucessful Allocation
+Total Volume=0.0760000012814999
+Total Weight=0.180999998003244
+Allocation Status once order is done;C
+threads allowed: 1
+threads allowed: 1
+Process ID: 314686314
+
+
+Number of Orders: 1
+
+
+Number of OrderLines: 2
+
+
+Piece Count: 0
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0
+
+created order number: 0001
+created order number: 0002
+created order number: 0003
+created order number: 0004
+created order number: 0005
+number of items in OBS 5
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 12:35:44 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0002
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0002
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 12:35:44 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0003
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0003
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 12:35:44 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0004
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0004
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 12:35:44 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0005
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0005
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 12:35:44 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+Allocation a case for product line0001
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691005 in Primary Locations: 1
+******************************************
+
+
+To Location: A01C059
+******************************************
+Allocation a case for product line0002
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691005 in Primary Locations: 1
+******************************************
+
+
+To Location: A01C059
+******************************************
+Allocation a case for product line0003
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 1
+******************************************
+
+
+To Location: A01C012
+******************************************
+Allocation a case for product line0004
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 1
+******************************************
+
+
+To Location: A01C012
+******************************************
+Allocation a case for product line0005
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 1
+******************************************
+
+
+To Location: A01C012
+******************************************
+ALLOCATION STATUS: C
+Sucessful Allocation
+Total Volume=14.7600001394749
+Total Weight=14428.7998352051
+Allocation Status once order is done;C
+threads allowed: 1
+threads allowed: 1
+Process ID: 177823177
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 506494506
+
+
+Number of Orders: 1
+
+
+Number of OrderLines: 2
+
+
+Piece Count: 0
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0
+
+created order number: 0001
+created order number: 0002
+created order number: 0003
+created order number: 0004
+created order number: 0005
+number of items in OBS 5
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:44:25 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0002
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0002
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:44:25 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0003
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0003
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:44:25 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0004
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0004
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:44:25 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0005
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0005
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:44:25 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+Allocation a case for product line0001
+Number of cases Required: 1
+Bulk Picking = False
+Cartonize is Running, trying again in a minute 3 tries left
+threads allowed: 1
+Process ID: 359641359
+
+
+Number of Orders: 1
+
+
+Number of OrderLines: 2
+
+
+Piece Count: 0
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0
+
+created order number: 0001
+created order number: 0002
+created order number: 0003
+created order number: 0004
+created order number: 0005
+number of items in OBS 5
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:46:34 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0002
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0002
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:46:34 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0003
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0003
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:46:34 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0004
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0004
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:46:34 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0005
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0005
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:46:34 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+Allocation a case for product line0001
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691005 in Primary Locations: 79
+Number of cases for product: 52691005 replens going to primary Locations: 
+******************************************
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+******************************************
+Allocation a case for product line0002
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691005 in Primary Locations: 79
+Number of cases for product: 52691005 replens going to primary Locations: 
+******************************************
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+******************************************
+Allocation a case for product line0003
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 72
+Number of cases for product: 52691006 replens going to primary Locations: 
+******************************************
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+******************************************
+Allocation a case for product line0004
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 72
+Number of cases for product: 52691006 replens going to primary Locations: 
+******************************************
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+******************************************
+Allocation a case for product line0005
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 72
+Number of cases for product: 52691006 replens going to primary Locations: 
+******************************************
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+******************************************
+ALLOCATION STATUS: C
+Sucessful Allocation
+Total Volume=14.7600001394749
+Total Weight=14428.7998352051
+Allocation Status once order is done;C
+threads allowed: 1
+threads allowed: 1
+Process ID: 723277723
+
+
+Number of Orders: 1
+
+
+Number of OrderLines: 2
+
+
+Piece Count: 0
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0
+
+created order number: 0001
+created order number: 0002
+created order number: 0003
+created order number: 0004
+created order number: 0005
+number of items in OBS 5
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:49:13 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0002
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0002
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:49:13 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0003
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0003
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:49:13 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0004
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0004
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:49:13 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0005
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0005
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:49:13 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+Allocation a case for product line0001
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691005 in Primary Locations: 79
+Number of cases for product: 52691005 replens going to primary Locations: 
+******************************************
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+******************************************
+Allocation a case for product line0002
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691005 in Primary Locations: 79
+Number of cases for product: 52691005 replens going to primary Locations: 
+******************************************
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: A01C059
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: C02E091
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: B07E125
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: C06E105
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+
+
+To Location: A04E065
+******************************************
+Allocation a case for product line0003
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 72
+Number of cases for product: 52691006 replens going to primary Locations: 
+******************************************
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+******************************************
+Allocation a case for product line0004
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 72
+Number of cases for product: 52691006 replens going to primary Locations: 
+******************************************
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+******************************************
+Allocation a case for product line0005
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 72
+Number of cases for product: 52691006 replens going to primary Locations: 
+******************************************
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C012
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A01C060
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: A04E030
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+
+
+To Location: C02E005
+******************************************
+ALLOCATION STATUS: C
+Sucessful Allocation
+Total Volume=14.7600001394749
+Total Weight=14428.7998352051
+Allocation Status once order is done;C
+threads allowed: 1
+threads allowed: 1
+Process ID: 357643357
+
+
+Number of Orders: 1
+
+
+Number of OrderLines: 2
+
+
+Piece Count: 0
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0
+
+created order number: 0001
+created order number: 0002
+created order number: 0003
+created order number: 0004
+created order number: 0005
+number of items in OBS 5
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:52:25 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0002
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0002
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:52:25 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0003
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0003
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:52:25 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0004
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0004
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:52:25 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0005
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0005
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 3:52:25 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+Allocation a case for product line0001
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691005 in Primary Locations: 79
+Number of cases for product: 52691005 replens going to primary Locations: 
+Cartonize is Running, trying again in a minute 3 tries left
+threads allowed: 1
+Process ID: 357643357
+
+
+Number of Orders: 1
+
+
+Number of OrderLines: 2
+
+
+Piece Count: 0
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0
+
+created order number: 0001
+created order number: 0002
+created order number: 0003
+created order number: 0004
+created order number: 0005
+number of items in OBS 5
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 4:00:34 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0002
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0002
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 4:00:34 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 37.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0003
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0003
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 4:00:34 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0004
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0004
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 4:00:34 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0005
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000900
+ORDER_NUMBER: 0005
+ORDER_LINE: 1
+TYPE: ORD
+UOM: CSE
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/25/2016 4:00:34 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691006
+ UOM_WEIGHT: 41.8
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 72
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+Allocation a case for product line0001
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691005 in Primary Locations: 79
+Number of cases for product: 52691005 replens going to primary Locations: 
+Allocation a case for product line0002
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691005 in Primary Locations: 78
+Number of cases for product: 52691005 replens going to primary Locations: 
+Allocation a case for product line0003
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 72
+Number of cases for product: 52691006 replens going to primary Locations: 
+Allocation a case for product line0004
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 71
+Number of cases for product: 52691006 replens going to primary Locations: 
+Allocation a case for product line0005
+Number of cases Required: 1
+Bulk Picking = False
+Number of cases for product: 52691006 in Primary Locations: 70
+Number of cases for product: 52691006 replens going to primary Locations: 
+ALLOCATION STATUS: C
+Sucessful Allocation
+Total Volume=14.7600001394749
+Total Weight=14428.7998352051
+Allocation Status once order is done;C
+threads allowed: 1

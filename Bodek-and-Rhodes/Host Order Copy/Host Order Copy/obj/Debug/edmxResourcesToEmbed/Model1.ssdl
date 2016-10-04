@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HOST_ORDER_DETAIL">
+    <Key>
+      <PropertyRef Name="EIS_ORDER_ID" />
+      <PropertyRef Name="EIS_ORDER_LINE" />
+    </Key>
+    <Property Name="EIS_ORDER_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EIS_ORDER_LINE" Type="smallint" Nullable="false" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" />
+    <Property Name="QC_CATEGORY" Type="varchar" MaxLength="4" />
+    <Property Name="ORDERED_UNITS" Type="real" />
+    <Property Name="UOM" Type="varchar" MaxLength="3" />
+    <Property Name="SCHEDULED_DATE" Type="datetime" />
+    <Property Name="NOTES" Type="varchar" MaxLength="255" />
+    <Property Name="EIS_ORDLINE_PRICE" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="EIS_UNIT_PRICE" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="HOST_ORDERS">
+    <Key>
+      <PropertyRef Name="EIS_ORDER_ID" />
+    </Key>
+    <Property Name="EIS_ORDER_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="STATUS" Type="varchar" MaxLength="1" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ORDER_DATE" Type="datetime" Nullable="false" />
+    <Property Name="CUSTOMER_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_1" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_2" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_3" Type="varchar" MaxLength="30" />
+    <Property Name="CITY" Type="varchar" MaxLength="30" />
+    <Property Name="STATE" Type="varchar" MaxLength="2" />
+    <Property Name="ZIP" Type="varchar" MaxLength="10" />
+    <Property Name="PHONE" Type="varchar" MaxLength="20" />
+    <Property Name="PURCHASE_ORDER" Type="varchar" MaxLength="15" />
+    <Property Name="ORIGINAL_SHIP_MODE" Type="varchar" MaxLength="2" />
+    <Property Name="TERMS" Type="smallint" />
+    <Property Name="COD_INDICATOR" Type="varchar" MaxLength="1" />
+    <Property Name="EST_NUM_BOXES" Type="int" />
+    <Property Name="CARRIER_ID" Type="varchar" MaxLength="10" />
+    <Property Name="FREIGHT" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="DEPOSIT_AMOUNT" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="FREIGHT_BILLING_OPTION" Type="varchar" MaxLength="1" />
+    <Property Name="EXPEDITE_IND" Type="varchar" MaxLength="1" />
+    <Property Name="NOTES" Type="varchar" MaxLength="255" />
+    <Property Name="IMPORT_TIME" Type="datetime" />
+    <Property Name="FREIGHT_BILL_TO_ACCOUNT" Type="varchar" MaxLength="12" />
+    <Property Name="FREIGHT_BILL_TO_NAME" Type="varchar" MaxLength="25" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_1" Type="varchar" MaxLength="30" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_2" Type="varchar" MaxLength="30" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_3" Type="varchar" MaxLength="30" />
+    <Property Name="FREIGHT_BILL_TO_CITY" Type="varchar" MaxLength="15" />
+    <Property Name="FREIGHT_BILL_TO_STATE" Type="varchar" MaxLength="2" />
+    <Property Name="FREIGHT_BILL_TO_ZIP" Type="varchar" MaxLength="9" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="QC_CODES" Type="varchar" MaxLength="30" />
+    <Property Name="DELIVER_BY_DATE" Type="datetime" />
+    <Property Name="QC_REQUIRED" Type="varchar" MaxLength="1" />
+    <Property Name="EXTERNAL_CARTONIZED" Type="nvarchar" MaxLength="250" />
+    <Property Name="FIRSTBOXSHIPPED" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="WMSModelStoreContainer">
+    <EntitySet Name="HOST_ORDER_DETAIL" EntityType="Self.HOST_ORDER_DETAIL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HOST_ORDERS" EntityType="Self.HOST_ORDERS" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

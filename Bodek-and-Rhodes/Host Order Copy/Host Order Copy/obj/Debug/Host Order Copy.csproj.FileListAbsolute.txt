@@ -1,0 +1,10 @@
+\\192.168.1.192\d$\Tim's Projects\Host Order Copy\Host Order Copy\bin\Debug\Host Order Copy.exe.config
+\\192.168.1.192\d$\Tim's Projects\Host Order Copy\Host Order Copy\bin\Debug\Host Order Copy.exe
+\\192.168.1.192\d$\Tim's Projects\Host Order Copy\Host Order Copy\bin\Debug\Host Order Copy.pdb
+\\192.168.1.192\d$\Tim's Projects\Host Order Copy\Host Order Copy\bin\Debug\EntityFramework.dll
+\\192.168.1.192\d$\Tim's Projects\Host Order Copy\Host Order Copy\bin\Debug\EntityFramework.SqlServer.dll
+\\192.168.1.192\d$\Tim's Projects\Host Order Copy\Host Order Copy\bin\Debug\EntityFramework.xml
+\\192.168.1.192\d$\Tim's Projects\Host Order Copy\Host Order Copy\bin\Debug\EntityFramework.SqlServer.xml
+\\192.168.1.192\d$\Tim's Projects\Host Order Copy\Host Order Copy\obj\Debug\Host Order Copy.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\Host Order Copy\Host Order Copy\obj\Debug\Host Order Copy.exe
+\\192.168.1.192\d$\Tim's Projects\Host Order Copy\Host Order Copy\obj\Debug\Host Order Copy.pdb

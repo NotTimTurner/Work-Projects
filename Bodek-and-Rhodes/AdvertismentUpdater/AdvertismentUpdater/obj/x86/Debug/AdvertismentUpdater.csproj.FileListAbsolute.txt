@@ -1,0 +1,38 @@
+C:\Users\apaul\Documents\Visual Studio 2010\Projects\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe
+C:\Users\apaul\Documents\Visual Studio 2010\Projects\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.pdb
+C:\Users\apaul\Documents\Visual Studio 2010\Projects\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\STPadLibNet.dll
+C:\Users\apaul\Documents\Visual Studio 2010\Projects\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\STPadLibNet.xml
+C:\Users\apaul\Documents\Visual Studio 2010\Projects\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.csprojResolveAssemblyReference.cache
+C:\Users\apaul\Documents\Visual Studio 2010\Projects\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.exe
+C:\Users\apaul\Documents\Visual Studio 2010\Projects\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.pdb
+C:\Users\apaul\Documents\Visual Studio 2010\Projects\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe.config
+C:\Users\tturner\Documents\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe.config
+C:\Users\tturner\Documents\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.exe
+C:\Users\tturner\Documents\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.pdb
+C:\Users\tturner\Documents\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe
+C:\Users\tturner\Documents\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.pdb
+C:\Users\tturner\Documents\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\STPadLibNet.dll
+C:\Users\tturner\Documents\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\STPadLibNet.xml
+C:\Users\tturner\Documents\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe.config
+\\192.168.1.192\d$\Tim's Projects\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.exe
+\\192.168.1.192\d$\Tim's Projects\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.pdb
+\\192.168.1.192\d$\Tim's Projects\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe
+\\192.168.1.192\d$\Tim's Projects\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.pdb
+\\192.168.1.192\d$\Tim's Projects\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe.manifest
+\\192.168.1.192\d$\Tim's Projects\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.application
+\\192.168.1.192\d$\Tim's Projects\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.exe.manifest
+\\192.168.1.192\d$\Tim's Projects\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.application
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe.config
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe.manifest
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.application
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.pdb
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\STPadLibNet.dll
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\STPadLibNet.xml
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.csprojResolveAssemblyReference.cache
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.exe.manifest
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.application
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.exe
+C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.pdb

@@ -1,0 +1,9 @@
+\\192.168.1.192\d$\Tim's Projects\AlterProductMaster\AlterProductMaster\bin\Debug\AlterProductMaster.exe.config
+\\192.168.1.192\d$\Tim's Projects\AlterProductMaster\AlterProductMaster\bin\Debug\AlterProductMaster.exe
+\\192.168.1.192\d$\Tim's Projects\AlterProductMaster\AlterProductMaster\bin\Debug\AlterProductMaster.pdb
+\\192.168.1.192\d$\Tim's Projects\AlterProductMaster\AlterProductMaster\obj\Debug\AlterProductMaster.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\AlterProductMaster\AlterProductMaster\obj\Debug\AlterProductMaster.Form1.resources
+\\192.168.1.192\d$\Tim's Projects\AlterProductMaster\AlterProductMaster\obj\Debug\AlterProductMaster.Properties.Resources.resources
+\\192.168.1.192\d$\Tim's Projects\AlterProductMaster\AlterProductMaster\obj\Debug\AlterProductMaster.csproj.GenerateResource.Cache
+\\192.168.1.192\d$\Tim's Projects\AlterProductMaster\AlterProductMaster\obj\Debug\AlterProductMaster.exe
+\\192.168.1.192\d$\Tim's Projects\AlterProductMaster\AlterProductMaster\obj\Debug\AlterProductMaster.pdb

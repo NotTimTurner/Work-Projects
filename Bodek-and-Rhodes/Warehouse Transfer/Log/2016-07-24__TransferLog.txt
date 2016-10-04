@@ -1,0 +1,433 @@
+file created at7/24/2016 12:00:04 AM
+threads allowed: 1
+Process ID: 353647353
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 465535465
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 274726274
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 888112888
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 996004996
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 966034966
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 468532468
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 277723277
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 584416584
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 101899101
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 962038962
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 415585415
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 81919081
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 281719281
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 142858142
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 251749251
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 607393607
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 168832168
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 29971029
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 500500500
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 309691309
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 526474526
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 669331669
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 531469531
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 197803197
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 58942058
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 6994006
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 31969031
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 729271729
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 200800200
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 563437563
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 811189811
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 425575425
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 927073927
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 283717283
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 454546454
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 702298702
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 818182818
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 369631369
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 397603397
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 813187813
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 371629371
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 483517483
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 375625375
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 174826174
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 39961039
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 11989011
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1
+threads allowed: 1
+Process ID: 319681319
+
+
+Number of Orders: 0
+
+
+No Orders Found Exiting Program
+threads allowed: 1

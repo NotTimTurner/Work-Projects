@@ -1,0 +1,6 @@
+\\192.168.1.192\d$\Tim's Projects\WMS-FDM4Compair\WMS-FDM4Compair\bin\Debug\WMS-FDM4Compair.exe.config
+\\192.168.1.192\d$\Tim's Projects\WMS-FDM4Compair\WMS-FDM4Compair\bin\Debug\WMS-FDM4Compair.exe
+\\192.168.1.192\d$\Tim's Projects\WMS-FDM4Compair\WMS-FDM4Compair\bin\Debug\WMS-FDM4Compair.pdb
+\\192.168.1.192\d$\Tim's Projects\WMS-FDM4Compair\WMS-FDM4Compair\obj\Debug\WMS-FDM4Compair.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\WMS-FDM4Compair\WMS-FDM4Compair\obj\Debug\WMS-FDM4Compair.exe
+\\192.168.1.192\d$\Tim's Projects\WMS-FDM4Compair\WMS-FDM4Compair\obj\Debug\WMS-FDM4Compair.pdb

@@ -1,0 +1,1019 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AUDIT_INBOUND">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="TRANTYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SUBTYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TRANSACTION_TIME" Type="datetime" Nullable="false" />
+    <Property Name="APPOINTMENT_TIME" Type="datetime" />
+    <Property Name="APPOINTMENT_TIME_OLD" Type="datetime" />
+    <Property Name="DOOR_ID" Type="varchar" MaxLength="4" />
+    <Property Name="DOOR_ID_OLD" Type="varchar" MaxLength="4" />
+    <Property Name="MADE_TIME" Type="datetime" />
+    <Property Name="MADE_TIME_OLD" Type="datetime" />
+    <Property Name="DURATION" Type="int" />
+    <Property Name="DURATION_OLD" Type="int" />
+    <Property Name="SENDER" Type="varchar" MaxLength="10" />
+    <Property Name="SENDER_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="CARRIER_ID" Type="varchar" MaxLength="10" />
+    <Property Name="CARRIER_ID_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" />
+    <Property Name="SHIPMENT_ID_OLD" Type="varchar" MaxLength="18" />
+    <Property Name="ARRIVAL_TIME" Type="datetime" />
+    <Property Name="PICK_ASSIGNED_TIME" Type="datetime" />
+    <Property Name="PICK_START_TIME" Type="datetime" />
+    <Property Name="PICK_COMPLETE_TIME" Type="datetime" />
+    <Property Name="DEPARTURE_TIME" Type="datetime" />
+    <Property Name="EXPORTTIME_SYS1" Type="datetime" />
+    <Property Name="EXPORTLOADNUM_SYS1" Type="int" />
+    <Property Name="EXPORTTIME_SYS2" Type="datetime" />
+    <Property Name="EXPORTLOADNUM_SYS2" Type="int" />
+    <Property Name="EXPORTTIME_SYS3" Type="datetime" />
+    <Property Name="EXPORTLOADNUM_SYS3" Type="int" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AUDIT_INBOUND_DETAIL">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="AUDIT_INBOUND_RID" Type="int" Nullable="false" />
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" />
+    <Property Name="ORDER_NUMBER" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_NUMBER_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_LINE" Type="int" />
+    <Property Name="ORDER_LINE_OLD" Type="int" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" />
+    <Property Name="PRODUCT_ID_OLD" Type="varchar" MaxLength="40" />
+    <Property Name="DUE_DATE" Type="datetime" />
+    <Property Name="DUE_DATE_OLD" Type="datetime" />
+    <Property Name="UNLOAD_ASSIGNED_TIME" Type="datetime" />
+    <Property Name="UNLOAD_START_TIME" Type="datetime" />
+    <Property Name="UNLOAD_COMPLETE_TIME" Type="datetime" />
+    <Property Name="UNLOADER" Type="varchar" MaxLength="9" />
+    <Property Name="UNITS_ORDERED" Type="real" />
+    <Property Name="UNITS_UNLOADED" Type="real" />
+    <Property Name="UNITS_RECEIVED" Type="real" />
+    <Property Name="ADJUSTMENT_CODE" Type="varchar" MaxLength="8" />
+    <Property Name="ADJUSTMENT_CODE_OLD" Type="varchar" MaxLength="8" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AUDIT_INVENTORY">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="TRANTYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SUBTYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TRANSACTION_TIME" Type="datetime" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar" MaxLength="9" />
+    <Property Name="INV_RID" Type="int" />
+    <Property Name="INV_RID_OLD" Type="int" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" />
+    <Property Name="PRODUCT_ID_OLD" Type="varchar" MaxLength="40" />
+    <Property Name="FROM_INV_BASELABEL" Type="varchar" MaxLength="20" />
+    <Property Name="INV_BASELABEL_OLD" Type="varchar" MaxLength="20" />
+    <Property Name="INV_TRACE" Type="varchar" MaxLength="20" />
+    <Property Name="INV_TRACE_OLD" Type="varchar" MaxLength="20" />
+    <Property Name="INV_QTY" Type="real" />
+    <Property Name="INV_QTY_OLD" Type="real" />
+    <Property Name="UOM" Type="varchar" MaxLength="3" />
+    <Property Name="UOM_OLD" Type="varchar" MaxLength="3" />
+    <Property Name="OWNER_ID" Type="varchar" MaxLength="20" />
+    <Property Name="OWNER_ID_OLD" Type="varchar" MaxLength="20" />
+    <Property Name="SITE_ID" Type="varchar" MaxLength="10" />
+    <Property Name="SITE_ID_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="LOCATION_ID" Type="varchar" MaxLength="16" />
+    <Property Name="LOCATION_ID_OLD" Type="varchar" MaxLength="16" />
+    <Property Name="QC_CATEGORY" Type="varchar" MaxLength="4" />
+    <Property Name="QC_CATEGORY_OLD" Type="varchar" MaxLength="4" />
+    <Property Name="EXPORTTIME_SYS1" Type="datetime" />
+    <Property Name="EXPORTLOADNUM_SYS1" Type="int" />
+    <Property Name="EXPORTTIME_SYS2" Type="datetime" />
+    <Property Name="EXPORTLOADNUM_SYS2" Type="int" />
+    <Property Name="EXPORTTIME_SYS3" Type="datetime" />
+    <Property Name="EXPORTLOADNUM_SYS3" Type="int" />
+    <Property Name="TRAILERRAILBOATLABEL" Type="varchar" MaxLength="30" />
+    <Property Name="CONTAINERLABEL" Type="varchar" MaxLength="20" />
+    <Property Name="PALLETTOTELABEL" Type="varchar" MaxLength="20" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="CARRIER_ID" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="AUDIT_INVENTORY_DETAIL">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="AUDIT_INVENTORY_RID" Type="int" Nullable="false" />
+    <Property Name="INV_ID" Type="varchar" MaxLength="40" />
+    <Property Name="INV_BASELABEL" Type="varchar" MaxLength="20" />
+    <Property Name="INV_TRACE" Type="varchar" MaxLength="20" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" />
+    <Property Name="CUSTOMER_ID" Type="varchar" MaxLength="10" />
+    <Property Name="CUSTOMER_ID_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" />
+    <Property Name="SHIPMENT_ID_OLD" Type="varchar" MaxLength="18" />
+    <Property Name="ORDER_NUMBER" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_NUMBER_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_LINE" Type="int" />
+    <Property Name="ORDER_LINE_OLD" Type="int" />
+    <Property Name="QC_INCIDENT" Type="int" />
+    <Property Name="QC_INCIDENT_OLD" Type="int" />
+    <Property Name="DEFECT_REASON" Type="varchar" MaxLength="4" />
+    <Property Name="DEFECT_REASON_OLD" Type="varchar" MaxLength="4" />
+    <Property Name="DEFECT_ID" Type="varchar" MaxLength="10" />
+    <Property Name="DEFECT_ID_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="STATUS" Type="varchar" MaxLength="10" />
+    <Property Name="STATUS_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="MANUFACTURED_DATE" Type="datetime" />
+    <Property Name="MANUFACTURED_DATE_OLD" Type="datetime" />
+    <Property Name="RECEIPT_DATE" Type="datetime" />
+    <Property Name="RECEIPT_DATE_OLD" Type="datetime" />
+    <Property Name="EXPIRATION_DATE" Type="datetime" />
+    <Property Name="EXPIRATION_DATE_OLD" Type="datetime" />
+    <Property Name="PRODUCTION_ORDER" Type="varchar" MaxLength="10" />
+    <Property Name="PRODUCTION_ORDER_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="PRODUCTION_LINE" Type="varchar" MaxLength="10" />
+    <Property Name="PRODUCTION_LINE_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="PRODUCTION_SHIFT" Type="varchar" MaxLength="10" />
+    <Property Name="PRODUCTION_SHIFT_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="ADJUSTMENT_CODE" Type="varchar" MaxLength="8" />
+    <Property Name="ADJUSTMENT_CODE_OLD" Type="varchar" MaxLength="8" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Audit_Manifest">
+    <Key>
+      <PropertyRef Name="CaseID" />
+      <PropertyRef Name="Transaction_Time" />
+    </Key>
+    <Property Name="CaseID" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Transaction_Time" Type="datetime" Nullable="false" />
+    <Property Name="TranType" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SubType" Type="varchar" MaxLength="25" />
+    <Property Name="StationID" Type="varchar" MaxLength="25" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="AUDIT_OUTBOUND">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="TRANTYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SUBTYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TRANSACTION_TIME" Type="datetime" Nullable="false" />
+    <Property Name="APPOINTMENT_TIME" Type="datetime" />
+    <Property Name="APPOINTMENT_TIME_OLD" Type="datetime" />
+    <Property Name="DOOR_ID" Type="varchar" MaxLength="4" />
+    <Property Name="DOOR_ID_OLD" Type="varchar" MaxLength="4" />
+    <Property Name="MADE_TIME" Type="datetime" />
+    <Property Name="MADE_TIME_OLD" Type="datetime" />
+    <Property Name="DURATION" Type="int" />
+    <Property Name="DURATION_OLD" Type="int" />
+    <Property Name="CARRIER_ID" Type="varchar" MaxLength="10" />
+    <Property Name="CARRIER_ID_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" />
+    <Property Name="SHIPMENT_ID_OLD" Type="varchar" MaxLength="18" />
+    <Property Name="ARRIVAL_TIME" Type="datetime" />
+    <Property Name="PICK_ASSIGNED_TIME" Type="datetime" />
+    <Property Name="PICK_START_TIME" Type="datetime" />
+    <Property Name="PICK_COMPLETE_TIME" Type="datetime" />
+    <Property Name="DEPARTURE_TIME" Type="datetime" />
+    <Property Name="EXPORTTIME_SYS1" Type="datetime" />
+    <Property Name="EXPORTLOADNUM_SYS1" Type="int" />
+    <Property Name="EXPORTTIME_SYS2" Type="datetime" />
+    <Property Name="EXPORTLOADNUM_SYS2" Type="int" />
+    <Property Name="EXPORTTIME_SYS3" Type="datetime" />
+    <Property Name="EXPORTLOADNUM_SYS3" Type="int" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="ADDRESS_1" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_1_OLD" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_2" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_2_OLD" Type="varchar" MaxLength="30" />
+    <Property Name="CITY" Type="varchar" MaxLength="30" />
+    <Property Name="CITY_OLD" Type="varchar" MaxLength="30" />
+    <Property Name="STATE" Type="varchar" MaxLength="2" />
+    <Property Name="STATE_OLD" Type="varchar" MaxLength="2" />
+    <Property Name="ZIP" Type="varchar" MaxLength="9" />
+    <Property Name="ZIP_OLD" Type="varchar" MaxLength="9" />
+    <Property Name="PURCHASE_ORDER" Type="varchar" MaxLength="15" />
+    <Property Name="PURCHASE_ORDER_OLD" Type="varchar" MaxLength="15" />
+    <Property Name="PURCHASE_ORDER_DATE" Type="datetime" />
+    <Property Name="PURCHASE_ORDER_DATE_OLD" Type="datetime" />
+    <Property Name="STATUS" Type="varchar" MaxLength="2" />
+    <Property Name="STATUS_OLD" Type="varchar" MaxLength="2" />
+    <Property Name="COMMENTS_1" Type="varchar" MaxLength="255" />
+    <Property Name="EXPORTFDM4BATCH_SYS1" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AUDIT_OUTBOUND_DETAIL">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="AUDIT_OUTBOUND_RID" Type="int" Nullable="false" />
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" />
+    <Property Name="ORDER_NUMBER" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_NUMBER_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_LINE" Type="int" />
+    <Property Name="ORDER_LINE_OLD" Type="int" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" />
+    <Property Name="PRODUCT_ID_OLD" Type="varchar" MaxLength="40" />
+    <Property Name="DUE_DATE" Type="datetime" />
+    <Property Name="DUE_DATE_OLD" Type="datetime" />
+    <Property Name="PICK_ASSIGNED_TIME" Type="datetime" />
+    <Property Name="PICK_START_TIME" Type="datetime" />
+    <Property Name="PICK_COMPLETE_TIME" Type="datetime" />
+    <Property Name="PICKER" Type="varchar" MaxLength="9" />
+    <Property Name="UNITS_ORDERED" Type="real" />
+    <Property Name="UNITS_STAGED" Type="real" />
+    <Property Name="UNITS_VERIFIED" Type="real" />
+    <Property Name="UNITS_SHIPPED" Type="real" />
+    <Property Name="ADJUSTMENT_CODE" Type="varchar" MaxLength="8" />
+    <Property Name="ADJUSTMENT_CODE_OLD" Type="varchar" MaxLength="8" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="STATUS" Type="varchar" MaxLength="2" />
+    <Property Name="STATUS_OLD" Type="varchar" MaxLength="10" />
+    <Property Name="UNITS_ORDERED_OLD" Type="real" />
+    <Property Name="TRANTYPE" Type="varchar" MaxLength="10" />
+    <Property Name="SUBTYPE" Type="varchar" MaxLength="10" />
+    <Property Name="TRANSACTION_TIME" Type="datetime" />
+    <Property Name="QC_AUDITOR" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CARRIERS">
+    <Key>
+      <PropertyRef Name="CARRIER_ID" />
+    </Key>
+    <Property Name="CARRIER_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="POOL_POINT" Type="varchar" MaxLength="4" />
+    <Property Name="NAME" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ADDRESS_1" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_2" Type="varchar" MaxLength="30" />
+    <Property Name="CITY" Type="varchar" MaxLength="15" />
+    <Property Name="STATE" Type="varchar" MaxLength="2" />
+    <Property Name="ZIP" Type="varchar" MaxLength="9" />
+    <Property Name="CONTACT_NAME" Type="varchar" MaxLength="30" />
+    <Property Name="CONTACT_PHONE" Type="varchar" MaxLength="15" />
+    <Property Name="COMMENTS_1" Type="varchar" MaxLength="70" />
+    <Property Name="COMMENTS_2" Type="varchar" MaxLength="70" />
+    <Property Name="COMMENTS_3" Type="varchar" MaxLength="70" />
+    <Property Name="COMMENTS_4" Type="varchar" MaxLength="70" />
+    <Property Name="ACCOUNT_NUMBER" Type="varchar" MaxLength="20" />
+    <Property Name="ICC_NUMBER" Type="varchar" MaxLength="12" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="COMPANY_NAME" Type="varchar" MaxLength="30" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" />
+    <Property Name="SHIP_MODE_DEFAULT" Type="varchar" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="CARTON_MASTER">
+    <Key>
+      <PropertyRef Name="CARTON_TYPE" />
+    </Key>
+    <Property Name="CARTON_TYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="80" />
+    <Property Name="LENGTH" Type="real" Nullable="false" />
+    <Property Name="WIDTH" Type="real" Nullable="false" />
+    <Property Name="HEIGHT" Type="real" Nullable="false" />
+    <Property Name="UCB_PERCENT" Type="real" Nullable="false" />
+    <Property Name="LCB_PERCENT" Type="real" Nullable="false" />
+    <Property Name="MAX_WEIGHT" Type="real" Nullable="false" />
+    <Property Name="DUNNAGE_WEIGHT" Type="real" Nullable="false" />
+    <Property Name="CONVEYABLE_IND" Type="bit" Nullable="false" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="EMAIL_GROUPS">
+    <Key>
+      <PropertyRef Name="EMAIL_GROUP" />
+      <PropertyRef Name="FRIENDLY_NAME" />
+    </Key>
+    <Property Name="EMAIL_GROUP" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FRIENDLY_NAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="STATUS" Type="varchar" MaxLength="15" />
+    <Property Name="LAST_MODULE" Type="varchar" MaxLength="20" />
+    <Property Name="LAST_USER" Type="varchar" MaxLength="20" />
+    <Property Name="LAST_UPDATED" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ERRORS_RUNTIME">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="ERRORTIME" Type="datetime" Nullable="false" />
+    <Property Name="USERID" Type="varchar" MaxLength="10" />
+    <Property Name="MODULE" Type="varchar" MaxLength="15" />
+    <Property Name="FUNCTION" Type="varchar" MaxLength="40" />
+    <Property Name="ERRORTYPE" Type="varchar" MaxLength="3" />
+    <Property Name="ERRORNUMBER" Type="int" />
+    <Property Name="ERRORMESSAGE" Type="varchar" MaxLength="255" />
+    <Property Name="ERRORDATA" Type="varchar" MaxLength="255" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WMS.dbo.GTIN_BACKUP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GTIN_BACKUP">
+    <Key>
+      <PropertyRef Name="product_id" />
+    </Key>
+    <Property Name="product_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="GTIN" Type="varchar" MaxLength="15" />
+    <Property Name="vendor_id" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="GTIN_XREF">
+    <Key>
+      <PropertyRef Name="GTIN" />
+      <PropertyRef Name="PRODUCT_ID" />
+    </Key>
+    <Property Name="GTIN" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="LAST_USER" Type="varchar" MaxLength="16" />
+    <Property Name="LAST_UPDATED" Type="datetime" />
+    <Property Name="LAST_MODULE" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="GTIN_XREF_MASTER">
+    <Key>
+      <PropertyRef Name="GTIN" />
+      <PropertyRef Name="PRODUCT_ID" />
+    </Key>
+    <Property Name="GTIN" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="CASE_QUANTITY" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="CASE_WEIGHT" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="CASE_VOLUME" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="PIECE_WEIGHT" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="PIECE_VOLUME" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="LAST_USER" Type="varchar" MaxLength="16" />
+    <Property Name="LAST_UPDATED" Type="datetime" />
+    <Property Name="LAST_MODULE" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="HOST_ORDER_DETAIL">
+    <Key>
+      <PropertyRef Name="EIS_ORDER_ID" />
+      <PropertyRef Name="EIS_ORDER_LINE" />
+    </Key>
+    <Property Name="EIS_ORDER_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EIS_ORDER_LINE" Type="smallint" Nullable="false" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" />
+    <Property Name="QC_CATEGORY" Type="varchar" MaxLength="4" />
+    <Property Name="ORDERED_UNITS" Type="real" />
+    <Property Name="UOM" Type="varchar" MaxLength="3" />
+    <Property Name="SCHEDULED_DATE" Type="datetime" />
+    <Property Name="NOTES" Type="varchar" MaxLength="255" />
+    <Property Name="EIS_ORDLINE_PRICE" Type="real" />
+    <Property Name="EIS_UNIT_PRICE" Type="decimal" Precision="10" Scale="3" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="HOST_ORDERS">
+    <Key>
+      <PropertyRef Name="EIS_ORDER_ID" />
+    </Key>
+    <Property Name="EIS_ORDER_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="STATUS" Type="varchar" MaxLength="1" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ORDER_DATE" Type="datetime" Nullable="false" />
+    <Property Name="CUSTOMER_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_1" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_2" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_3" Type="varchar" MaxLength="30" />
+    <Property Name="CITY" Type="varchar" MaxLength="30" />
+    <Property Name="STATE" Type="varchar" MaxLength="2" />
+    <Property Name="ZIP" Type="varchar" MaxLength="9" />
+    <Property Name="PHONE" Type="varchar" MaxLength="20" />
+    <Property Name="PURCHASE_ORDER" Type="varchar" MaxLength="15" />
+    <Property Name="ORIGINAL_SHIP_MODE" Type="varchar" MaxLength="2" />
+    <Property Name="TERMS" Type="smallint" />
+    <Property Name="COD_INDICATOR" Type="varchar" MaxLength="1" />
+    <Property Name="EST_NUM_BOXES" Type="int" />
+    <Property Name="CARRIER_ID" Type="varchar" MaxLength="10" />
+    <Property Name="FREIGHT" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="DEPOSIT_AMOUNT" Type="real" />
+    <Property Name="FREIGHT_BILLING_OPTION" Type="varchar" MaxLength="1" />
+    <Property Name="EXPEDITE_IND" Type="varchar" MaxLength="1" />
+    <Property Name="NOTES" Type="varchar" MaxLength="255" />
+    <Property Name="IMPORT_TIME" Type="datetime" />
+    <Property Name="FREIGHT_BILL_TO_ACCOUNT" Type="varchar" MaxLength="12" />
+    <Property Name="FREIGHT_BILL_TO_NAME" Type="varchar" MaxLength="25" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_1" Type="varchar" MaxLength="30" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_2" Type="varchar" MaxLength="30" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_3" Type="varchar" MaxLength="30" />
+    <Property Name="FREIGHT_BILL_TO_CITY" Type="varchar" MaxLength="15" />
+    <Property Name="FREIGHT_BILL_TO_STATE" Type="varchar" MaxLength="2" />
+    <Property Name="FREIGHT_BILL_TO_ZIP" Type="varchar" MaxLength="9" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="QC_CODES" Type="varchar" MaxLength="30" />
+    <Property Name="QC_REQUIRED" Type="varchar" MaxLength="1" />
+    <Property Name="DELIVER_BY_DATE" Type="datetime" />
+    <Property Name="FIRSTBOXSHIPPED" Type="bit" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="CASELABEL" Type="varchar" MaxLength="20" />
+    <Property Name="PALLETTOTELABEL" Type="varchar" MaxLength="20" />
+    <Property Name="CONTAINERLABEL" Type="varchar" MaxLength="20" />
+    <Property Name="TRAILERRAILBOATLABEL" Type="varchar" MaxLength="30" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" />
+    <Property Name="TRACE_ID" Type="varchar" MaxLength="20" />
+    <Property Name="OWNER_ID" Type="varchar" MaxLength="20" />
+    <Property Name="LOCATION_ID" Type="varchar" MaxLength="16" />
+    <Property Name="QUANTITY" Type="real" />
+    <Property Name="QC_CATEGORY" Type="varchar" MaxLength="4" />
+    <Property Name="EXPIRATION_DATE" Type="datetime" />
+    <Property Name="MFG_DATETIME" Type="datetime" />
+    <Property Name="RECEIPT_DATE" Type="datetime" />
+    <Property Name="RESERVED" Type="bit" Nullable="false" />
+    <Property Name="HOLD" Type="bit" Nullable="false" />
+    <Property Name="RESERVATION_TYPE" Type="varchar" MaxLength="10" />
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_NUMBER" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_LINE" Type="smallint" />
+    <Property Name="DATA1DATE" Type="datetime" />
+    <Property Name="DATA1NUM" Type="real" />
+    <Property Name="DATA1STR" Type="varchar" MaxLength="20" />
+    <Property Name="DATA2DATE" Type="datetime" />
+    <Property Name="DATA2NUM" Type="real" />
+    <Property Name="DATA2STR" Type="varchar" MaxLength="20" />
+    <Property Name="DATA3DATE" Type="datetime" />
+    <Property Name="DATA3NUM" Type="real" />
+    <Property Name="DATA3STR" Type="varchar" MaxLength="20" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="INVENTORY_ALLOCATION">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="LOCATION_ID" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="QC_CATEGORY" Type="varchar" MaxLength="4" />
+    <Property Name="TRACE_ID" Type="varchar" MaxLength="20" />
+    <Property Name="QUANTITY" Type="real" />
+    <Property Name="ALLOCATION_TYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" />
+    <Property Name="ORDER_NUMBER" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_LINE" Type="int" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="LOCATION_CAPACITY">
+    <Key>
+      <PropertyRef Name="LOCATION_ID" />
+      <PropertyRef Name="UOM" />
+      <PropertyRef Name="PRODUCT_ID" />
+    </Key>
+    <Property Name="LOCATION_ID" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="UOM" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="CAPACITY" Type="real" />
+    <Property Name="USE_PRODUCTSPECIFIC" Type="bit" Nullable="false" />
+    <Property Name="REPLENISH_LB_QTY" Type="real" />
+    <Property Name="REPLENISH_LB_UOM" Type="varchar" MaxLength="4" />
+    <Property Name="REPLENISH_UB_QTY" Type="real" />
+    <Property Name="REPLENISH_UB_UOM" Type="varchar" MaxLength="4" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="LOCATIONS">
+    <Key>
+      <PropertyRef Name="LOCATION_ID" />
+    </Key>
+    <Property Name="LOCATION_ID" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="LOCATION_GROUP" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EIS_LOCATION" Type="varchar" MaxLength="10" />
+    <Property Name="PICK_SEQUENCE" Type="int" Nullable="false" />
+    <Property Name="AISLE" Type="varchar" MaxLength="2" />
+    <Property Name="SLOT" Type="varchar" MaxLength="2" />
+    <Property Name="VLEVEL" Type="varchar" MaxLength="2" />
+    <Property Name="BIN" Type="varchar" MaxLength="2" />
+    <Property Name="STATUS" Type="varchar" MaxLength="1" />
+    <Property Name="SITE_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PICKING_ZONE" Type="varchar" MaxLength="2" />
+    <Property Name="PUTAWAY_ZONE" Type="varchar" MaxLength="2" />
+    <Property Name="ALLOWPIECEPICKING" Type="bit" Nullable="false" />
+    <Property Name="TYPE" Type="varchar" MaxLength="1" />
+    <Property Name="USAGE" Type="varchar" MaxLength="1" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="PUTAWAY_SEQUENCE" Type="int" />
+    <Property Name="REVERSE_SLOT" Type="varchar" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="LOOKUP_VALUES">
+    <Key>
+      <PropertyRef Name="TABLE_NAME" />
+      <PropertyRef Name="FIELD_NAME" />
+      <PropertyRef Name="VALUE" />
+    </Key>
+    <Property Name="TABLE_NAME" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="FIELD_NAME" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="VALUE" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="MOVE_QUEUE">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="INV_RID" Type="int" Nullable="false" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PRIORITY" Type="smallint" Nullable="false" />
+    <Property Name="CREATE_TIME" Type="datetime" Nullable="false" />
+    <Property Name="STATUS" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="LABELLEVEL" Type="varchar" MaxLength="10" />
+    <Property Name="TO_ZONE" Type="varchar" MaxLength="8" />
+    <Property Name="TO_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="FROM_ZONE" Type="varchar" MaxLength="8" />
+    <Property Name="FROM_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="ORIG_QUANTITY_REQUIRED" Type="real" />
+    <Property Name="QUANTITY_REQUIRED" Type="real" />
+    <Property Name="QUANTITY_INTRANSIT" Type="real" />
+    <Property Name="USER_ID_INTRANSIT" Type="varchar" MaxLength="9" />
+    <Property Name="VEHICLE_INTRANSIT" Type="varchar" MaxLength="20" />
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" />
+    <Property Name="ORDER_NUMBER" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_LINE" Type="smallint" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="PAGEFILL2" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL1" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL3" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL4" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL5" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL6" Type="char" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WMS.dbo.MOVE_QUEUE_ARCHIVE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MOVE_QUEUE_ARCHIVE">
+    <Key>
+      <PropertyRef Name="_RID_" />
+      <PropertyRef Name="INV_RID" />
+      <PropertyRef Name="TYPE" />
+      <PropertyRef Name="PRIORITY" />
+      <PropertyRef Name="CREATE_TIME" />
+      <PropertyRef Name="STATUS" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="INV_RID" Type="int" Nullable="false" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PRIORITY" Type="smallint" Nullable="false" />
+    <Property Name="CREATE_TIME" Type="datetime" Nullable="false" />
+    <Property Name="STATUS" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="LABELLEVEL" Type="varchar" MaxLength="10" />
+    <Property Name="TO_ZONE" Type="varchar" MaxLength="8" />
+    <Property Name="TO_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="FROM_ZONE" Type="varchar" MaxLength="8" />
+    <Property Name="FROM_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="ORIG_QUANTITY_REQUIRED" Type="real" />
+    <Property Name="QUANTITY_REQUIRED" Type="real" />
+    <Property Name="QUANTITY_INTRANSIT" Type="real" />
+    <Property Name="USER_ID_INTRANSIT" Type="varchar" MaxLength="9" />
+    <Property Name="VEHICLE_INTRANSIT" Type="varchar" MaxLength="20" />
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" />
+    <Property Name="ORDER_NUMBER" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_LINE" Type="smallint" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="PAGEFILL2" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL1" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL3" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL4" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL5" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL6" Type="char" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WMS.dbo.MQREPLEN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MQREPLEN">
+    <Key>
+      <PropertyRef Name="_RID_" />
+      <PropertyRef Name="INV_RID" />
+      <PropertyRef Name="TYPE" />
+      <PropertyRef Name="PRIORITY" />
+      <PropertyRef Name="CREATE_TIME" />
+      <PropertyRef Name="STATUS" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="INV_RID" Type="int" Nullable="false" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PRIORITY" Type="smallint" Nullable="false" />
+    <Property Name="CREATE_TIME" Type="datetime" Nullable="false" />
+    <Property Name="STATUS" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="LABELLEVEL" Type="varchar" MaxLength="10" />
+    <Property Name="TO_ZONE" Type="varchar" MaxLength="8" />
+    <Property Name="TO_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="FROM_ZONE" Type="varchar" MaxLength="8" />
+    <Property Name="FROM_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="ORIG_QUANTITY_REQUIRED" Type="real" />
+    <Property Name="QUANTITY_REQUIRED" Type="real" />
+    <Property Name="QUANTITY_INTRANSIT" Type="real" />
+    <Property Name="USER_ID_INTRANSIT" Type="varchar" MaxLength="9" />
+    <Property Name="VEHICLE_INTRANSIT" Type="varchar" MaxLength="20" />
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" />
+    <Property Name="ORDER_NUMBER" Type="varchar" MaxLength="10" />
+    <Property Name="ORDER_LINE" Type="smallint" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="PAGEFILL2" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL1" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL3" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL4" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL5" Type="char" MaxLength="255" />
+    <Property Name="PAGEFILL6" Type="char" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="OUTBOUND_SHIPMENT_DETAILS">
+    <Key>
+      <PropertyRef Name="SHIPMENT_ID" />
+      <PropertyRef Name="ORDER_NUMBER" />
+      <PropertyRef Name="ORDER_LINE" />
+    </Key>
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" Nullable="false" />
+    <Property Name="ORDER_NUMBER" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ORDER_LINE" Type="smallint" Nullable="false" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" />
+    <Property Name="QC_CATEGORY" Type="varchar" MaxLength="4" />
+    <Property Name="UOM" Type="varchar" MaxLength="3" />
+    <Property Name="UOM_WEIGHT" Type="real" />
+    <Property Name="ORDERED_UNITS" Type="real" />
+    <Property Name="STAGED_UNITS" Type="real" />
+    <Property Name="SHIPPED_UNITS" Type="real" />
+    <Property Name="STATUS" Type="varchar" MaxLength="3" />
+    <Property Name="SCHEDULED_TIME" Type="datetime" />
+    <Property Name="PICK_ASSIGNED_TIME" Type="datetime" />
+    <Property Name="PICK_START_TIME" Type="datetime" />
+    <Property Name="PICK_COMPLETE_TIME" Type="datetime" />
+    <Property Name="UNIT_PRICE_EA" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="NOTES" Type="varchar" MaxLength="255" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="ALLOCATION_STATUS" Type="varchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="OUTBOUND_SHIPMENTS">
+    <Key>
+      <PropertyRef Name="SHIPMENT_ID" />
+      <PropertyRef Name="ORDER_NUMBER" />
+    </Key>
+    <Property Name="SHIPMENT_ID" Type="varchar" MaxLength="18" Nullable="false" />
+    <Property Name="ORDER_NUMBER" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" />
+    <Property Name="STOP" Type="smallint" />
+    <Property Name="STOP_OF" Type="smallint" />
+    <Property Name="SEQUENCE" Type="smallint" />
+    <Property Name="SITE_ID" Type="varchar" MaxLength="10" />
+    <Property Name="CUSTOMER_ID" Type="varchar" MaxLength="10" />
+    <Property Name="NAME" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_1" Type="varchar" MaxLength="30" />
+    <Property Name="ADDRESS_2" Type="varchar" MaxLength="30" />
+    <Property Name="CITY" Type="varchar" MaxLength="30" />
+    <Property Name="STATE" Type="varchar" MaxLength="2" />
+    <Property Name="ZIP" Type="varchar" MaxLength="9" />
+    <Property Name="PHONE" Type="varchar" MaxLength="12" />
+    <Property Name="PURCHASE_ORDER" Type="varchar" MaxLength="15" />
+    <Property Name="PURCHASE_ORDER_DATE" Type="datetime" />
+    <Property Name="SCHEDULED_SHIP_DATE" Type="datetime" />
+    <Property Name="ACTUAL_SHIP_DATE" Type="datetime" />
+    <Property Name="RELEASE_EMPL" Type="varchar" MaxLength="9" />
+    <Property Name="ORIGINAL_CARRIER" Type="varchar" MaxLength="10" />
+    <Property Name="ORIGINAL_SHIP_MODE" Type="varchar" MaxLength="2" />
+    <Property Name="RAIL_ROUTING" Type="varchar" MaxLength="58" />
+    <Property Name="CARRIER_ID" Type="varchar" MaxLength="10" />
+    <Property Name="SHIP_MODE" Type="varchar" MaxLength="2" />
+    <Property Name="EARLY_LATE_CODE" Type="varchar" MaxLength="2" />
+    <Property Name="EARLY_LATE_EMPLOYEE" Type="varchar" MaxLength="9" />
+    <Property Name="EARLY_LATE_DATE" Type="datetime" />
+    <Property Name="DOOR_ID" Type="varchar" MaxLength="4" />
+    <Property Name="TRAILER_INITIALS" Type="varchar" MaxLength="4" />
+    <Property Name="TRAILER_NUMBER" Type="varchar" MaxLength="15" />
+    <Property Name="TRAILER_SEAL_1" Type="varchar" MaxLength="15" />
+    <Property Name="TRAILER_SEAL_2" Type="varchar" MaxLength="15" />
+    <Property Name="TRAILER_SEAL_3" Type="varchar" MaxLength="15" />
+    <Property Name="REQUESTED_ARRIVAL_DATE" Type="datetime" />
+    <Property Name="DELIVERY_DATE" Type="datetime" />
+    <Property Name="TOTAL_CSN" Type="int" />
+    <Property Name="TOTAL_WEIGHT" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="LOADER" Type="varchar" MaxLength="9" />
+    <Property Name="STATUS" Type="varchar" MaxLength="2" />
+    <Property Name="RESERVATION_STATUS" Type="varchar" MaxLength="1" />
+    <Property Name="PREPAID_COLLECT" Type="varchar" MaxLength="1" />
+    <Property Name="STAGED_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="EXCEED_SHIP_BY" Type="bit" Nullable="false" />
+    <Property Name="SUBSTITUTION_OVERRIDE" Type="bit" Nullable="false" />
+    <Property Name="SPECIAL_HANDLING" Type="bit" Nullable="false" />
+    <Property Name="NOTES" Type="varchar" MaxLength="255" />
+    <Property Name="ALLOWCOPL" Type="bit" Nullable="false" />
+    <Property Name="PAYMENT_TERMS" Type="varchar" MaxLength="10" />
+    <Property Name="CARTON_TYPE" Type="varchar" MaxLength="10" />
+    <Property Name="FREIGHT_CHARGE" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="ALLOCATION_STATUS" Type="varchar" MaxLength="3" />
+    <Property Name="COD_INDICATOR" Type="varchar" MaxLength="1" />
+    <Property Name="CARTON_FREIGHT" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="COD_COST" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="WAVE_ID" Type="int" />
+    <Property Name="WAVE_DATE" Type="datetime" />
+    <Property Name="DEPOSIT_AMOUNT" Type="decimal" Precision="24" Scale="3" />
+    <Property Name="FREIGHT_BILL_TO_ACCOUNT" Type="varchar" MaxLength="12" />
+    <Property Name="FREIGHT_BILL_TO_NAME" Type="varchar" MaxLength="25" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_1" Type="varchar" MaxLength="30" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_2" Type="varchar" MaxLength="30" />
+    <Property Name="FREIGHT_BILL_TO_ADDRESS_3" Type="varchar" MaxLength="30" />
+    <Property Name="FREIGHT_BILL_TO_CITY" Type="varchar" MaxLength="15" />
+    <Property Name="FREIGHT_BILL_TO_STATE" Type="varchar" MaxLength="2" />
+    <Property Name="FREIGHT_BILL_TO_ZIP" Type="varchar" MaxLength="9" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="QC_CODES" Type="varchar" MaxLength="30" />
+    <Property Name="QC_REQUIRED" Type="varchar" MaxLength="1" />
+    <Property Name="DELIVER_BY_DATE" Type="datetime" />
+    <Property Name="ADDRESS_3" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="PRODUCT_MASTER">
+    <Key>
+      <PropertyRef Name="PRODUCT_ID" />
+    </Key>
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="EIS_PRODUCT_ID" Type="varchar" MaxLength="40" />
+    <Property Name="UPC_CODE" Type="varchar" MaxLength="15" />
+    <Property Name="VENDOR_ID" Type="varchar" MaxLength="10" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+    <Property Name="SHORT_DESCRIPTION" Type="varchar" MaxLength="35" />
+    <Property Name="BASE_UOM" Type="varchar" MaxLength="3" />
+    <Property Name="PRODUCTION_UOM" Type="varchar" MaxLength="3" />
+    <Property Name="STOCK_UOM" Type="varchar" MaxLength="3" />
+    <Property Name="RECEIVING_UOM" Type="varchar" MaxLength="3" />
+    <Property Name="BASE_UOM_PER_CASELEVEL" Type="real" />
+    <Property Name="CASELEVEL_PER_PALLETTOTE" Type="int" />
+    <Property Name="CASELEVEL_PER_CONTAINER" Type="int" />
+    <Property Name="LOCATION_GROUP" Type="varchar" MaxLength="10" />
+    <Property Name="PUTAWAY_ZONE_1" Type="varchar" MaxLength="8" />
+    <Property Name="PUTAWAY_ZONE_2" Type="varchar" MaxLength="8" />
+    <Property Name="PUTAWAY_ZONE_3" Type="varchar" MaxLength="8" />
+    <Property Name="PICK_ZONE_1" Type="varchar" MaxLength="8" />
+    <Property Name="PICK_ZONE_2" Type="varchar" MaxLength="8" />
+    <Property Name="PICK_ZONE_3" Type="varchar" MaxLength="8" />
+    <Property Name="PIECE_PICK_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="CASELEVEL_PICK_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="PALLETTOTE_PICK_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="CONTAINER_PICK_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="BOL_CLASS" Type="varchar" MaxLength="4" />
+    <Property Name="PRODUCT_TYPE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="INIT_QC_CATEGORY" Type="varchar" MaxLength="4" />
+    <Property Name="SHELF_LIFE" Type="smallint" />
+    <Property Name="SHIP_BY_WINDOW" Type="smallint" />
+    <Property Name="CONSOLIDATION_WINDOW" Type="smallint" />
+    <Property Name="CASELEVEL_WEIGHT" Type="real" />
+    <Property Name="CUBEPERUOM" Type="real" />
+    <Property Name="CUBEUOM" Type="varchar" MaxLength="3" />
+    <Property Name="AUTO_RELEASE" Type="bit" Nullable="false" />
+    <Property Name="EIS_AVG_UNIT_COST" Type="real" />
+    <Property Name="EIS_SIZE" Type="varchar" MaxLength="4" />
+    <Property Name="EIS_MILL_STYLE_NUMBER" Type="varchar" MaxLength="8" />
+    <Property Name="EIS_PACKAGE_QTY" Type="real" />
+    <Property Name="EIS_QTY_ONORDER" Type="real" />
+    <Property Name="EIS_QTY_ONHAND" Type="real" />
+    <Property Name="EIS_MILL_PURCHASE_PRICE" Type="real" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="EIS_PIECE_WEIGHT" Type="real" />
+    <Property Name="EIS_COLOR" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="PURCHASE_ORDER_DETAILS">
+    <Key>
+      <PropertyRef Name="PURCHASE_ORDER" />
+      <PropertyRef Name="PO_LINE" />
+    </Key>
+    <Property Name="PURCHASE_ORDER" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="PO_LINE" Type="int" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" />
+    <Property Name="QUANTITY_ORDERED" Type="real" />
+    <Property Name="QUANTITY_RECEIVED" Type="real" />
+    <Property Name="UOM" Type="varchar" MaxLength="3" />
+    <Property Name="DUE_DATE" Type="datetime" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="PURCHASE_ORDERS">
+    <Key>
+      <PropertyRef Name="PURCHASE_ORDER" />
+    </Key>
+    <Property Name="PURCHASE_ORDER" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="VENDOR_ID" Type="varchar" MaxLength="10" />
+    <Property Name="DUE_DATE" Type="datetime" />
+    <Property Name="STATUS" Type="varchar" MaxLength="1" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+    <Property Name="TYPE" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="SYSTEM">
+    <Key>
+      <PropertyRef Name="NAME" />
+    </Key>
+    <Property Name="NAME" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="VALUE" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="DATATYPE" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="SYSTEMNEXTRID">
+    <Key>
+      <PropertyRef Name="GENERICNAME" />
+    </Key>
+    <Property Name="GENERICNAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NEXTRID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WMS.dbo.SYSTEMNEXTRID_AUDINV' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SYSTEMNEXTRID_AUDINV">
+    <Key>
+      <PropertyRef Name="NEXTRID" />
+    </Key>
+    <Property Name="NEXTRID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WMS.dbo.SYSTEMNEXTRID_AUDINVD' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SYSTEMNEXTRID_AUDINVD">
+    <Key>
+      <PropertyRef Name="NEXTRID" />
+    </Key>
+    <Property Name="NEXTRID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TRACELOG">
+    <Key>
+      <PropertyRef Name="_RID_" />
+    </Key>
+    <Property Name="_RID_" Type="int" Nullable="false" />
+    <Property Name="USERID" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="LOGDATE" Type="datetime" Nullable="false" />
+    <Property Name="TEXT" Type="varchar" MaxLength="255" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="UOM_CONVERSION">
+    <Key>
+      <PropertyRef Name="PRODUCT_ID" />
+      <PropertyRef Name="FROM_UOM" />
+    </Key>
+    <Property Name="PRODUCT_ID" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="FROM_UOM" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="BASE_UOM" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="NUMERATOR" Type="real" Nullable="false" />
+    <Property Name="DENOMINATOR" Type="real" />
+    <Property Name="_LAST_UPDATED_" Type="datetime" />
+    <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+    <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="WMSModelStoreContainer">
+    <EntitySet Name="AUDIT_INBOUND" EntityType="Self.AUDIT_INBOUND" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AUDIT_INBOUND_DETAIL" EntityType="Self.AUDIT_INBOUND_DETAIL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AUDIT_INVENTORY" EntityType="Self.AUDIT_INVENTORY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AUDIT_INVENTORY_DETAIL" EntityType="Self.AUDIT_INVENTORY_DETAIL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Audit_Manifest" EntityType="Self.Audit_Manifest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AUDIT_OUTBOUND" EntityType="Self.AUDIT_OUTBOUND" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AUDIT_OUTBOUND_DETAIL" EntityType="Self.AUDIT_OUTBOUND_DETAIL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CARRIERS" EntityType="Self.CARRIERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CARTON_MASTER" EntityType="Self.CARTON_MASTER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EMAIL_GROUPS" EntityType="Self.EMAIL_GROUPS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ERRORS_RUNTIME" EntityType="Self.ERRORS_RUNTIME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GTIN_XREF" EntityType="Self.GTIN_XREF" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GTIN_XREF_MASTER" EntityType="Self.GTIN_XREF_MASTER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HOST_ORDER_DETAIL" EntityType="Self.HOST_ORDER_DETAIL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HOST_ORDERS" EntityType="Self.HOST_ORDERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Inventory" EntityType="Self.Inventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INVENTORY_ALLOCATION" EntityType="Self.INVENTORY_ALLOCATION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOCATION_CAPACITY" EntityType="Self.LOCATION_CAPACITY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOCATIONS" EntityType="Self.LOCATIONS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOOKUP_VALUES" EntityType="Self.LOOKUP_VALUES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MOVE_QUEUE" EntityType="Self.MOVE_QUEUE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OUTBOUND_SHIPMENT_DETAILS" EntityType="Self.OUTBOUND_SHIPMENT_DETAILS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OUTBOUND_SHIPMENTS" EntityType="Self.OUTBOUND_SHIPMENTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRODUCT_MASTER" EntityType="Self.PRODUCT_MASTER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PURCHASE_ORDER_DETAILS" EntityType="Self.PURCHASE_ORDER_DETAILS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PURCHASE_ORDERS" EntityType="Self.PURCHASE_ORDERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYSTEM" EntityType="Self.SYSTEM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYSTEMNEXTRID" EntityType="Self.SYSTEMNEXTRID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TRACELOG" EntityType="Self.TRACELOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UOM_CONVERSION" EntityType="Self.UOM_CONVERSION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GTIN_BACKUP" EntityType="Self.GTIN_BACKUP" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GTIN_BACKUP].[product_id] AS [product_id], 
+    [GTIN_BACKUP].[GTIN] AS [GTIN], 
+    [GTIN_BACKUP].[vendor_id] AS [vendor_id]
+    FROM [dbo].[GTIN_BACKUP] AS [GTIN_BACKUP]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MOVE_QUEUE_ARCHIVE" EntityType="Self.MOVE_QUEUE_ARCHIVE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MOVE_QUEUE_ARCHIVE].[_RID_] AS [_RID_], 
+    [MOVE_QUEUE_ARCHIVE].[INV_RID] AS [INV_RID], 
+    [MOVE_QUEUE_ARCHIVE].[TYPE] AS [TYPE], 
+    [MOVE_QUEUE_ARCHIVE].[PRIORITY] AS [PRIORITY], 
+    [MOVE_QUEUE_ARCHIVE].[CREATE_TIME] AS [CREATE_TIME], 
+    [MOVE_QUEUE_ARCHIVE].[STATUS] AS [STATUS], 
+    [MOVE_QUEUE_ARCHIVE].[LABELLEVEL] AS [LABELLEVEL], 
+    [MOVE_QUEUE_ARCHIVE].[TO_ZONE] AS [TO_ZONE], 
+    [MOVE_QUEUE_ARCHIVE].[TO_LOCATION] AS [TO_LOCATION], 
+    [MOVE_QUEUE_ARCHIVE].[FROM_ZONE] AS [FROM_ZONE], 
+    [MOVE_QUEUE_ARCHIVE].[FROM_LOCATION] AS [FROM_LOCATION], 
+    [MOVE_QUEUE_ARCHIVE].[ORIG_QUANTITY_REQUIRED] AS [ORIG_QUANTITY_REQUIRED], 
+    [MOVE_QUEUE_ARCHIVE].[QUANTITY_REQUIRED] AS [QUANTITY_REQUIRED], 
+    [MOVE_QUEUE_ARCHIVE].[QUANTITY_INTRANSIT] AS [QUANTITY_INTRANSIT], 
+    [MOVE_QUEUE_ARCHIVE].[USER_ID_INTRANSIT] AS [USER_ID_INTRANSIT], 
+    [MOVE_QUEUE_ARCHIVE].[VEHICLE_INTRANSIT] AS [VEHICLE_INTRANSIT], 
+    [MOVE_QUEUE_ARCHIVE].[SHIPMENT_ID] AS [SHIPMENT_ID], 
+    [MOVE_QUEUE_ARCHIVE].[ORDER_NUMBER] AS [ORDER_NUMBER], 
+    [MOVE_QUEUE_ARCHIVE].[ORDER_LINE] AS [ORDER_LINE], 
+    [MOVE_QUEUE_ARCHIVE].[_LAST_UPDATED_] AS [_LAST_UPDATED_], 
+    [MOVE_QUEUE_ARCHIVE].[_LAST_USER_] AS [_LAST_USER_], 
+    [MOVE_QUEUE_ARCHIVE].[_LAST_MODULE_] AS [_LAST_MODULE_], 
+    [MOVE_QUEUE_ARCHIVE].[PAGEFILL2] AS [PAGEFILL2], 
+    [MOVE_QUEUE_ARCHIVE].[PAGEFILL1] AS [PAGEFILL1], 
+    [MOVE_QUEUE_ARCHIVE].[PAGEFILL3] AS [PAGEFILL3], 
+    [MOVE_QUEUE_ARCHIVE].[PAGEFILL4] AS [PAGEFILL4], 
+    [MOVE_QUEUE_ARCHIVE].[PAGEFILL5] AS [PAGEFILL5], 
+    [MOVE_QUEUE_ARCHIVE].[PAGEFILL6] AS [PAGEFILL6]
+    FROM [dbo].[MOVE_QUEUE_ARCHIVE] AS [MOVE_QUEUE_ARCHIVE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MQREPLEN" EntityType="Self.MQREPLEN" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MQREPLEN].[_RID_] AS [_RID_], 
+    [MQREPLEN].[INV_RID] AS [INV_RID], 
+    [MQREPLEN].[TYPE] AS [TYPE], 
+    [MQREPLEN].[PRIORITY] AS [PRIORITY], 
+    [MQREPLEN].[CREATE_TIME] AS [CREATE_TIME], 
+    [MQREPLEN].[STATUS] AS [STATUS], 
+    [MQREPLEN].[LABELLEVEL] AS [LABELLEVEL], 
+    [MQREPLEN].[TO_ZONE] AS [TO_ZONE], 
+    [MQREPLEN].[TO_LOCATION] AS [TO_LOCATION], 
+    [MQREPLEN].[FROM_ZONE] AS [FROM_ZONE], 
+    [MQREPLEN].[FROM_LOCATION] AS [FROM_LOCATION], 
+    [MQREPLEN].[ORIG_QUANTITY_REQUIRED] AS [ORIG_QUANTITY_REQUIRED], 
+    [MQREPLEN].[QUANTITY_REQUIRED] AS [QUANTITY_REQUIRED], 
+    [MQREPLEN].[QUANTITY_INTRANSIT] AS [QUANTITY_INTRANSIT], 
+    [MQREPLEN].[USER_ID_INTRANSIT] AS [USER_ID_INTRANSIT], 
+    [MQREPLEN].[VEHICLE_INTRANSIT] AS [VEHICLE_INTRANSIT], 
+    [MQREPLEN].[SHIPMENT_ID] AS [SHIPMENT_ID], 
+    [MQREPLEN].[ORDER_NUMBER] AS [ORDER_NUMBER], 
+    [MQREPLEN].[ORDER_LINE] AS [ORDER_LINE], 
+    [MQREPLEN].[_LAST_UPDATED_] AS [_LAST_UPDATED_], 
+    [MQREPLEN].[_LAST_USER_] AS [_LAST_USER_], 
+    [MQREPLEN].[_LAST_MODULE_] AS [_LAST_MODULE_], 
+    [MQREPLEN].[PAGEFILL2] AS [PAGEFILL2], 
+    [MQREPLEN].[PAGEFILL1] AS [PAGEFILL1], 
+    [MQREPLEN].[PAGEFILL3] AS [PAGEFILL3], 
+    [MQREPLEN].[PAGEFILL4] AS [PAGEFILL4], 
+    [MQREPLEN].[PAGEFILL5] AS [PAGEFILL5], 
+    [MQREPLEN].[PAGEFILL6] AS [PAGEFILL6]
+    FROM [dbo].[MQREPLEN] AS [MQREPLEN]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SYSTEMNEXTRID_AUDINV" EntityType="Self.SYSTEMNEXTRID_AUDINV" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SYSTEMNEXTRID_AUDINV].[NEXTRID] AS [NEXTRID]
+    FROM [dbo].[SYSTEMNEXTRID_AUDINV] AS [SYSTEMNEXTRID_AUDINV]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SYSTEMNEXTRID_AUDINVD" EntityType="Self.SYSTEMNEXTRID_AUDINVD" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SYSTEMNEXTRID_AUDINVD].[NEXTRID] AS [NEXTRID]
+    FROM [dbo].[SYSTEMNEXTRID_AUDINVD] AS [SYSTEMNEXTRID_AUDINVD]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

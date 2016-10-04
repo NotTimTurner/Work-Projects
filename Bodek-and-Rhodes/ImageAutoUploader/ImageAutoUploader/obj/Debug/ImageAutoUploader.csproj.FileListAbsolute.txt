@@ -1,0 +1,6 @@
+\\192.168.1.192\d$\Tim's Projects\ImageAutoUploader\ImageAutoUploader\bin\Debug\ImageAutoUploader.exe.config
+\\192.168.1.192\d$\Tim's Projects\ImageAutoUploader\ImageAutoUploader\bin\Debug\ImageAutoUploader.exe
+\\192.168.1.192\d$\Tim's Projects\ImageAutoUploader\ImageAutoUploader\bin\Debug\ImageAutoUploader.pdb
+\\192.168.1.192\d$\Tim's Projects\ImageAutoUploader\ImageAutoUploader\obj\Debug\ImageAutoUploader.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\ImageAutoUploader\ImageAutoUploader\obj\Debug\ImageAutoUploader.exe
+\\192.168.1.192\d$\Tim's Projects\ImageAutoUploader\ImageAutoUploader\obj\Debug\ImageAutoUploader.pdb

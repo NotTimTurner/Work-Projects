@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="WMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="LOCATIONS">
+          <Key>
+            <PropertyRef Name="LOCATION_ID" />
+          </Key>
+          <Property Name="LOCATION_ID" Type="varchar" MaxLength="16" Nullable="false" />
+          <Property Name="LOCATION_GROUP" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="EIS_LOCATION" Type="varchar" MaxLength="10" />
+          <Property Name="PICK_SEQUENCE" Type="int" Nullable="false" />
+          <Property Name="AISLE" Type="varchar" MaxLength="2" />
+          <Property Name="SLOT" Type="varchar" MaxLength="2" />
+          <Property Name="VLEVEL" Type="varchar" MaxLength="2" />
+          <Property Name="BIN" Type="varchar" MaxLength="2" />
+          <Property Name="STATUS" Type="varchar" MaxLength="1" />
+          <Property Name="SITE_ID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="PICKING_ZONE" Type="varchar" MaxLength="2" />
+          <Property Name="PUTAWAY_ZONE" Type="varchar" MaxLength="2" />
+          <Property Name="ALLOWPIECEPICKING" Type="bit" Nullable="false" />
+          <Property Name="TYPE" Type="varchar" MaxLength="1" />
+          <Property Name="USAGE" Type="varchar" MaxLength="1" />
+          <Property Name="_LAST_UPDATED_" Type="datetime" />
+          <Property Name="_LAST_USER_" Type="varchar" MaxLength="16" />
+          <Property Name="_LAST_MODULE_" Type="varchar" MaxLength="20" />
+          <Property Name="PUTAWAY_SEQUENCE" Type="int" />
+          <Property Name="REVERSE_SLOT" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <EntityContainer Name="WMSModelStoreContainer">
+          <EntitySet Name="LOCATIONS" EntityType="Self.LOCATIONS" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="LOCATION">
+          <Key>
+            <PropertyRef Name="LOCATION_ID" />
+          </Key>
+          <Property Name="LOCATION_ID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LOCATION_GROUP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EIS_LOCATION" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PICK_SEQUENCE" Type="Int32" Nullable="false" />
+          <Property Name="AISLE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="SLOT" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="VLEVEL" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="BIN" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="SITE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PICKING_ZONE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="PUTAWAY_ZONE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ALLOWPIECEPICKING" Type="Boolean" Nullable="false" />
+          <Property Name="TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="USAGE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_LAST_UPDATED_" Type="DateTime" Precision="3" />
+          <Property Name="C_LAST_USER_" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="C_LAST_MODULE_" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PUTAWAY_SEQUENCE" Type="Int32" />
+          <Property Name="REVERSE_SLOT" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="WMSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="LOCATIONS" EntityType="Self.LOCATION" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WMSModelStoreContainer" CdmEntityContainer="WMSEntities">
+          <EntitySetMapping Name="LOCATIONS">
+            <EntityTypeMapping TypeName="WMSModel.LOCATION">
+              <MappingFragment StoreEntitySet="LOCATIONS">
+                <ScalarProperty Name="LOCATION_ID" ColumnName="LOCATION_ID" />
+                <ScalarProperty Name="LOCATION_GROUP" ColumnName="LOCATION_GROUP" />
+                <ScalarProperty Name="EIS_LOCATION" ColumnName="EIS_LOCATION" />
+                <ScalarProperty Name="PICK_SEQUENCE" ColumnName="PICK_SEQUENCE" />
+                <ScalarProperty Name="AISLE" ColumnName="AISLE" />
+                <ScalarProperty Name="SLOT" ColumnName="SLOT" />
+                <ScalarProperty Name="VLEVEL" ColumnName="VLEVEL" />
+                <ScalarProperty Name="BIN" ColumnName="BIN" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="SITE_ID" ColumnName="SITE_ID" />
+                <ScalarProperty Name="PICKING_ZONE" ColumnName="PICKING_ZONE" />
+                <ScalarProperty Name="PUTAWAY_ZONE" ColumnName="PUTAWAY_ZONE" />
+                <ScalarProperty Name="ALLOWPIECEPICKING" ColumnName="ALLOWPIECEPICKING" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="USAGE" ColumnName="USAGE" />
+                <ScalarProperty Name="C_LAST_UPDATED_" ColumnName="_LAST_UPDATED_" />
+                <ScalarProperty Name="C_LAST_USER_" ColumnName="_LAST_USER_" />
+                <ScalarProperty Name="C_LAST_MODULE_" ColumnName="_LAST_MODULE_" />
+                <ScalarProperty Name="PUTAWAY_SEQUENCE" ColumnName="PUTAWAY_SEQUENCE" />
+                <ScalarProperty Name="REVERSE_SLOT" ColumnName="REVERSE_SLOT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,6 @@
+\\192.168.1.192\d$\Tim's Projects\EncryptionTest\EncryptionTest\bin\Debug\EncryptionTest.exe.config
+\\192.168.1.192\d$\Tim's Projects\EncryptionTest\EncryptionTest\bin\Debug\EncryptionTest.exe
+\\192.168.1.192\d$\Tim's Projects\EncryptionTest\EncryptionTest\bin\Debug\EncryptionTest.pdb
+\\192.168.1.192\d$\Tim's Projects\EncryptionTest\EncryptionTest\obj\Debug\EncryptionTest.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\EncryptionTest\EncryptionTest\obj\Debug\EncryptionTest.exe
+\\192.168.1.192\d$\Tim's Projects\EncryptionTest\EncryptionTest\obj\Debug\EncryptionTest.pdb

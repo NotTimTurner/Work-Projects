@@ -1,0 +1,6 @@
+\\192.168.1.192\d$\Tim's Projects\Update UOM\Update UOM\bin\Debug\Update UOM.exe.config
+\\192.168.1.192\d$\Tim's Projects\Update UOM\Update UOM\bin\Debug\Update UOM.exe
+\\192.168.1.192\d$\Tim's Projects\Update UOM\Update UOM\bin\Debug\Update UOM.pdb
+\\192.168.1.192\d$\Tim's Projects\Update UOM\Update UOM\obj\Debug\Update UOM.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\Update UOM\Update UOM\obj\Debug\Update UOM.exe
+\\192.168.1.192\d$\Tim's Projects\Update UOM\Update UOM\obj\Debug\Update UOM.pdb

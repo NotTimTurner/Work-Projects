@@ -1,0 +1,18 @@
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print\QC Auto Print\bin\Debug\QC Auto Print.exe.config
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print\QC Auto Print\bin\Debug\QC Auto Print.exe
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print\QC Auto Print\bin\Debug\QC Auto Print.pdb
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print\QC Auto Print\obj\Debug\QC Auto Print.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print\QC Auto Print\obj\Debug\QC Auto Print.exe
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print\QC Auto Print\obj\Debug\QC Auto Print.pdb
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print CA\QC Auto Print\bin\Debug\QC Auto Print.exe.config
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print CA\QC Auto Print\obj\Debug\QC Auto Print.exe
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print CA\QC Auto Print\obj\Debug\QC Auto Print.pdb
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print CA\QC Auto Print\bin\Debug\QC Auto Print.exe
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print CA\QC Auto Print\bin\Debug\QC Auto Print.pdb
+\\192.168.1.192\d$\Tim's Projects\QC Auto Print CA\QC Auto Print\obj\Debug\QC Auto Print.csprojResolveAssemblyReference.cache
+\\warehousestrg\D$\Tim's Projects\QC Auto Print CA\QC Auto Print\bin\Debug\QC Auto Print.exe.config
+\\warehousestrg\D$\Tim's Projects\QC Auto Print CA\QC Auto Print\obj\Debug\QC Auto Print.exe
+\\warehousestrg\D$\Tim's Projects\QC Auto Print CA\QC Auto Print\obj\Debug\QC Auto Print.pdb
+\\warehousestrg\D$\Tim's Projects\QC Auto Print CA\QC Auto Print\bin\Debug\QC Auto Print.exe
+\\warehousestrg\D$\Tim's Projects\QC Auto Print CA\QC Auto Print\bin\Debug\QC Auto Print.pdb
+\\warehousestrg\D$\Tim's Projects\QC Auto Print CA\QC Auto Print\obj\Debug\QC Auto Print.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+\\192.168.1.192\d$\Tim's Projects\RemoveAllPriority30s\RemoveAllPriority30s\bin\Debug\RemoveAllPriority30s.exe.config
+\\192.168.1.192\d$\Tim's Projects\RemoveAllPriority30s\RemoveAllPriority30s\bin\Debug\RemoveAllPriority30s.exe
+\\192.168.1.192\d$\Tim's Projects\RemoveAllPriority30s\RemoveAllPriority30s\bin\Debug\RemoveAllPriority30s.pdb
+\\192.168.1.192\d$\Tim's Projects\RemoveAllPriority30s\RemoveAllPriority30s\obj\Debug\RemoveAllPriority30s.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\RemoveAllPriority30s\RemoveAllPriority30s\obj\Debug\RemoveAllPriority30s.exe
+\\192.168.1.192\d$\Tim's Projects\RemoveAllPriority30s\RemoveAllPriority30s\obj\Debug\RemoveAllPriority30s.pdb

@@ -1,0 +1,827 @@
+file created at1/26/2016 12:39:21 PM
+threads allowed: 1
+Process ID: 894106894
+
+
+Number of Orders: 1
+
+
+Number of OrderLines: 3
+
+
+ProductID: 52691003
+Shortened ProductID:  52691
+Total Volume Of Pieces: 0.034
+Pieces To Cartonize: 1
+Piece Pick Location: B06A121
+Zone :B
+Aisle :06
+Level :A
+Bin :121
+*********************************
+
+ProductID: 52691004
+Shortened ProductID:  52691
+Total Volume Of Pieces: 0.036
+Pieces To Cartonize: 1
+Piece Pick Location: B06A122
+Zone :B
+Aisle :06
+Level :A
+Bin :122
+*********************************
+
+ProductID: 52691005
+Shortened ProductID:  52691
+Total Volume Of Pieces: 0.038
+Pieces To Cartonize: 1
+Piece Pick Location: B06A123
+Zone :B
+Aisle :06
+Level :A
+Bin :123
+*********************************
+
+Piece Count: 3
+
+
+No Chairs Found
+
+
+the total volume to cartonize is 0.108
+
+Cartonizing Array Line0Product :52691003
+Not using new cartonize
+calling SplitProduct
+Pieces to cartonize: 1
+Max Pieces Per Carton: 90
+Max Pieces per Carton Volume: 2647.05882352941
+full Cartons: -1
+No Need TO SPLIT
+The right size carton is: POB
+Cartonizing Array Line1Product :52691004
+Not using new cartonize
+calling SplitProduct
+Pieces to cartonize: 1
+Max Pieces Per Carton: 85
+Max Pieces per Carton Volume: 2361.11111111111
+full Cartons: -1
+No Need TO SPLIT
+The right size carton is: POB
+Cartonizing Array Line2Product :52691005
+Not using new cartonize
+calling SplitProduct
+Pieces to cartonize: 1
+Max Pieces Per Carton: 81
+Max Pieces per Carton Volume: 2131.57894736842
+full Cartons: -1
+No Need TO SPLIT
+The right size carton is: POB
+created order number: 0001
+
+
+OUTBOUND SHIPMENT DATA TO BE INSERTED INTO THE DATABASE:
+Shipment ID: C000000100
+OrderNumber: 0001
+Type: ORD
+Stop: 0
+Stop Of: 0
+Sequence: 0
+Customer_ID: 101210
+Name: Legacy AlphaBroder
+Address 1: 6 NESHAMINY INTERPLEX
+Address 2: 
+City: TREVOSE
+State: PA
+Zip: 19053
+Phone 215-6736767
+Purchas Order Date: 1/25/2016 12:00:00 AM
+Scheduled Ship Date: 1/26/2016 12:39:26 PM
+Original Carrier: Truck
+Origional Ship Mode: 8
+Carrier ID: Truck
+Ship Mode: 8
+Total CNS: 0
+Total Weight0
+Status: B
+PrePaid Collect: 1
+Exceed Ship By: False
+Substitution Override: False
+Special Handeling: False
+Notes: 
+Allow CopL: False
+Payment_Terms: 5
+Freight Charge: 0
+Allocation status: N
+COD Indicator: 
+Carton Freight: 0
+COD Cost: 0
+Wave ID: 0
+Deposit Ammount: 0
+Freight Bill To Account: 
+Freight Bill To Name: 
+Freight Bill to Address 1: 
+Freight BIll to Address 2: 
+Freight Bill to Address 3: 
+Freight Bill to City: 
+Freight Bill to Zip: 
+Last Updated: 1/26/2016 12:39:26 PM
+last User: BR-PA-RDPIT
+Last Module: CARTONIZE
+QC Codes: 
+Deliver by Date: 1/25/2016 12:00:00 AM
+Address 3: Legacy AlphaBroder
+Carton Type: POB
+created order number: 0002
+
+
+OUTBOUND SHIPMENT DATA TO BE INSERTED INTO THE DATABASE:
+Shipment ID: C000000100
+OrderNumber: 0002
+Type: ORD
+Stop: 0
+Stop Of: 0
+Sequence: 0
+Customer_ID: 101210
+Name: Legacy AlphaBroder
+Address 1: 6 NESHAMINY INTERPLEX
+Address 2: 
+City: TREVOSE
+State: PA
+Zip: 19053
+Phone 215-6736767
+Purchas Order Date: 1/25/2016 12:00:00 AM
+Scheduled Ship Date: 1/26/2016 12:39:26 PM
+Original Carrier: Truck
+Origional Ship Mode: 8
+Carrier ID: Truck
+Ship Mode: 8
+Total CNS: 0
+Total Weight0
+Status: B
+PrePaid Collect: 1
+Exceed Ship By: False
+Substitution Override: False
+Special Handeling: False
+Notes: 
+Allow CopL: False
+Payment_Terms: 5
+Freight Charge: 0
+Allocation status: N
+COD Indicator: 
+Carton Freight: 0
+COD Cost: 0
+Wave ID: 0
+Deposit Ammount: 0
+Freight Bill To Account: 
+Freight Bill To Name: 
+Freight Bill to Address 1: 
+Freight BIll to Address 2: 
+Freight Bill to Address 3: 
+Freight Bill to City: 
+Freight Bill to Zip: 
+Last Updated: 1/26/2016 12:39:26 PM
+last User: BR-PA-RDPIT
+Last Module: CARTONIZE
+QC Codes: 
+Deliver by Date: 1/25/2016 12:00:00 AM
+Address 3: Legacy AlphaBroder
+Carton Type: POB
+created order number: 0003
+
+
+OUTBOUND SHIPMENT DATA TO BE INSERTED INTO THE DATABASE:
+Shipment ID: C000000100
+OrderNumber: 0003
+Type: ORD
+Stop: 0
+Stop Of: 0
+Sequence: 0
+Customer_ID: 101210
+Name: Legacy AlphaBroder
+Address 1: 6 NESHAMINY INTERPLEX
+Address 2: 
+City: TREVOSE
+State: PA
+Zip: 19053
+Phone 215-6736767
+Purchas Order Date: 1/25/2016 12:00:00 AM
+Scheduled Ship Date: 1/26/2016 12:39:26 PM
+Original Carrier: Truck
+Origional Ship Mode: 8
+Carrier ID: Truck
+Ship Mode: 8
+Total CNS: 0
+Total Weight0
+Status: B
+PrePaid Collect: 1
+Exceed Ship By: False
+Substitution Override: False
+Special Handeling: False
+Notes: 
+Allow CopL: False
+Payment_Terms: 5
+Freight Charge: 0
+Allocation status: N
+COD Indicator: 
+Carton Freight: 0
+COD Cost: 0
+Wave ID: 0
+Deposit Ammount: 0
+Freight Bill To Account: 
+Freight Bill To Name: 
+Freight Bill to Address 1: 
+Freight BIll to Address 2: 
+Freight Bill to Address 3: 
+Freight Bill to City: 
+Freight Bill to Zip: 
+Last Updated: 1/26/2016 12:39:26 PM
+last User: BR-PA-RDPIT
+Last Module: CARTONIZE
+QC Codes: 
+Deliver by Date: 1/25/2016 12:00:00 AM
+Address 3: Legacy AlphaBroder
+Carton Type: POB
+number of items in OBS 3
+created order number: 0001
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000100
+ORDER_NUMBER: 0001
+ORDER_LINE: 1
+TYPE: ORD
+UOM: EA
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/26/2016 12:39:26 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691003
+ UOM_WEIGHT: 0.37
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 1
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0002
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000100
+ORDER_NUMBER: 0002
+ORDER_LINE: 1
+TYPE: ORD
+UOM: EA
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/26/2016 12:39:26 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691004
+ UOM_WEIGHT: 0.41
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 1
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+created order number: 0003
+
+
+Information being inserted into outbound shipment details
+Shipment ID: C000000100
+ORDER_NUMBER: 0003
+ORDER_LINE: 1
+TYPE: ORD
+UOM: EA
+QC_CATEGORY: 
+SHIPPED_UNITS: 0
+ _LAST_UPDATED_: 1/26/2016 12:39:26 PM
+_LAST_USER_: BR-PA-RDPIT
+_LAST_MODULE_: CARTONIZE
+ PRODUCT_ID: 52691005
+ UOM_WEIGHT: 0.5
+UNIT_PRICE_EA: 0
+ORDERED_UNITS: 1
+STATUS: B
+ALLOCATION_STATUS: N
+STAGED_UNITS: 0
+
+
+INFORMANTION FOR BOX :17587512
+RID: 17587512
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0720804
+Product ID 52691003
+Trace ID: 
+Owner ID: 
+Location ID: B06A121
+Quantity :55
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/12/2015 4:55:34 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000419426
+data2date: 
+data2Num: 5401292
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/26/2016 7:59:33 AM
+Last User: 215
+Last Module: RFPIECEPICK
+****************************
+
+
+INFORMANTION FOR BOX :17587513
+RID: 17587513
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0720804
+Product ID 52691003
+Trace ID: 
+Owner ID: 
+Location ID: B06A121
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/12/2015 4:55:34 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000419426
+data2date: 
+data2Num: 5401293
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/21/2016 2:26:10 PM
+Last User: 203
+Last Module: RFPUTAWAY
+****************************
+
+
+INFORMANTION FOR BOX :17587514
+RID: 17587514
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0720804
+Product ID 52691003
+Trace ID: 
+Owner ID: 
+Location ID: B06A121
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/12/2015 4:55:34 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000419426
+data2date: 
+data2Num: 5401294
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/21/2016 2:26:10 PM
+Last User: 203
+Last Module: RFPUTAWAY
+****************************
+
+
+INFORMANTION FOR BOX :17652250
+RID: 17652250
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0723144
+Product ID 52691003
+Trace ID: 
+Owner ID: 
+Location ID: B06A121
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/26/2015 12:36:03 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000421520
+data2date: 
+data2Num: 5415446
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/21/2016 2:26:10 PM
+Last User: 203
+Last Module: RFPUTAWAY
+****************************
+
+
+INFORMANTION FOR BOX :17652251
+RID: 17652251
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0723144
+Product ID 52691003
+Trace ID: 
+Owner ID: 
+Location ID: B06A121
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/26/2015 12:36:03 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000421520
+data2date: 
+data2Num: 5415447
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/21/2016 2:26:10 PM
+Last User: 203
+Last Module: RFPUTAWAY
+****************************
+Replen amount going to Location B06A121: 0
+Inventory Avliable to be Picked for 52691003: 343
+creating move queue
+
+
+INFORMANTION FOR BOX :17652265
+RID: 17652265
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0723144
+Product ID 52691004
+Trace ID: 
+Owner ID: 
+Location ID: B06A122
+Quantity :62
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/26/2015 12:36:03 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000421520
+data2date: 
+data2Num: 5415422
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/25/2016 4:55:47 PM
+Last User: 231
+Last Module: RFPIECEPICK
+****************************
+
+
+INFORMANTION FOR BOX :17652266
+RID: 17652266
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0723144
+Product ID 52691004
+Trace ID: 
+Owner ID: 
+Location ID: B06A122
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/26/2015 12:36:03 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000421520
+data2date: 
+data2Num: 5415423
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/13/2016 4:54:14 PM
+Last User: 202
+Last Module: RFREPLMENT
+****************************
+Replen amount going to Location B06A122: 0
+Inventory Avliable to be Picked for 52691004: 124
+creating move queue
+
+
+INFORMANTION FOR BOX :17652294
+RID: 17652294
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0720804
+Product ID 52691005
+Trace ID: 
+Owner ID: 
+Location ID: B06A123
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/26/2015 12:36:03 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000421520
+data2date: 
+data2Num: 5415748
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/26/2016 8:17:48 AM
+Last User: 229
+Last Module: RFREPLMENT
+****************************
+
+
+INFORMANTION FOR BOX :17652295
+RID: 17652295
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0720804
+Product ID 52691005
+Trace ID: 
+Owner ID: 
+Location ID: B06A123
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/26/2015 12:36:03 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000421520
+data2date: 
+data2Num: 5415749
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/26/2016 8:17:49 AM
+Last User: 229
+Last Module: RFREPLMENT
+****************************
+
+
+INFORMANTION FOR BOX :17652296
+RID: 17652296
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0720804
+Product ID 52691005
+Trace ID: 
+Owner ID: 
+Location ID: B06A123
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/26/2015 12:36:03 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000421520
+data2date: 
+data2Num: 5415750
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/26/2016 8:17:49 AM
+Last User: 229
+Last Module: RFREPLMENT
+****************************
+
+
+INFORMANTION FOR BOX :17652297
+RID: 17652297
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0720804
+Product ID 52691005
+Trace ID: 
+Owner ID: 
+Location ID: B06A123
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/26/2015 12:36:03 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000421520
+data2date: 
+data2Num: 5415751
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/26/2016 8:17:49 AM
+Last User: 229
+Last Module: RFREPLMENT
+****************************
+
+
+INFORMANTION FOR BOX :17652298
+RID: 17652298
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0720804
+Product ID 52691005
+Trace ID: 
+Owner ID: 
+Location ID: B06A123
+Quantity :72
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/26/2015 12:36:03 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000421520
+data2date: 
+data2Num: 5415752
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/26/2016 8:17:49 AM
+Last User: 229
+Last Module: RFREPLMENT
+****************************
+
+
+INFORMANTION FOR BOX :17652308
+RID: 17652308
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: C0723144
+Product ID 52691005
+Trace ID: 
+Owner ID: 
+Location ID: B06A123
+Quantity :62
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 8/26/2015 12:36:03 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: 400821780000421520
+data2date: 
+data2Num: 5415774
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/25/2016 4:56:12 PM
+Last User: 302
+Last Module: RFPIECEPICK
+****************************
+
+
+INFORMANTION FOR BOX :18251213
+RID: 18251213
+Case Label: 
+Container Label: 
+Pallet Label: 
+Trailer Label: 
+Product ID 52691005
+Trace ID: 
+Owner ID: 
+Location ID: B06A123
+Quantity :3
+QC Caragoty: 
+Expiration Date: 
+MFG DateTime: 
+Recipt Date: 1/25/2016 2:04:33 PM
+Reserved: False
+Hold: False
+Reservation Type: 
+shipment ID: 
+Order Number: 
+Order Line: 
+data1date: 
+data1Num: 
+data1str: ADJUSTMENT
+data2date: 
+data2Num: 
+data2str: 
+data3date: 
+data3Num: 
+data3str: 
+last Updated: 1/26/2016 8:00:02 AM
+Last User: 215
+Last Module: RFPIECEPICK
+****************************
+Replen amount going to Location B06A123: 0
+Inventory Avliable to be Picked for 52691005: 425
+creating move queue
+ALLOCATION STATUS: C
+Sucessful Allocation
+Total Volume=0.107999999076128
+Total Weight=1.28000000119209
+Allocation Status once order is done;C
+threads allowed: 1

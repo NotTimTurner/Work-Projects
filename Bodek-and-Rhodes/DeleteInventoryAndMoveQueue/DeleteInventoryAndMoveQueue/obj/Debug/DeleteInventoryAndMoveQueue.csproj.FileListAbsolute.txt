@@ -1,0 +1,6 @@
+\\192.168.1.192\d$\Tim's Projects\DeleteInventoryAndMoveQueue\DeleteInventoryAndMoveQueue\bin\Debug\DeleteInventoryAndMoveQueue.exe.config
+\\192.168.1.192\d$\Tim's Projects\DeleteInventoryAndMoveQueue\DeleteInventoryAndMoveQueue\bin\Debug\DeleteInventoryAndMoveQueue.exe
+\\192.168.1.192\d$\Tim's Projects\DeleteInventoryAndMoveQueue\DeleteInventoryAndMoveQueue\bin\Debug\DeleteInventoryAndMoveQueue.pdb
+\\192.168.1.192\d$\Tim's Projects\DeleteInventoryAndMoveQueue\DeleteInventoryAndMoveQueue\obj\Debug\DeleteInventoryAndMoveQueue.csprojResolveAssemblyReference.cache
+\\192.168.1.192\d$\Tim's Projects\DeleteInventoryAndMoveQueue\DeleteInventoryAndMoveQueue\obj\Debug\DeleteInventoryAndMoveQueue.exe
+\\192.168.1.192\d$\Tim's Projects\DeleteInventoryAndMoveQueue\DeleteInventoryAndMoveQueue\obj\Debug\DeleteInventoryAndMoveQueue.pdb

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WMSModelStoreContainer" CdmEntityContainer="WMSEntities">
+    <EntitySetMapping Name="LOCATIONS">
+      <EntityTypeMapping TypeName="WMSModel.LOCATION">
+        <MappingFragment StoreEntitySet="LOCATIONS">
+          <ScalarProperty Name="LOCATION_ID" ColumnName="LOCATION_ID" />
+          <ScalarProperty Name="LOCATION_GROUP" ColumnName="LOCATION_GROUP" />
+          <ScalarProperty Name="EIS_LOCATION" ColumnName="EIS_LOCATION" />
+          <ScalarProperty Name="PICK_SEQUENCE" ColumnName="PICK_SEQUENCE" />
+          <ScalarProperty Name="AISLE" ColumnName="AISLE" />
+          <ScalarProperty Name="SLOT" ColumnName="SLOT" />
+          <ScalarProperty Name="VLEVEL" ColumnName="VLEVEL" />
+          <ScalarProperty Name="BIN" ColumnName="BIN" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="SITE_ID" ColumnName="SITE_ID" />
+          <ScalarProperty Name="PICKING_ZONE" ColumnName="PICKING_ZONE" />
+          <ScalarProperty Name="PUTAWAY_ZONE" ColumnName="PUTAWAY_ZONE" />
+          <ScalarProperty Name="ALLOWPIECEPICKING" ColumnName="ALLOWPIECEPICKING" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="USAGE" ColumnName="USAGE" />
+          <ScalarProperty Name="C_LAST_UPDATED_" ColumnName="_LAST_UPDATED_" />
+          <ScalarProperty Name="C_LAST_USER_" ColumnName="_LAST_USER_" />
+          <ScalarProperty Name="C_LAST_MODULE_" ColumnName="_LAST_MODULE_" />
+          <ScalarProperty Name="PUTAWAY_SEQUENCE" ColumnName="PUTAWAY_SEQUENCE" />
+          <ScalarProperty Name="REVERSE_SLOT" ColumnName="REVERSE_SLOT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

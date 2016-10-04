@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WMSModelStoreContainer" CdmEntityContainer="WMSEntities">
+    <EntitySetMapping Name="HOST_ORDER_DETAIL">
+      <EntityTypeMapping TypeName="WMSModel.HOST_ORDER_DETAIL">
+        <MappingFragment StoreEntitySet="HOST_ORDER_DETAIL">
+          <ScalarProperty Name="EIS_ORDER_ID" ColumnName="EIS_ORDER_ID" />
+          <ScalarProperty Name="EIS_ORDER_LINE" ColumnName="EIS_ORDER_LINE" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+          <ScalarProperty Name="QC_CATEGORY" ColumnName="QC_CATEGORY" />
+          <ScalarProperty Name="ORDERED_UNITS" ColumnName="ORDERED_UNITS" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="SCHEDULED_DATE" ColumnName="SCHEDULED_DATE" />
+          <ScalarProperty Name="NOTES" ColumnName="NOTES" />
+          <ScalarProperty Name="EIS_ORDLINE_PRICE" ColumnName="EIS_ORDLINE_PRICE" />
+          <ScalarProperty Name="EIS_UNIT_PRICE" ColumnName="EIS_UNIT_PRICE" />
+          <ScalarProperty Name="C_LAST_UPDATED_" ColumnName="_LAST_UPDATED_" />
+          <ScalarProperty Name="C_LAST_USER_" ColumnName="_LAST_USER_" />
+          <ScalarProperty Name="C_LAST_MODULE_" ColumnName="_LAST_MODULE_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOST_ORDERS">
+      <EntityTypeMapping TypeName="WMSModel.HOST_ORDERS">
+        <MappingFragment StoreEntitySet="HOST_ORDERS">
+          <ScalarProperty Name="EIS_ORDER_ID" ColumnName="EIS_ORDER_ID" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="ORDER_DATE" ColumnName="ORDER_DATE" />
+          <ScalarProperty Name="CUSTOMER_ID" ColumnName="CUSTOMER_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDRESS_1" ColumnName="ADDRESS_1" />
+          <ScalarProperty Name="ADDRESS_2" ColumnName="ADDRESS_2" />
+          <ScalarProperty Name="ADDRESS_3" ColumnName="ADDRESS_3" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="PURCHASE_ORDER" ColumnName="PURCHASE_ORDER" />
+          <ScalarProperty Name="ORIGINAL_SHIP_MODE" ColumnName="ORIGINAL_SHIP_MODE" />
+          <ScalarProperty Name="TERMS" ColumnName="TERMS" />
+          <ScalarProperty Name="COD_INDICATOR" ColumnName="COD_INDICATOR" />
+          <ScalarProperty Name="EST_NUM_BOXES" ColumnName="EST_NUM_BOXES" />
+          <ScalarProperty Name="CARRIER_ID" ColumnName="CARRIER_ID" />
+          <ScalarProperty Name="FREIGHT" ColumnName="FREIGHT" />
+          <ScalarProperty Name="DEPOSIT_AMOUNT" ColumnName="DEPOSIT_AMOUNT" />
+          <ScalarProperty Name="FREIGHT_BILLING_OPTION" ColumnName="FREIGHT_BILLING_OPTION" />
+          <ScalarProperty Name="EXPEDITE_IND" ColumnName="EXPEDITE_IND" />
+          <ScalarProperty Name="NOTES" ColumnName="NOTES" />
+          <ScalarProperty Name="IMPORT_TIME" ColumnName="IMPORT_TIME" />
+          <ScalarProperty Name="FREIGHT_BILL_TO_ACCOUNT" ColumnName="FREIGHT_BILL_TO_ACCOUNT" />
+          <ScalarProperty Name="FREIGHT_BILL_TO_NAME" ColumnName="FREIGHT_BILL_TO_NAME" />
+          <ScalarProperty Name="FREIGHT_BILL_TO_ADDRESS_1" ColumnName="FREIGHT_BILL_TO_ADDRESS_1" />
+          <ScalarProperty Name="FREIGHT_BILL_TO_ADDRESS_2" ColumnName="FREIGHT_BILL_TO_ADDRESS_2" />
+          <ScalarProperty Name="FREIGHT_BILL_TO_ADDRESS_3" ColumnName="FREIGHT_BILL_TO_ADDRESS_3" />
+          <ScalarProperty Name="FREIGHT_BILL_TO_CITY" ColumnName="FREIGHT_BILL_TO_CITY" />
+          <ScalarProperty Name="FREIGHT_BILL_TO_STATE" ColumnName="FREIGHT_BILL_TO_STATE" />
+          <ScalarProperty Name="FREIGHT_BILL_TO_ZIP" ColumnName="FREIGHT_BILL_TO_ZIP" />
+          <ScalarProperty Name="C_LAST_UPDATED_" ColumnName="_LAST_UPDATED_" />
+          <ScalarProperty Name="C_LAST_USER_" ColumnName="_LAST_USER_" />
+          <ScalarProperty Name="C_LAST_MODULE_" ColumnName="_LAST_MODULE_" />
+          <ScalarProperty Name="QC_CODES" ColumnName="QC_CODES" />
+          <ScalarProperty Name="DELIVER_BY_DATE" ColumnName="DELIVER_BY_DATE" />
+          <ScalarProperty Name="QC_REQUIRED" ColumnName="QC_REQUIRED" />
+          <ScalarProperty Name="EXTERNAL_CARTONIZED" ColumnName="EXTERNAL_CARTONIZED" />
+          <ScalarProperty Name="FIRSTBOXSHIPPED" ColumnName="FIRSTBOXSHIPPED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
