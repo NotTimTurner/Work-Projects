@@ -7,6 +7,18 @@ using System.IO;
 using System.Data;
 using System.Data.SqlClient;
 
+/// <summary>
+/// Author: Tim Turner
+/// Creation Data: 3/15/2015
+/// Purpose: To grab images from a file( the images are provided by the web team) 
+///          and insert them into the Warehousestrg Database so that the POS signiture pads
+///          can just call the database instead of trying to update from a file
+/// imporvments: instead of Deleting all the items in the table every day and readding them
+///              have it check and see if the files are different from the ones in the database        
+/// </summary>
+
+
+
 
 namespace ImageAutoUploader
 {

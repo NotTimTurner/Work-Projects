@@ -4,3 +4,6 @@
 \\192.168.1.192\d$\Tim's Projects\QC Auto Print\QC Auto Print\obj\Debug\QC Auto Print.csprojResolveAssemblyReference.cache
 \\192.168.1.192\d$\Tim's Projects\QC Auto Print\QC Auto Print\obj\Debug\QC Auto Print.exe
 \\192.168.1.192\d$\Tim's Projects\QC Auto Print\QC Auto Print\obj\Debug\QC Auto Print.pdb
+C:\Users\tturner\Documents\GitHub\Work Projects\Bodek-and-Rhodes\QC Auto Print\QC Auto Print\bin\Debug\QC Auto Print.exe.config
+C:\Users\tturner\Documents\GitHub\Work Projects\Bodek-and-Rhodes\QC Auto Print\QC Auto Print\obj\Debug\QC Auto Print.exe
+C:\Users\tturner\Documents\GitHub\Work Projects\Bodek-and-Rhodes\QC Auto Print\QC Auto Print\obj\Debug\QC Auto Print.pdb

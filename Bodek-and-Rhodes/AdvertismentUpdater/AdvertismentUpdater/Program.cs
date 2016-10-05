@@ -1,9 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.IO;
 using System.Data;
 using System.Data.SqlClient;
+
+
+/// <summary>
+/// Project: Advertisment Updater
+/// Date Created: March 2015
+/// purpose:    Uses the signotec API to update the Images on the signature pad from the warehousestrg Database.
+///             added to the task scheduler on each machine to run at 5 AM while no one is IN
+/// </summary>
 
 namespace AdvertismentUpdater
 {
@@ -13,6 +19,7 @@ namespace AdvertismentUpdater
         {
             try
             {
+                //signature pad API
                 signotec.STPadLibNet.STPadLib spad = new signotec.STPadLibNet.STPadLib();
 
                 // System.Diagnostics.Process reset = System.Diagnostics.Process.Start(@"C:\Program Files (x86)\signotec\signoPAD-API\Applications\signoReset\signoReset.exe");
@@ -20,7 +27,7 @@ namespace AdvertismentUpdater
                 //reset.Kill();
 
                 spad.DeviceOpen(0);
-
+                //Connect to warehouseSTRG and run ReadALLImage( basically just a select * from AdvertismentImages)
                 String strConnString = "Data Source=192.168.1.192;Initial Catalog=WMS;User ID=bodek;";
                 SqlConnection con = new SqlConnection(strConnString);
                 SqlCommand cmd = new SqlCommand("ReadAllImage", con);
@@ -32,7 +39,7 @@ namespace AdvertismentUpdater
                     con.Open();
 
                 adp.Fill(dt);
-
+                //Draws all the images onto the signature pad
                 if (dt.Rows.Count > 0)
                 {
                     for (int i = 0; i < dt.Rows.Count; i++)
@@ -55,7 +62,7 @@ namespace AdvertismentUpdater
                         spad.DisplaySetImage(0, 0, bitmap);
                     }
                 }
-
+                //signature pad display variables and the slidshow speed
                 spad.DisplayConfigSlideShow("4;5;6;7;8;9;10;11;12;13", 3000);
 
                 spad.DeviceClose(0);
@@ -73,7 +80,7 @@ namespace AdvertismentUpdater
 
 
 
-            /*
+            /* legacy code origionally this program grabed from a file not the database
             string[] pics = System.IO.Directory.GetFiles(@"C:\Users\tturner\Desktop", "*.bmp");
             for (int j = 0; j < pics.Length; j++)
             {

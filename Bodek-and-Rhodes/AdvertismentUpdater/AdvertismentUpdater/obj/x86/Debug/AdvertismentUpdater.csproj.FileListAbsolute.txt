@@ -36,3 +36,6 @@ C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\A
 C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.application
 C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.exe
 C:\Users\tturner\Desktop\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.pdb
+C:\Users\tturner\Documents\GitHub\Work Projects\Bodek-and-Rhodes\AdvertismentUpdater\AdvertismentUpdater\bin\Debug\AdvertismentUpdater.exe.config
+C:\Users\tturner\Documents\GitHub\Work Projects\Bodek-and-Rhodes\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.exe
+C:\Users\tturner\Documents\GitHub\Work Projects\Bodek-and-Rhodes\AdvertismentUpdater\AdvertismentUpdater\obj\x86\Debug\AdvertismentUpdater.pdb

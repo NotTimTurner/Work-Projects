@@ -1,12 +1,24 @@
 ﻿using System;
 using System.Drawing;
-using System.Windows.Forms;
+
 using System.Drawing.Printing;
 using System.Runtime.InteropServices;
-using System.Data;
+
 using System.Data.SqlClient;
-//add printers to database table with 
-//add time on the ticket
+
+
+/// <summary>
+/// Program: QC Auto Print
+/// Author: Tim Turner
+/// Creation Date: April 2015
+/// 
+/// Summary: Bob asked me to replace the old QC program with an automated one. It scans the database every 2 minutes for a new QC defect
+///          and if it sees one it will print out a QC ticket 
+///          
+/// Improvments needed: Printer is right now hard Coded, that needs to change(Edit 10/5/2016 never happened but still something i wish i did)
+///                     10/5/2016: going back this should be more object oriented and use my database connection class, as well as validation and utility
+/// </summary>
+
 
 namespace QC_Auto_Print
 {
